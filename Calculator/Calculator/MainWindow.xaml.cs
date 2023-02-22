@@ -130,5 +130,13 @@ namespace Calculator
 
             Display.Text = "0";
         }
+
+        //private void Window_KeyDown(object sender, KeyEventArgs e)
+        //{
+        //    if (e.Key.ToString() == "D1")
+        //    {
+        //        Btn1.RaiseEvent(new RoutedEventArgs(ButtonBase.ClickEvent));
+        //    }
+        //}
     }
 }
