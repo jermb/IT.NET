@@ -24,5 +24,39 @@ namespace Calculator
         {
             InitializeComponent();
         }
+
+        private void Add(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void Add(object sender, RoutedEventArgs e)
+        {
+
+        }
+        private void Add(object sender, RoutedEventArgs e)
+        {
+
+        }
+        private void Add(object sender, RoutedEventArgs e)
+        {
+
+        }
+        private void Add(object sender, RoutedEventArgs e)
+        {
+
+        }
+        private void Add(object sender, RoutedEventArgs e)
+        {
+
+        }
+        private void Add(object sender, RoutedEventArgs e)
+        {
+
+        }
+        private void Add(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }
