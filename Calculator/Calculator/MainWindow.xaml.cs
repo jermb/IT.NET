@@ -21,6 +21,7 @@ namespace Calculator
     public partial class MainWindow : Window
     {
         private enum Mode {ADD, SUBTRACT, DIVIDE, MULTIPLY, NONE};
+        private static readonly char[] ModeSymbols = { '+', '-', '/', 'x' };
         private Mode mode;
         private string symbol;
 
@@ -55,16 +56,21 @@ namespace Calculator
 
         private void Number(object sender, RoutedEventArgs e)
         {
-            int tag = int.Parse(((Button)sender).Tag.ToString());
-            if (Display.Text == "0") { Display.Text = tag.ToString(); }
-            else 
-            { 
-                Display.Text += tag.ToString();
+            string tag = ((Button)sender).Tag.ToString();
+            AddNumber(tag);
+        }
+
+        private void AddNumber(string num)
+        {
+            if (Display.Text == "0") { Display.Text = num; }
+            else
+            {
+                Display.Text += num;
             }
         }
         private void Decimal()
         {
-            if (Display.Text.IndexOfAny(new char[] { '+', '-', '/', 'x' }) == Display.Text.Length - 1)
+            if (Display.Text.IndexOfAny(ModeSymbols) == Display.Text.Length - 1)
             {
                 Display.Text += "0.";
             }
@@ -93,7 +99,7 @@ namespace Calculator
             this.mode = mode;
             this.symbol = symbol;
 
-            if (Display.Text.IndexOfAny(new char[] {'+', '-', '/', 'x'}) != -1) {
+            if (Display.Text.IndexOfAny(ModeSymbols) != -1) {
                 Solve();
             }
 
@@ -102,6 +108,7 @@ namespace Calculator
 
         private void Solve()
         {
+            if (mode == Mode.NONE) { return; }
             string[] txtNums = Display.Text.Split(symbol);
             float[] nums = new float[txtNums.Length];
             float value = 0;
@@ -129,6 +136,36 @@ namespace Calculator
             symbol = "";
 
             Display.Text = "0";
+        }
+
+        private void Delete(object sender, RoutedEventArgs e)
+        {
+            char last = Display.Text[Display.Text.Length - 1];
+            if (ModeSymbols.Contains(last))
+            {
+                mode = Mode.NONE;
+                symbol = "";
+            }
+            Display.Text = Display.Text.Remove(Display.Text.Length - 1);
+        }
+
+        private void Window_PreviewKeyDown(object sender, KeyEventArgs e)
+        {
+            switch (e.Key)
+            {
+                case Key.Enter: Solve(); break;
+                case Key.Back: Delete(null, null); break;
+                case Key.D0:
+                case Key.D1:
+                case Key.D2:
+                case Key.D3:
+                case Key.D4:
+                case Key.D5:
+                case Key.D6:
+                case Key.D7:
+                case Key.D8:
+                case Key.D9: AddNumber(e.Key.ToString().Replace("D", "")); break;
+            }
         }
 
         //private void Window_KeyDown(object sender, KeyEventArgs e)
