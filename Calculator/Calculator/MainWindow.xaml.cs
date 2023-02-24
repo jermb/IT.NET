@@ -134,6 +134,11 @@ namespace Calculator
             Display.Text = Display.Text.Remove(Display.Text.Length - 1);
         }
 
+        private void NegativeSwtich(object sender, KeyEventArgs e)
+        {
+            
+        }
+
         private void KeyPress(object sender, KeyEventArgs e)
         {
             switch (e.Key)
