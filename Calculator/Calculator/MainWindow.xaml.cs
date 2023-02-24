@@ -21,19 +21,21 @@ namespace Calculator
     public partial class MainWindow : Window
     {
         private enum Mode {ADD, SUBTRACT, DIVIDE, MULTIPLY, NONE};
-        private static readonly char[] ModeSymbols = { '+', '-', '/', 'x' };
+        private static readonly char[] ModeSymbols = { '+', '–', '/', 'x' };
         private Mode mode;
         private string symbol;
 
         public MainWindow()
         {
             InitializeComponent();
+            
             Display.Text = "0";
         }
 
         private void Number(object sender, RoutedEventArgs e)
         {
             string tag = ((Button)sender).Tag.ToString();
+            if (Display.Text == "Err") { Display.Text = "0"; }
             AddNumber(tag);
         }
 
@@ -47,6 +49,7 @@ namespace Calculator
         }
         private void Decimal()
         {
+            if (Display.Text == "Err") { Display.Text = "0"; }
             for (int i = Display.Text.Length-1; i >= 0; i--)
             {
                 char c = Display.Text[i];
@@ -63,7 +66,7 @@ namespace Calculator
             switch (tag)
             {
                 case "+": SetMode("+", Mode.ADD); break;
-                case "-": SetMode("-", Mode.SUBTRACT); break;
+                case "–": SetMode("–", Mode.SUBTRACT); break;
                 case "/": SetMode("/", Mode.DIVIDE); break;
                 case "x": SetMode("x", Mode.MULTIPLY); break;
                 case ".": Decimal();  break;
@@ -76,6 +79,7 @@ namespace Calculator
             this.mode = mode;
             this.symbol = symbol;
 
+            if (Display.Text == "Err") { Display.Text = "0"; }
             if (Display.Text.IndexOfAny(ModeSymbols) != -1) {
 
                 if (ModeSymbols.Contains(Display.Text[Display.Text.Length - 1]))
@@ -104,15 +108,22 @@ namespace Calculator
                 nums[i] = float.Parse(txtNums[i]);
             }
 
-            switch (mode)
+            try
             {
-                case Mode.ADD: value = nums[0] + nums[1]; break;
-                case Mode.SUBTRACT: value = nums[0] - nums[1]; break;
-                case Mode.DIVIDE: value = nums[0] / nums[1]; break;
-                case Mode.MULTIPLY: value = nums[0] * nums[1];  break;
-            }
+                switch (mode)
+                {
+                    case Mode.ADD: value = nums[0] + nums[1]; break;
+                    case Mode.SUBTRACT: value = nums[0] - nums[1]; break;
+                    case Mode.DIVIDE: if (nums[1] == 0) { throw new Exception(); } value = nums[0] / nums[1]; break;
+                    case Mode.MULTIPLY: value = nums[0] * nums[1]; break;
+                }
 
-            Display.Text = value.ToString();
+                Display.Text = value.ToString();
+            }
+            catch (Exception ex)
+            {
+                Display.Text = "Err";
+            }
         }
 
         private void Clear(object sender, RoutedEventArgs e)
@@ -134,9 +145,19 @@ namespace Calculator
             Display.Text = Display.Text.Remove(Display.Text.Length - 1);
         }
 
-        private void NegativeSwtich(object sender, KeyEventArgs e)
+        private void NegativeSwitch(object sender, RoutedEventArgs e)
         {
-            
+            int index = Display.Text.IndexOfAny(ModeSymbols);
+            if (index != -1)
+            {
+                if (Display.Text[0].Equals("-")) { return; }
+                Display.Text = "-" + Display.Text;
+            }
+            else
+            {
+                if (Display.Text[index + 1].Equals("-")) { return; }
+                Display.Text.Insert(index + 1, "-");
+            }
         }
 
         private void KeyPress(object sender, KeyEventArgs e)
