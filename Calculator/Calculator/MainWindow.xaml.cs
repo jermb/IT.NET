@@ -31,29 +31,6 @@ namespace Calculator
             Display.Text = "0";
         }
 
-        private void Add(object sender, RoutedEventArgs e)
-        {
-
-        }
-
-        private void Subtract(object sender, RoutedEventArgs e)
-        {
-
-        }
-        private void Multiply(object sender, RoutedEventArgs e)
-        {
-
-        }
-        private void Divide(object sender, RoutedEventArgs e)
-        {
-            //string txt = "wow";
-            //txt.
-        }
-        private void Equals(object sender, RoutedEventArgs e)
-        {
-
-        }
-
         private void Number(object sender, RoutedEventArgs e)
         {
             string tag = ((Button)sender).Tag.ToString();
@@ -70,14 +47,14 @@ namespace Calculator
         }
         private void Decimal()
         {
-            if (Display.Text.IndexOfAny(ModeSymbols) == Display.Text.Length - 1)
+            for (int i = Display.Text.Length-1; i >= 0; i--)
             {
-                Display.Text += "0.";
+                char c = Display.Text[i];
+                if (ModeSymbols.Contains(c)) { break; }
+                else if (c == '.') { return; }
             }
-            else
-            {
-                Display.Text += ".";
-            }
+            if (ModeSymbols.Contains(Display.Text[Display.Text.Length - 1])) { Display.Text += "0"; }
+            Display.Text += ".";
         }
         private void Symbol(object sender, RoutedEventArgs e)
         {
@@ -85,7 +62,7 @@ namespace Calculator
 
             switch (tag)
             {
-                case "+":  SetMode("+", Mode.ADD); break;
+                case "+": SetMode("+", Mode.ADD); break;
                 case "-": SetMode("-", Mode.SUBTRACT); break;
                 case "/": SetMode("/", Mode.DIVIDE); break;
                 case "x": SetMode("x", Mode.MULTIPLY); break;
@@ -100,7 +77,15 @@ namespace Calculator
             this.symbol = symbol;
 
             if (Display.Text.IndexOfAny(ModeSymbols) != -1) {
-                Solve();
+
+                if (ModeSymbols.Contains(Display.Text[Display.Text.Length - 1]))
+                {
+                    Display.Text = Display.Text.Remove(Display.Text.Length - 1);
+                }
+                else
+                {
+                    Solve();
+                }
             }
 
             Display.Text += symbol;
@@ -149,7 +134,7 @@ namespace Calculator
             Display.Text = Display.Text.Remove(Display.Text.Length - 1);
         }
 
-        private void Window_PreviewKeyDown(object sender, KeyEventArgs e)
+        private void KeyPress(object sender, KeyEventArgs e)
         {
             switch (e.Key)
             {
@@ -165,15 +150,8 @@ namespace Calculator
                 case Key.D7:
                 case Key.D8:
                 case Key.D9: AddNumber(e.Key.ToString().Replace("D", "")); break;
+                case Key.OemPeriod: Decimal(); break;
             }
         }
-
-        //private void Window_KeyDown(object sender, KeyEventArgs e)
-        //{
-        //    if (e.Key.ToString() == "D1")
-        //    {
-        //        Btn1.RaiseEvent(new RoutedEventArgs(ButtonBase.ClickEvent));
-        //    }
-        //}
     }
 }
