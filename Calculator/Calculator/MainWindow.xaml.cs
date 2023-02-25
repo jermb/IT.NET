@@ -148,15 +148,15 @@ namespace Calculator
         private void NegativeSwitch(object sender, RoutedEventArgs e)
         {
             int index = Display.Text.IndexOfAny(ModeSymbols);
-            if (index != -1)
+            if (index == -1)
             {
-                if (Display.Text[0].Equals("-")) { return; }
+                if (Display.Text[0].Equals('-')) { return; }
                 Display.Text = "-" + Display.Text;
             }
             else
             {
-                if (Display.Text[index + 1].Equals("-")) { return; }
-                Display.Text.Insert(index + 1, "-");
+                if (index + 1 != Display.Text.Length && Display.Text[index + 1].Equals("-")) { return; }
+                Display.Text = Display.Text.Insert(index + 1, "-");
             }
         }
 
