@@ -23,7 +23,8 @@ namespace Calculator
         private enum Mode {ADD, SUBTRACT, DIVIDE, MULTIPLY, NONE};
         private static readonly char[] ModeSymbols = { '+', '–', '/', 'x' };
         private Mode mode;
-        private string symbol;
+        private char symbol;
+        private string repeatOp = null;
 
         public MainWindow()
         {
@@ -42,10 +43,8 @@ namespace Calculator
         private void AddNumber(string num)
         {
             if (Display.Text == "0") { Display.Text = num; }
-            else
-            {
-                Display.Text += num;
-            }
+            else if (Display.Text == "-0") { Display.Text = "-" + num; }
+            else { Display.Text += num; }
         }
         private void Decimal()
         {
@@ -65,23 +64,20 @@ namespace Calculator
 
             switch (tag)
             {
-                case "+": SetMode("+", Mode.ADD); break;
-                case "–": SetMode("–", Mode.SUBTRACT); break;
-                case "/": SetMode("/", Mode.DIVIDE); break;
-                case "x": SetMode("x", Mode.MULTIPLY); break;
+                case "+": SetMode('+', Mode.ADD); break;
+                case "–": SetMode('–', Mode.SUBTRACT); break;
+                case "/": SetMode('/', Mode.DIVIDE); break;
+                case "x": SetMode('x', Mode.MULTIPLY); break;
                 case ".": Decimal();  break;
                 case "=": Solve(); break;
             }
         }
 
-        private void SetMode(string symbol, Mode mode)
+        private void SetMode(char symbol, Mode mode)
         {
-            this.mode = mode;
-            this.symbol = symbol;
-
             if (Display.Text == "Err") { Display.Text = "0"; }
-            if (Display.Text.IndexOfAny(ModeSymbols) != -1) {
-
+            if (Display.Text.IndexOfAny(ModeSymbols) != -1) 
+            {
                 if (ModeSymbols.Contains(Display.Text[Display.Text.Length - 1]))
                 {
                     Display.Text = Display.Text.Remove(Display.Text.Length - 1);
@@ -91,7 +87,8 @@ namespace Calculator
                     Solve();
                 }
             }
-
+            this.mode = mode;
+            this.symbol = symbol;
             Display.Text += symbol;
         }
 
@@ -99,38 +96,44 @@ namespace Calculator
         {
             if (mode == Mode.NONE) { return; }
             string[] txtNums = Display.Text.Split(symbol);
-            float[] nums = new float[txtNums.Length];
             float value = 0;
 
-            if (txtNums.Length == 1) { return; }
-            for (int i = 0; i < txtNums.Length; i++)
-            {
-                nums[i] = float.Parse(txtNums[i]);
-            }
+            try 
+            { 
+                if (txtNums.Length == 1) 
+                {
+                    if (repeatOp == null) { return; }
+                    txtNums = new string[] { txtNums[0], repeatOp };
+                }
 
-            try
-            {
+                float[] nums = new float[txtNums.Length];
+                for (int i = 0; i < txtNums.Length; i++)
+                {
+                    nums[i] = float.Parse(txtNums[i]);
+                }
+
                 switch (mode)
                 {
                     case Mode.ADD: value = nums[0] + nums[1]; break;
                     case Mode.SUBTRACT: value = nums[0] - nums[1]; break;
-                    case Mode.DIVIDE: if (nums[1] == 0) { throw new Exception(); } value = nums[0] / nums[1]; break;
+                    case Mode.DIVIDE: if (nums[1] == 0) { throw new DivideByZeroException(); } value = nums[0] / nums[1]; break;
                     case Mode.MULTIPLY: value = nums[0] * nums[1]; break;
                 }
-
+                repeatOp = txtNums[1];
                 Display.Text = value.ToString();
             }
-            catch (Exception ex)
+            catch (Exception e) when (e is DivideByZeroException || e is FormatException || e is IndexOutOfRangeException)
             {
                 Display.Text = "Err";
+                repeatOp = null;
             }
         }
 
         private void Clear(object sender, RoutedEventArgs e)
         {
             mode = Mode.NONE;
-            symbol = "";
-
+            symbol = '~';
+            repeatOp = null;
             Display.Text = "0";
         }
 
@@ -140,7 +143,7 @@ namespace Calculator
             if (ModeSymbols.Contains(last))
             {
                 mode = Mode.NONE;
-                symbol = "";
+                symbol = '~';
             }
             Display.Text = Display.Text.Remove(Display.Text.Length - 1);
         }
@@ -150,22 +153,36 @@ namespace Calculator
             int index = Display.Text.IndexOfAny(ModeSymbols);
             if (index == -1)
             {
-                if (Display.Text[0].Equals('-')) { return; }
-                Display.Text = "-" + Display.Text;
+                if (Display.Text[0].Equals('-')) 
+                {
+                    Display.Text = Display.Text.Substring(1);
+                }
+                else
+                {
+                    Display.Text = "-" + Display.Text;
+                }
             }
             else
             {
-                if (index + 1 != Display.Text.Length && Display.Text[index + 1].Equals("-")) { return; }
-                Display.Text = Display.Text.Insert(index + 1, "-");
+                if (index + 1 != Display.Text.Length && Display.Text[index + 1].Equals('-')) {
+                    Display.Text = string.Concat(Display.Text.AsSpan(0, index + 1), Display.Text.AsSpan(index + 2));
+                }
+                else
+                {
+                    Display.Text = Display.Text.Insert(index + 1, "-");
+                }
+                
             }
         }
 
         private void KeyPress(object sender, KeyEventArgs e)
         {
+            bool shift = Keyboard.Modifiers == ModifierKeys.Shift ? true : false;
             switch (e.Key)
             {
                 case Key.Enter: Solve(); break;
-                case Key.Back: Delete(null, null); break;
+                case Key.Back: if (shift) { Clear(null, null); } else { Delete(null, null); } break;
+                case Key.Delete: Clear(null, null); break;
                 case Key.D0:
                 case Key.D1:
                 case Key.D2:
@@ -177,6 +194,10 @@ namespace Calculator
                 case Key.D8:
                 case Key.D9: AddNumber(e.Key.ToString().Replace("D", "")); break;
                 case Key.OemPeriod: Decimal(); break;
+                case Key.X: SetMode('x', Mode.MULTIPLY); break;
+                case Key.OemQuestion: SetMode('/', Mode.DIVIDE); break;
+                case Key.OemMinus: if (shift) { NegativeSwitch(null, null); } else { SetMode('–', Mode.SUBTRACT); } break;
+                case Key.OemPlus: if (shift) { SetMode('+', Mode.ADD); } else { Solve(); } break;
             }
         }
     }
