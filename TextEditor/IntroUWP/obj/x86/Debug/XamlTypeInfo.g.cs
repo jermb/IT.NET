@@ -8,22 +8,22 @@
 //------------------------------------------------------------------------------
 
 
-namespace IntroUWP
+namespace TextEditor
 {
     public partial class App : global::Windows.UI.Xaml.Markup.IXamlMetadataProvider
     {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Windows.UI.Xaml.Build.Tasks"," 10.0.18362.1")]
-        private global::IntroUWP.IntroUWP_XamlTypeInfo.XamlMetaDataProvider __appProvider;
+        private global::TextEditor.TextEditor_XamlTypeInfo.XamlMetaDataProvider __appProvider;
 
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Windows.UI.Xaml.Build.Tasks"," 10.0.18362.1")]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        private global::IntroUWP.IntroUWP_XamlTypeInfo.XamlMetaDataProvider _AppProvider
+        private global::TextEditor.TextEditor_XamlTypeInfo.XamlMetaDataProvider _AppProvider
         {
             get
             {
                 if (__appProvider == null)
                 {
-                    __appProvider = new global::IntroUWP.IntroUWP_XamlTypeInfo.XamlMetaDataProvider();
+                    __appProvider = new global::TextEditor.TextEditor_XamlTypeInfo.XamlMetaDataProvider();
                 }
                 return __appProvider;
             }
@@ -61,7 +61,7 @@ namespace IntroUWP
     }
 }
 
-namespace IntroUWP.IntroUWP_XamlTypeInfo
+namespace TextEditor.TextEditor_XamlTypeInfo
 {
     /// <summary>
     /// Main class for providing metadata for the app or library
@@ -70,15 +70,15 @@ namespace IntroUWP.IntroUWP_XamlTypeInfo
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     public sealed class XamlMetaDataProvider : global::Windows.UI.Xaml.Markup.IXamlMetadataProvider
     {
-        private global::IntroUWP.IntroUWP_XamlTypeInfo.XamlTypeInfoProvider _provider = null;
+        private global::TextEditor.TextEditor_XamlTypeInfo.XamlTypeInfoProvider _provider = null;
 
-        private global::IntroUWP.IntroUWP_XamlTypeInfo.XamlTypeInfoProvider Provider
+        private global::TextEditor.TextEditor_XamlTypeInfo.XamlTypeInfoProvider Provider
         {
             get
             {
                 if (_provider == null)
                 {
-                    _provider = new global::IntroUWP.IntroUWP_XamlTypeInfo.XamlTypeInfoProvider();
+                    _provider = new global::TextEditor.TextEditor_XamlTypeInfo.XamlTypeInfoProvider();
                 }
                 return _provider;
             }
