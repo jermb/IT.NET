@@ -9,17 +9,16 @@
     mc:Ignorable="d"
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
     
-
     <Grid>
         <StackPanel>
             <MenuBar>
                 <MenuBarItem Title="File">
-                    <MenuFlyoutItem Text="New"/>
-                    <MenuFlyoutItem x:ConnectionId='3' Text="Open..."                             />
-                    <MenuFlyoutItem Text="Save"/>
-                    <MenuFlyoutItem Text="Save As"/>
+                    <MenuFlyoutItem x:ConnectionId='3' Text="New"            />
+                    <MenuFlyoutItem x:ConnectionId='4' Text="Open..."             />
+                    <MenuFlyoutItem x:ConnectionId='5' Text="Save"             />
+                    <MenuFlyoutItem x:ConnectionId='6' Text="Save As"               />
                     <MenuFlyoutSeparator />
-                    <MenuFlyoutItem Text="Exit"/>
+                    <MenuFlyoutItem x:ConnectionId='7' Text="Exit"             />
                 </MenuBarItem>
                 <MenuBarItem Title="Help">
                     <MenuFlyoutItem Text="About"/>
@@ -27,8 +26,7 @@
             </MenuBar>
         </StackPanel>
 
-        <TextBox x:ConnectionId='2' x:Name="InputBox"  Margin="50, 60" Text="Input Box" TextWrapping="Wrap" ScrollViewer.VerticalScrollBarVisibility="Auto" AcceptsReturn="True"/>
-
+        <TextBox x:ConnectionId='2' x:Name="InputBox"  Margin="50, 60" Text="Input Box" TextWrapping="Wrap" ScrollViewer.VerticalScrollBarVisibility="Auto" AcceptsReturn="True"                                   />
 
     </Grid>
 </Page>

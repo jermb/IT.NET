@@ -1,22 +1,31 @@
 ﻿using System;
 
-public class TextDocument
+namespace TextEditor
 {
+    public class TextDocument
+    {
+        private TextBox textbox;
 
+        public string FilePath { get; set; }
+        public string FileName { get; set; }
+        public bool HasChanges { get; }
 
+        public TextDocument(TextBox textbox)
+        {
+            this.textbox = textbox;
+        }
 
-	public TextDocument()
-	{
-	}
+        public Save()
+        {
 
-	public Save()
-	{
+        }
 
-	}
+        public Open()
+        {
 
-	public Open()
-	{
+        }
 
-	}
+    }
 
 }
+
