@@ -35,36 +35,22 @@ namespace TextEditor
         public MainPage()
         {
             this.InitializeComponent();
-            doc = new TextDocument(InputBox);
+            doc = new TextDocument(InputBox, this);
         }
 
         private async void Open(object sender, RoutedEventArgs e)
         {
-
-
-            //    Display.Text = "Open";
-
-            //    Display.Text = "";
-
             FileOpenPicker openPicker = new FileOpenPicker();
             openPicker.ViewMode = PickerViewMode.Thumbnail;
             openPicker.SuggestedStartLocation = PickerLocationId.DocumentsLibrary;
             openPicker.FileTypeFilter.Add(".txt");
             StorageFile file = await openPicker.PickSingleFileAsync();
-            if (file != null)
-            {
-                doc.Open(file);
-            }
-            else
-            {
-                MessageDialog dialog = new MessageDialog("Could not open file.");
-                await dialog.ShowAsync();
-            }
+            doc.Open(file);
         }
 
         private async void Save(object sender, RoutedEventArgs e)
         {
-            if (doc.FilePath == null) { SaveAs(sender, e); return; }
+            if (doc.File == null) { SaveAs(sender, e); return; }
             doc.Save();
         }
 
@@ -81,7 +67,7 @@ namespace TextEditor
 
         private async void New(object sender, RoutedEventArgs e)
         {
-            if (!doc.HasChanges && await ResolveUnsavedChanges(sender, e)) doc.New();
+            if (!doc.HasChanges || await ResolveUnsavedChanges(sender, e)) doc.New();
         }
 
         private async void Exit(object sender, RoutedEventArgs e)
@@ -90,6 +76,11 @@ namespace TextEditor
             //  If user saves or discards changes the application will close. 
             //  Otherwise the close operation is canceled
             if (!doc.HasChanges || await ResolveUnsavedChanges(sender, e)) CoreApplication.Exit();
+        }
+
+        private async void About(object sender, RoutedEventArgs e)
+        {
+            await new MessageDialog("This application is a basic text editor. It is capable of opening and saving '.txt' files.\nIt was created by Jay Edson for INFOTC 4400").ShowAsync();
         }
 
         private void InputBox_TextChanged(object sender, TextChangedEventArgs e)
@@ -117,6 +108,21 @@ namespace TextEditor
                 Save(sender, e);
             }
             return true;
+        }
+
+        private void TabHandling(object sender, KeyRoutedEventArgs e)
+        {
+            //if (e.Key == Windows.System.VirtualKey.Tab)
+            //{
+            //    int cursor = InputBox.SelectionStart;
+            //    InputBox.Text = InputBox.Text.Insert(cursor, "\t");
+            //    e.Handled = true;
+            //}
+        }
+
+        public void SaveIsEnabled(bool enabled)
+        {
+            SaveButton.IsEnabled = enabled;
         }
     }
 }

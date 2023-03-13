@@ -13,20 +13,20 @@
         <StackPanel>
             <MenuBar>
                 <MenuBarItem Title="File">
-                    <MenuFlyoutItem x:ConnectionId='3' Text="New"            />
-                    <MenuFlyoutItem x:ConnectionId='4' Text="Open..."             />
-                    <MenuFlyoutItem x:ConnectionId='5' Text="Save"             />
-                    <MenuFlyoutItem x:ConnectionId='6' Text="Save As"               />
+                    <MenuFlyoutItem x:ConnectionId='4' Text="New"            />
+                    <MenuFlyoutItem x:ConnectionId='5' Text="Open..."             />
+                    <MenuFlyoutItem x:ConnectionId='6' Text="Save"              x:Name="SaveButton" IsEnabled="False"/>
+                    <MenuFlyoutItem x:ConnectionId='7' Text="Save As"               />
                     <MenuFlyoutSeparator />
-                    <MenuFlyoutItem x:ConnectionId='7' Text="Exit"             />
+                    <MenuFlyoutItem x:ConnectionId='8' Text="Exit"             />
                 </MenuBarItem>
                 <MenuBarItem Title="Help">
-                    <MenuFlyoutItem Text="About"/>
+                    <MenuFlyoutItem x:ConnectionId='3' Text="About"              />
                 </MenuBarItem>
             </MenuBar>
         </StackPanel>
 
-        <TextBox x:ConnectionId='2' x:Name="InputBox"  Margin="50, 60" Text="Input Box" TextWrapping="Wrap" ScrollViewer.VerticalScrollBarVisibility="Auto" AcceptsReturn="True"                                   />
+        <TextBox x:ConnectionId='2' x:Name="InputBox"  Margin="50, 60" Text="Input Box" TextWrapping="Wrap" ScrollViewer.VerticalScrollBarVisibility="Auto" AcceptsReturn="True"                                                         />
 
     </Grid>
 </Page>

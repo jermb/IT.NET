@@ -15,18 +15,18 @@
                 <MenuBarItem Title="File">
                     <MenuFlyoutItem Text="New" Click="New"/>
                     <MenuFlyoutItem Text="Open..." Click="Open"/>
-                    <MenuFlyoutItem Text="Save" Click="Save"/>
+                    <MenuFlyoutItem Text="Save" Click="Save" x:Name="SaveButton" IsEnabled="False"/>
                     <MenuFlyoutItem Text="Save As" Click="SaveAs"/>
                     <MenuFlyoutSeparator />
                     <MenuFlyoutItem Text="Exit" Click="Exit"/>
                 </MenuBarItem>
                 <MenuBarItem Title="Help">
-                    <MenuFlyoutItem Text="About"/>
+                    <MenuFlyoutItem Text="About" Click="About"/>
                 </MenuBarItem>
             </MenuBar>
         </StackPanel>
 
-        <TextBox x:Name="InputBox"  Margin="50, 60" Text="Input Box" TextWrapping="Wrap" ScrollViewer.VerticalScrollBarVisibility="Auto" AcceptsReturn="True" TextChanged="InputBox_TextChanged"/>
+        <TextBox x:Name="InputBox"  Margin="50, 60" Text="Input Box" TextWrapping="Wrap" ScrollViewer.VerticalScrollBarVisibility="Auto" AcceptsReturn="True" TextChanged="InputBox_TextChanged" KeyDown="TabHandling"/>
 
     </Grid>
 </Page>

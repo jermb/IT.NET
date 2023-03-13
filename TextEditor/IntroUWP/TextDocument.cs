@@ -9,19 +9,23 @@ namespace TextEditor
 {
     public class TextDocument
     {
+        private MainPage main;
         private TextBox textbox;
+        private StorageFile file;
+        private bool changed;
+        private string text;
 
-        public string FilePath { get; set; }
-        public string FileName { get; set; }
+        public string FilePath { get => file?.Path; }
+        public string FileName { get => file?.Name; }
+        public StorageFile File { get => file; }
+        public bool HasChanges { get => changed; set { changed = value; main.SaveIsEnabled(value); } }
 
-        public StorageFile File { get; }
-        public bool HasChanges { get; set; }
+        public string Text { get => text; }
 
-        public string Text { get; set; }
-
-        public TextDocument(TextBox textbox)
+        public TextDocument(TextBox textbox, MainPage main)
         {
             this.textbox = textbox;
+            this.main = main;
         }
 
         public async void Save()
@@ -43,24 +47,18 @@ namespace TextEditor
 
         public async void Open(StorageFile file)
         {
-            string text = await FileIO.ReadTextAsync(file);
-            FilePath = file.Path;
-            FileName = file.Name;
+            if (file == null) await new MessageDialog("Could not open file.").ShowAsync();
+
+            textbox.Text = text = await FileIO.ReadTextAsync(file);
+            this.file = file;
             HasChanges = false;
-            Text = text;
-            textbox.Text = text + "\n" + FilePath;
         }
 
         public void New()
         {
-            FilePath = FileName = File = null;
+            file = null;
             HasChanges = false;
-            textbox.Text = Text = "";
-        }
-
-        public async Task<StorageFolder> FileDirectory()
-        {
-            return await StorageFolder.GetFolderFromPathAsync(FilePath);
+            textbox.Text = text = "";
         }
 
     }
