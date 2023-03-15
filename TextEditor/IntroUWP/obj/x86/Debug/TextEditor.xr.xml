@@ -13,12 +13,18 @@
     <RootType FullName="Windows.UI.Xaml.Controls.StackPanel">
       <RootProperty Name="Children" />
     </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.TextBlock">
+      <RootProperty Name="Text" />
+      <RootProperty Name="Margin" />
+      <RootProperty Name="FontSize" />
+      <RootProperty Name="FontStyle" />
+    </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.TextBox">
       <RootProperty Name="Margin" />
-      <RootProperty Name="Text" />
       <RootProperty Name="TextWrapping" />
       <RootProperty Name="AcceptsReturn" />
-      <RootEvent Name="TextChanged" />
+      <RootEvent Name="Paste" />
+      <RootEvent Name="CuttingToClipboard" />
       <RootEvent Name="KeyDown" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.ScrollViewer">

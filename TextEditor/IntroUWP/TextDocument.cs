@@ -1,4 +1,6 @@
 ﻿using System;
+using System.IO;
+using System.Security;
 using System.Threading.Tasks;
 using Windows.Foundation;
 using Windows.Storage;
@@ -9,58 +11,68 @@ namespace TextEditor
 {
     public class TextDocument
     {
-        private MainPage main;
-        private TextBox textbox;
+        private readonly MainPage main;
         private StorageFile file;
         private bool changed;
-        private string text;
 
-        public string FilePath { get => file?.Path; }
-        public string FileName { get => file?.Name; }
-        public StorageFile File { get => file; }
-        public bool HasChanges { get => changed; set { changed = value; main.SaveIsEnabled(value); } }
+        //  Returns the name of the file minus the '.txt' extension
+        public string FileName { get => file?.DisplayName; }
+        public bool IsStored { get => file != null; }
+        public bool HasChanges { get => changed; set { changed = value; main.UnsavedChanges(value); } }
 
-        public string Text { get => text; }
-
-        public TextDocument(TextBox textbox, MainPage main)
+        public TextDocument(MainPage main)
         {
-            this.textbox = textbox;
             this.main = main;
         }
 
-        public async void Save()
+        public async Task Save()
         {
-            Save(File);
+            //  This method is called when saving an already existing file
+            //  Uses the StorageFile saved in [file] to save
+            await Save(file);
         }
 
-        public async void Save(StorageFile file)
+        public async Task Save(StorageFile file)
         {
             if (file == null) return;
             CachedFileManager.DeferUpdates(file);
-            await FileIO.WriteTextAsync(file, textbox.Text);
+            await FileIO.WriteTextAsync(file, main.DocumentText);
+            //  If there was an issue with saving the file, displays a message to the user
             Windows.Storage.Provider.FileUpdateStatus status = await CachedFileManager.CompleteUpdatesAsync(file);
-
-            HasChanges = false;
-
             if (status != Windows.Storage.Provider.FileUpdateStatus.Complete) await new MessageDialog("An issue occurred while saving " + file.Name).ShowAsync();
-        }
 
-        public async void Open(StorageFile file)
-        {
-            if (file == null) await new MessageDialog("Could not open file.").ShowAsync();
-
-            textbox.Text = text = await FileIO.ReadTextAsync(file);
             this.file = file;
             HasChanges = false;
+            main.SetFileName();
         }
 
-        public void New()
+        public async Task<bool> Open(StorageFile file)
         {
+            //  Returns true if file is successfully opened
+            if (file == null) return false;   //  If a file is not chosen by the user
+            try
+            {
+                main.DocumentText = await FileIO.ReadTextAsync(file);
+                this.file = file;
+                HasChanges = false;
+                main.SetFileName();
+                return true;
+            }
+            catch (Exception e) when (e is ArgumentException || e is FileNotFoundException || e is UnauthorizedAccessException || e is IOException || e is NotSupportedException || e is SecurityException)
+            {
+                await new MessageDialog("Could not open file.").ShowAsync();
+            }
+            return false;
+        }
+
+        public async Task New()
+        {
+            //  Defaults all values
             file = null;
             HasChanges = false;
-            textbox.Text = text = "";
+            main.DocumentText = "";
+            main.SetFileName();
         }
-
     }
 
 }

@@ -13,7 +13,7 @@
         <StackPanel>
             <MenuBar>
                 <MenuBarItem Title="File">
-                    <MenuFlyoutItem Text="New" Click="New"/>
+                    <MenuFlyoutItem Text="New" Click="New" x:Name="NewButton" IsEnabled="False"/>
                     <MenuFlyoutItem Text="Open..." Click="Open"/>
                     <MenuFlyoutItem Text="Save" Click="Save" x:Name="SaveButton" IsEnabled="False"/>
                     <MenuFlyoutItem Text="Save As" Click="SaveAs"/>
@@ -26,7 +26,8 @@
             </MenuBar>
         </StackPanel>
 
-        <TextBox x:Name="InputBox"  Margin="50, 60" Text="Input Box" TextWrapping="Wrap" ScrollViewer.VerticalScrollBarVisibility="Auto" AcceptsReturn="True" TextChanged="InputBox_TextChanged" KeyDown="TabHandling"/>
+        <TextBlock x:Name="FileName" Text="Untitled" Margin="60, 45" FontSize="16" FontStyle="Normal"/>
+        <TextBox x:Name="InputBox"  Margin="50, 70" TextWrapping="Wrap" ScrollViewer.VerticalScrollBarVisibility="Auto" AcceptsReturn="True" Paste="InputBox_ClipboardAction" CuttingToClipboard="InputBox_ClipboardAction" KeyDown="TabHandling"/>
 
     </Grid>
 </Page>

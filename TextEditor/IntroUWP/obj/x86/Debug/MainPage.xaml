@@ -13,20 +13,21 @@
         <StackPanel>
             <MenuBar>
                 <MenuBarItem Title="File">
-                    <MenuFlyoutItem x:ConnectionId='4' Text="New"            />
-                    <MenuFlyoutItem x:ConnectionId='5' Text="Open..."             />
-                    <MenuFlyoutItem x:ConnectionId='6' Text="Save"              x:Name="SaveButton" IsEnabled="False"/>
-                    <MenuFlyoutItem x:ConnectionId='7' Text="Save As"               />
+                    <MenuFlyoutItem x:ConnectionId='5' Text="New"             x:Name="NewButton" IsEnabled="False"/>
+                    <MenuFlyoutItem x:ConnectionId='6' Text="Open..."             />
+                    <MenuFlyoutItem x:ConnectionId='7' Text="Save"              x:Name="SaveButton" IsEnabled="False"/>
+                    <MenuFlyoutItem x:ConnectionId='8' Text="Save As"               />
                     <MenuFlyoutSeparator />
-                    <MenuFlyoutItem x:ConnectionId='8' Text="Exit"             />
+                    <MenuFlyoutItem x:ConnectionId='9' Text="Exit"             />
                 </MenuBarItem>
                 <MenuBarItem Title="Help">
-                    <MenuFlyoutItem x:ConnectionId='3' Text="About"              />
+                    <MenuFlyoutItem x:ConnectionId='4' Text="About"              />
                 </MenuBarItem>
             </MenuBar>
         </StackPanel>
 
-        <TextBox x:ConnectionId='2' x:Name="InputBox"  Margin="50, 60" Text="Input Box" TextWrapping="Wrap" ScrollViewer.VerticalScrollBarVisibility="Auto" AcceptsReturn="True"                                                         />
+        <TextBlock x:ConnectionId='2' x:Name="FileName" Text="Untitled" Margin="60, 45" FontSize="16" FontStyle="Normal"/>
+        <TextBox x:ConnectionId='3' x:Name="InputBox"  Margin="50, 70" TextWrapping="Wrap" ScrollViewer.VerticalScrollBarVisibility="Auto" AcceptsReturn="True"                                                                                                     />
 
     </Grid>
 </Page>
