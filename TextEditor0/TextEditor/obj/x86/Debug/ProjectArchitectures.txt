@@ -1,1 +1,0 @@
-C:\Users\jermb\Source\Repos\IT.NET\TextEditor\TextEditor\TextEditor.csproj;x86
