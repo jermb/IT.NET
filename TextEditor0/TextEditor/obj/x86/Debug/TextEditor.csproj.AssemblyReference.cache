@@ -1,0 +1,851 @@
+Ø   cC:\Program Files (x86)\Windows Kits\10\bin\10.0.18362.0\XamlCompiler\Microsoft.UI.Xaml.Markup.winmd    \ñõ˙´÷Microsoft.UI.Xaml.Markup
+                        Ä     kfile:///C:/Program Files (x86)/Windows Kits/10/bin/10.0.18362.0/XamlCompiler/Microsoft.UI.Xaml.Markup.winmd†    $  Ä  î      $  RSA1     µ¸êÁgáw:èﬁâ8»‘∫eπ `Y>ñƒíeàú¡?Îµ?¨1Æ”3≈Ó`!g-óÍ1®ÆΩ†/%ÿ}∫o…˝Yé‘⁄5‰L9åECË„;Ñ&=Æ…ıñÉoó»˜GPÂó\d‚üEﬁÙk*+G≠√e+ı√]©   1ø8V≠6N5xMicrosoft.UI.Xaml.Markup, Version=10.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, ContentType=WindowsRuntime       System.Runtime                                      ∞?_’
+:        System.Diagnostics.Debug                                      ∞?_’
+:        Windowsˇ   ˇ   ˇ   ˇ                                   System.Collections                                      ∞?_’
+:        System.Threading.Tasks                                      ∞?_’
+:        System.Reflection                                      ∞?_’
+:        System.Threading                                      ∞?_’
+:        System.Reflection.Extensions                                      ∞?_’
+:        System.Linq                                      ∞?_’
+:        System.Runtime.Extensions                                      ∞?_’
+:        System.Runtime.WindowsRuntime                                      ∑z\V4‡â        mscorlib                                      ∑z\V4‡â        System.Runtime                                      ∞?_’
+:        -System.Runtime.InteropServices.WindowsRuntime                                      ∞?_’
+:        System.ObjectModel                                      ∞?_’
+:        System.Runtime.WindowsRuntime                                      ∑z\V4‡â        %System.Runtime.WindowsRuntime.UI.Xaml                                      ∑z\V4‡â            !WindowsRuntime 1.4;CLR v4.0.30319.NETCore      ˇˇˇˇˇˇˇˇ wC:\Users\jermb\.nuget\packages\microsoft.netcore.universalwindowsplatform\6.2.10\ref\uap10.0.15138\Microsoft.CSharp.dll    ß]˙πª◊Microsoft.CSharp                         Ä     file:///C:/Users/jermb/.nuget/packages/microsoft.netcore.universalwindowsplatform/6.2.10/ref/uap10.0.15138/Microsoft.CSharp.dll†    $  Ä  î      $  RSA1     —˙WƒÆŸ£.Ñ™Æ˝ÈË˝jÏèá˚vlÉLôí≤;ÁöŸ’‹¡›ö“6!êr<˘Äïƒ·wè∆wO)Ë2íÍÏ‰Ë!¿•ÔËÒd\Lì¡´ô(]b,™e,˙÷=t]o-ÂÒ~^Øƒñ=&äCe m¿ì4MZ“ì   ∞?_’
+:SMicrosoft.CSharp, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a       netstandard                                      Ã{ˇÕ-›Q            
+v4.0.30319 |C:\Users\jermb\.nuget\packages\microsoft.netcore.universalwindowsplatform\6.2.10\ref\uap10.0.15138\Microsoft.VisualBasic.dll    ß]˙πª◊Microsoft.VisualBasic
+                         Ä     Ñfile:///C:/Users/jermb/.nuget/packages/microsoft.netcore.universalwindowsplatform/6.2.10/ref/uap10.0.15138/Microsoft.VisualBasic.dll†    $  Ä  î      $  RSA1     —˙WƒÆŸ£.Ñ™Æ˝ÈË˝jÏèá˚vlÉLôí≤;ÁöŸ’‹¡›ö“6!êr<˘Äïƒ·wè∆wO)Ë2íÍÏ‰Ë!¿•ÔËÒd\Lì¡´ô(]b,™e,˙÷=t]o-ÂÒ~^Øƒñ=&äCe m¿ì4MZ“ì   ∞?_’
+:YMicrosoft.VisualBasic, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a       netstandard                                      Ã{ˇÕ-›Q            
+v4.0.30319 ÅC:\Users\jermb\.nuget\packages\microsoft.netcore.universalwindowsplatform\6.2.10\ref\uap10.0.15138\Microsoft.Win32.Primitives.dll    ß]˙πª◊Microsoft.Win32.Primitives                       Ä     âfile:///C:/Users/jermb/.nuget/packages/microsoft.netcore.universalwindowsplatform/6.2.10/ref/uap10.0.15138/Microsoft.Win32.Primitives.dll†    $  Ä  î      $  RSA1     —˙WƒÆŸ£.Ñ™Æ˝ÈË˝jÏèá˚vlÉLôí≤;ÁöŸ’‹¡›ö“6!êr<˘Äïƒ·wè∆wO)Ë2íÍÏ‰Ë!¿•ÔËÒd\Lì¡´ô(]b,™e,˙÷=t]o-ÂÒ~^Øƒñ=&äCe m¿ì4MZ“ì   ∞?_’
+:]Microsoft.Win32.Primitives, Version=4.1.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a       System.Runtime                                    ∞?_’
+:            
+v4.0.30319 xC:\Users\jermb\.nuget\packages\microsoft.netcore.universalwindowsplatform\6.2.10\ref\uap10.0.15138\System.AppContext.dll    ß]˙πª◊System.AppContext                       Ä     Äfile:///C:/Users/jermb/.nuget/packages/microsoft.netcore.universalwindowsplatform/6.2.10/ref/uap10.0.15138/System.AppContext.dll†    $  Ä  î      $  RSA1     —˙WƒÆŸ£.Ñ™Æ˝ÈË˝jÏèá˚vlÉLôí≤;ÁöŸ’‹¡›ö“6!êr<˘Äïƒ·wè∆wO)Ë2íÍÏ‰Ë!¿•ÔËÒd\Lì¡´ô(]b,™e,˙÷=t]o-ÂÒ~^Øƒñ=&äCe m¿ì4MZ“ì   ∞?_’
+:TSystem.AppContext, Version=4.2.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a       System.Runtime                                    ∞?_’
+:            
+v4.0.30319 uC:\Users\jermb\.nuget\packages\microsoft.netcore.universalwindowsplatform\6.2.10\ref\uap10.0.15138\System.Buffers.dll    ß]˙πª◊System.Buffers                        Ä     }file:///C:/Users/jermb/.nuget/packages/microsoft.netcore.universalwindowsplatform/6.2.10/ref/uap10.0.15138/System.Buffers.dll†    $  Ä  î      $  RSA1     KÜƒÀxTõ4∫∂; ‚;˛µ≥Ï9 t6ß„ÀŸ_œÖqU®íé™)Î˝œª≠;ß˛ßΩ£"ljç7
+L”˜Hknº"YÖ¶8GnıqÃí§a< ∏˙e÷Œ‡ÀÂÛc0…†AÉUüÔ$Ã)∆Ÿ„•A3:Ÿæ“+8À   Ã{ˇÕ-›QQSystem.Buffers, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51       netstandard                                      Ã{ˇÕ-›Q            
+v4.0.30319 ÑC:\Users\jermb\.nuget\packages\microsoft.netcore.universalwindowsplatform\6.2.10\ref\uap10.0.15138\System.Collections.Concurrent.dll    ß]˙πª◊System.Collections.Concurrent                        Ä     åfile:///C:/Users/jermb/.nuget/packages/microsoft.netcore.universalwindowsplatform/6.2.10/ref/uap10.0.15138/System.Collections.Concurrent.dll†    $  Ä  î      $  RSA1     —˙WƒÆŸ£.Ñ™Æ˝ÈË˝jÏèá˚vlÉLôí≤;ÁöŸ’‹¡›ö“6!êr<˘Äïƒ·wè∆wO)Ë2íÍÏ‰Ë!¿•ÔËÒd\Lì¡´ô(]b,™e,˙÷=t]o-ÂÒ~^Øƒñ=&äCe m¿ì4MZ“ì   ∞?_’
+:aSystem.Collections.Concurrent, Version=4.0.14.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a       System.Runtime                                    ∞?_’
+:            
+v4.0.30319 ÉC:\Users\jermb\.nuget\packages\microsoft.netcore.universalwindowsplatform\6.2.10\ref\uap10.0.15138\System.Collections.Immutable.dll    ß]˙πª◊System.Collections.Immutable                       Ä     ãfile:///C:/Users/jermb/.nuget/packages/microsoft.netcore.universalwindowsplatform/6.2.10/ref/uap10.0.15138/System.Collections.Immutable.dll†    $  Ä  î      $  RSA1     —˙WƒÆŸ£.Ñ™Æ˝ÈË˝jÏèá˚vlÉLôí≤;ÁöŸ’‹¡›ö“6!êr<˘Äïƒ·wè∆wO)Ë2íÍÏ‰Ë!¿•ÔËÒd\Lì¡´ô(]b,™e,˙÷=t]o-ÂÒ~^Øƒñ=&äCe m¿ì4MZ“ì   ∞?_’
+:_System.Collections.Immutable, Version=1.2.3.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a       System.Runtime                                    ∞?_’
+:        System.Collections                                    ∞?_’
+:            
+v4.0.30319 ÑC:\Users\jermb\.nuget\packages\microsoft.netcore.universalwindowsplatform\6.2.10\ref\uap10.0.15138\System.Collections.NonGeneric.dll    ß]˙πª◊System.Collections.NonGeneric                       Ä     åfile:///C:/Users/jermb/.nuget/packages/microsoft.netcore.universalwindowsplatform/6.2.10/ref/uap10.0.15138/System.Collections.NonGeneric.dll†    $  Ä  î      $  RSA1     —˙WƒÆŸ£.Ñ™Æ˝ÈË˝jÏèá˚vlÉLôí≤;ÁöŸ’‹¡›ö“6!êr<˘Äïƒ·wè∆wO)Ë2íÍÏ‰Ë!¿•ÔËÒd\Lì¡´ô(]b,™e,˙÷=t]o-ÂÒ~^Øƒñ=&äCe m¿ì4MZ“ì   ∞?_’
+:`System.Collections.NonGeneric, Version=4.1.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a       System.Runtime                                    ∞?_’
+:        System.Runtime.Extensions                                    ∞?_’
+:            
+v4.0.30319 ÖC:\Users\jermb\.nuget\packages\microsoft.netcore.universalwindowsplatform\6.2.10\ref\uap10.0.15138\System.Collections.Specialized.dll    ß]˙πª◊System.Collections.Specialized                       Ä     çfile:///C:/Users/jermb/.nuget/packages/microsoft.netcore.universalwindowsplatform/6.2.10/ref/uap10.0.15138/System.Collections.Specialized.dll†    $  Ä  î      $  RSA1     —˙WƒÆŸ£.Ñ™Æ˝ÈË˝jÏèá˚vlÉLôí≤;ÁöŸ’‹¡›ö“6!êr<˘Äïƒ·wè∆wO)Ë2íÍÏ‰Ë!¿•ÔËÒd\Lì¡´ô(]b,™e,˙÷=t]o-ÂÒ~^Øƒñ=&äCe m¿ì4MZ“ì   ∞?_’
+:aSystem.Collections.Specialized, Version=4.1.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a       System.Runtime                                    ∞?_’
+:        System.Runtime.Extensions                                    ∞?_’
+:            
+v4.0.30319 yC:\Users\jermb\.nuget\packages\microsoft.netcore.universalwindowsplatform\6.2.10\ref\uap10.0.15138\System.Collections.dll    ß]˙πª◊System.Collections                       Ä     Åfile:///C:/Users/jermb/.nuget/packages/microsoft.netcore.universalwindowsplatform/6.2.10/ref/uap10.0.15138/System.Collections.dll†    $  Ä  î      $  RSA1     —˙WƒÆŸ£.Ñ™Æ˝ÈË˝jÏèá˚vlÉLôí≤;ÁöŸ’‹¡›ö“6!êr<˘Äïƒ·wè∆wO)Ë2íÍÏ‰Ë!¿•ÔËÒd\Lì¡´ô(]b,™e,˙÷=t]o-ÂÒ~^Øƒñ=&äCe m¿ì4MZ“ì   ∞?_’
+:USystem.Collections, Version=4.1.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a       System.Runtime                                    ∞?_’
+:            
+v4.0.30319 àC:\Users\jermb\.nuget\packages\microsoft.netcore.universalwindowsplatform\6.2.10\ref\uap10.0.15138\System.ComponentModel.Annotations.dll    ß]˙πª◊!System.ComponentModel.Annotations                       Ä     êfile:///C:/Users/jermb/.nuget/packages/microsoft.netcore.universalwindowsplatform/6.2.10/ref/uap10.0.15138/System.ComponentModel.Annotations.dll†    $  Ä  î      $  RSA1     —˙WƒÆŸ£.Ñ™Æ˝ÈË˝jÏèá˚vlÉLôí≤;ÁöŸ’‹¡›ö“6!êr<˘Äïƒ·wè∆wO)Ë2íÍÏ‰Ë!¿•ÔËÒd\Lì¡´ô(]b,™e,˙÷=t]o-ÂÒ~^Øƒñ=&äCe m¿ì4MZ“ì   ∞?_’
+:dSystem.ComponentModel.Annotations, Version=4.2.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a       netstandard                                      Ã{ˇÕ-›Q            
+v4.0.30319 àC:\Users\jermb\.nuget\packages\microsoft.netcore.universalwindowsplatform\6.2.10\ref\uap10.0.15138\System.ComponentModel.Composition.dll    ß]˙πª◊!System.ComponentModel.Composition                        Ä     êfile:///C:/Users/jermb/.nuget/packages/microsoft.netcore.universalwindowsplatform/6.2.10/ref/uap10.0.15138/System.ComponentModel.Composition.dll                     ∑z\V4‡âdSystem.ComponentModel.Composition, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089       System.Runtime                                       ∞?_’
+:            
+v4.0.30319 åC:\Users\jermb\.nuget\packages\microsoft.netcore.universalwindowsplatform\6.2.10\ref\uap10.0.15138\System.ComponentModel.DataAnnotations.dll    ß]˙πª◊%System.ComponentModel.DataAnnotations                        Ä     îfile:///C:/Users/jermb/.nuget/packages/microsoft.netcore.universalwindowsplatform/6.2.10/ref/uap10.0.15138/System.ComponentModel.DataAnnotations.dll†    $  Ä  î      $  RSA1     µ¸êÁgáw:èﬁâ8»‘∫eπ `Y>ñƒíeàú¡?Îµ?¨1Æ”3≈Ó`!g-óÍ1®ÆΩ†/%ÿ}∫o…˝Yé‘⁄5‰L9åECË„;Ñ&=Æ…ıñÉoó»˜GPÂó\d‚üEﬁÙk*+G≠√e+ı√]©   1ø8V≠6N5hSystem.ComponentModel.DataAnnotations, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35       System.Runtime                                       ∞?_’
+:        !System.ComponentModel.Annotations                                       ∞?_’
+:            
+v4.0.30319 åC:\Users\jermb\.nuget\packages\microsoft.netcore.universalwindowsplatform\6.2.10\ref\uap10.0.15138\System.ComponentModel.EventBasedAsync.dll    ß]˙πª◊%System.ComponentModel.EventBasedAsync                       Ä     îfile:///C:/Users/jermb/.nuget/packages/microsoft.netcore.universalwindowsplatform/6.2.10/ref/uap10.0.15138/System.ComponentModel.EventBasedAsync.dll†    $  Ä  î      $  RSA1     —˙WƒÆŸ£.Ñ™Æ˝ÈË˝jÏèá˚vlÉLôí≤;ÁöŸ’‹¡›ö“6!êr<˘Äïƒ·wè∆wO)Ë2íÍÏ‰Ë!¿•ÔËÒd\Lì¡´ô(]b,™e,˙÷=t]o-ÂÒ~^Øƒñ=&äCe m¿ì4MZ“ì   ∞?_’
+:hSystem.ComponentModel.EventBasedAsync, Version=4.1.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a       System.Runtime                                    ∞?_’
+:        System.Threading                                    ∞?_’
+:         System.ComponentModel.Primitives                                    ∞?_’
+:        System.ComponentModel                                     ∞?_’
+:            
+v4.0.30319 áC:\Users\jermb\.nuget\packages\microsoft.netcore.universalwindowsplatform\6.2.10\ref\uap10.0.15138\System.ComponentModel.Primitives.dll    ß]˙πª◊ System.ComponentModel.Primitives                       Ä     èfile:///C:/Users/jermb/.nuget/packages/microsoft.netcore.universalwindowsplatform/6.2.10/ref/uap10.0.15138/System.ComponentModel.Primitives.dll†    $  Ä  î      $  RSA1     —˙WƒÆŸ£.Ñ™Æ˝ÈË˝jÏèá˚vlÉLôí≤;ÁöŸ’‹¡›ö“6!êr<˘Äïƒ·wè∆wO)Ë2íÍÏ‰Ë!¿•ÔËÒd\Lì¡´ô(]b,™e,˙÷=t]o-ÂÒ~^Øƒñ=&äCe m¿ì4MZ“ì   ∞?_’
+:cSystem.ComponentModel.Primitives, Version=4.2.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a       System.Runtime                                    ∞?_’
+:        System.Collections.NonGeneric                                    ∞?_’
+:        System.ComponentModel                                     ∞?_’
+:            
+v4.0.30319 äC:\Users\jermb\.nuget\packages\microsoft.netcore.universalwindowsplatform\6.2.10\ref\uap10.0.15138\System.ComponentModel.TypeConverter.dll    ß]˙πª◊#System.ComponentModel.TypeConverter                       Ä     ífile:///C:/Users/jermb/.nuget/packages/microsoft.netcore.universalwindowsplatform/6.2.10/ref/uap10.0.15138/System.ComponentModel.TypeConverter.dll†    $  Ä  î      $  RSA1     —˙WƒÆŸ£.Ñ™Æ˝ÈË˝jÏèá˚vlÉLôí≤;ÁöŸ’‹¡›ö“6!êr<˘Äïƒ·wè∆wO)Ë2íÍÏ‰Ë!¿•ÔËÒd\Lì¡´ô(]b,™e,˙÷=t]o-ÂÒ~^Øƒñ=&äCe m¿ì4MZ“ì   ∞?_’
+:fSystem.ComponentModel.TypeConverter, Version=4.2.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a       System.Runtime                                    ∞?_’
+:         System.ComponentModel.Primitives                                    ∞?_’
+:        System.ComponentModel                                     ∞?_’
+:         System.Resources.ResourceManager                                    ∞?_’
+:        System.Runtime.Extensions                                    ∞?_’
+:        System.Collections.NonGeneric                                    ∞?_’
+:        System.Resources.Writer                                    ∞?_’
+:            
+v4.0.30319 |C:\Users\jermb\.nuget\packages\microsoft.netcore.universalwindowsplatform\6.2.10\ref\uap10.0.15138\System.ComponentModel.dll    ß]˙πª◊System.ComponentModel                        Ä     Ñfile:///C:/Users/jermb/.nuget/packages/microsoft.netcore.universalwindowsplatform/6.2.10/ref/uap10.0.15138/System.ComponentModel.dll†    $  Ä  î      $  RSA1     —˙WƒÆŸ£.Ñ™Æ˝ÈË˝jÏèá˚vlÉLôí≤;ÁöŸ’‹¡›ö“6!êr<˘Äïƒ·wè∆wO)Ë2íÍÏ‰Ë!¿•ÔËÒd\Lì¡´ô(]b,™e,˙÷=t]o-ÂÒ~^Øƒñ=&äCe m¿ì4MZ“ì   ∞?_’
+:XSystem.ComponentModel, Version=4.0.3.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a       System.Runtime                                    ∞?_’
+:            
+v4.0.30319 {C:\Users\jermb\.nuget\packages\microsoft.netcore.universalwindowsplatform\6.2.10\ref\uap10.0.15138\System.Configuration.dll    ß]˙πª◊System.Configuration                        Ä     Éfile:///C:/Users/jermb/.nuget/packages/microsoft.netcore.universalwindowsplatform/6.2.10/ref/uap10.0.15138/System.Configuration.dll†    $  Ä  î      $  RSA1     —˙WƒÆŸ£.Ñ™Æ˝ÈË˝jÏèá˚vlÉLôí≤;ÁöŸ’‹¡›ö“6!êr<˘Äïƒ·wè∆wO)Ë2íÍÏ‰Ë!¿•ÔËÒd\Lì¡´ô(]b,™e,˙÷=t]o-ÂÒ~^Øƒñ=&äCe m¿ì4MZ“ì   ∞?_’
+:WSystem.Configuration, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a       System.Runtime                                       ∞?_’
+:        )System.Configuration.ConfigurationManager                                       Ã{ˇÕ-›Q            
+v4.0.30319 uC:\Users\jermb\.nuget\packages\microsoft.netcore.universalwindowsplatform\6.2.10\ref\uap10.0.15138\System.Console.dll    ß]˙πª◊System.Console                       Ä     }file:///C:/Users/jermb/.nuget/packages/microsoft.netcore.universalwindowsplatform/6.2.10/ref/uap10.0.15138/System.Console.dll†    $  Ä  î      $  RSA1     —˙WƒÆŸ£.Ñ™Æ˝ÈË˝jÏèá˚vlÉLôí≤;ÁöŸ’‹¡›ö“6!êr<˘Äïƒ·wè∆wO)Ë2íÍÏ‰Ë!¿•ÔËÒd\Lì¡´ô(]b,™e,˙÷=t]o-ÂÒ~^Øƒñ=&äCe m¿ì4MZ“ì   ∞?_’
+:QSystem.Console, Version=4.1.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a       System.Runtime                                    ∞?_’
+:        System.Runtime.Extensions                                    ∞?_’
+:            
+v4.0.30319 rC:\Users\jermb\.nuget\packages\microsoft.netcore.universalwindowsplatform\6.2.10\ref\uap10.0.15138\System.Core.dll    ß]˙πª◊System.Core                        Ä     zfile:///C:/Users/jermb/.nuget/packages/microsoft.netcore.universalwindowsplatform/6.2.10/ref/uap10.0.15138/System.Core.dll                     ∑z\V4‡âNSystem.Core, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089       System.Runtime                                       ∞?_’
+:        System.IO.MemoryMappedFiles                                       ∞?_’
+:         System.Security.Cryptography.Cng                                       ∞?_’
+:        System.IO.Pipes                                       ∞?_’
+:        System.Collections                                       ∞?_’
+:        System.Linq.Expressions                                       ∞?_’
+:        System.IO.Pipes.AccessControl                                       ∞?_’
+:        System.Linq                                       ∞?_’
+:        System.Linq.Queryable                                       ∞?_’
+:        System.Linq.Parallel                                       ∞?_’
+:        System.Runtime.InteropServices                                       ∞?_’
+:        'System.Security.Cryptography.Algorithms                                       ∞?_’
+:         System.Security.Cryptography.Csp                                       ∞?_’
+:        -System.Security.Cryptography.X509Certificates                                       ∞?_’
+:        System.Threading                                       ∞?_’
+:        System.Threading.Tasks                                       ∞?_’
+:            
+v4.0.30319 yC:\Users\jermb\.nuget\packages\microsoft.netcore.universalwindowsplatform\6.2.10\ref\uap10.0.15138\System.Data.Common.dll    ß]˙πª◊System.Data.Common                       Ä     Åfile:///C:/Users/jermb/.nuget/packages/microsoft.netcore.universalwindowsplatform/6.2.10/ref/uap10.0.15138/System.Data.Common.dll†    $  Ä  î      $  RSA1     —˙WƒÆŸ£.Ñ™Æ˝ÈË˝jÏèá˚vlÉLôí≤;ÁöŸ’‹¡›ö“6!êr<˘Äïƒ·wè∆wO)Ë2íÍÏ‰Ë!¿•ÔËÒd\Lì¡´ô(]b,™e,˙÷=t]o-ÂÒ~^Øƒñ=&äCe m¿ì4MZ“ì   ∞?_’
+:USystem.Data.Common, Version=4.2.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a       System.Runtime                                    ∞?_’
+:        #System.ComponentModel.TypeConverter                                    ∞?_’
+:         System.ComponentModel.Primitives                                    ∞?_’
+:        System.Runtime.Extensions                                    ∞?_’
+:        System.ObjectModel                                    ∞?_’
+:        System.ComponentModel                                     ∞?_’
+:        System.Xml.ReaderWriter                                    ∞?_’
+:        System.Transactions.Local                                     Ã{ˇÕ-›Q            
+v4.0.30319 |C:\Users\jermb\.nuget\packages\microsoft.netcore.universalwindowsplatform\6.2.10\ref\uap10.0.15138\System.Data.SqlClient.dll    ß]˙πª◊System.Data.SqlClient                        Ä     Ñfile:///C:/Users/jermb/.nuget/packages/microsoft.netcore.universalwindowsplatform/6.2.10/ref/uap10.0.15138/System.Data.SqlClient.dll†    $  Ä  î      $  RSA1     —˙WƒÆŸ£.Ñ™Æ˝ÈË˝jÏèá˚vlÉLôí≤;ÁöŸ’‹¡›ö“6!êr<˘Äïƒ·wè∆wO)Ë2íÍÏ‰Ë!¿•ÔËÒd\Lì¡´ô(]b,™e,˙÷=t]o-ÂÒ~^Øƒñ=&äCe m¿ì4MZ“ì   ∞?_’
+:XSystem.Data.SqlClient, Version=4.3.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a       netstandard                                      Ã{ˇÕ-›Q            
+v4.0.30319 rC:\Users\jermb\.nuget\packages\microsoft.netcore.universalwindowsplatform\6.2.10\ref\uap10.0.15138\System.Data.dll    ß]˙πª◊System.Data                        Ä     zfile:///C:/Users/jermb/.nuget/packages/microsoft.netcore.universalwindowsplatform/6.2.10/ref/uap10.0.15138/System.Data.dll                     ∑z\V4‡âNSystem.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089       System.Runtime                                       ∞?_’
+:        System.Data.SqlClient                                       ∞?_’
+:        System.Data.Common                                       ∞?_’
+:        System.Security.Permissions                                       Ã{ˇÕ-›Q        System.Data.Odbc                                       Ã{ˇÕ-›Q            
+v4.0.30319 ÉC:\Users\jermb\.nuget\packages\microsoft.netcore.universalwindowsplatform\6.2.10\ref\uap10.0.15138\System.Diagnostics.Contracts.dll    ß]˙πª◊System.Diagnostics.Contracts                        Ä     ãfile:///C:/Users/jermb/.nuget/packages/microsoft.netcore.universalwindowsplatform/6.2.10/ref/uap10.0.15138/System.Diagnostics.Contracts.dll†    $  Ä  î      $  RSA1     —˙WƒÆŸ£.Ñ™Æ˝ÈË˝jÏèá˚vlÉLôí≤;ÁöŸ’‹¡›ö“6!êr<˘Äïƒ·wè∆wO)Ë2íÍÏ‰Ë!¿•ÔËÒd\Lì¡´ô(]b,™e,˙÷=t]o-ÂÒ~^Øƒñ=&äCe m¿ì4MZ“ì   ∞?_’
+:_System.Diagnostics.Contracts, Version=4.0.3.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a       System.Runtime                                    ∞?_’
+:            
+v4.0.30319 C:\Users\jermb\.nuget\packages\microsoft.netcore.universalwindowsplatform\6.2.10\ref\uap10.0.15138\System.Diagnostics.Debug.dll    ß]˙πª◊System.Diagnostics.Debug                       Ä     áfile:///C:/Users/jermb/.nuget/packages/microsoft.netcore.universalwindowsplatform/6.2.10/ref/uap10.0.15138/System.Diagnostics.Debug.dll†    $  Ä  î      $  RSA1     —˙WƒÆŸ£.Ñ™Æ˝ÈË˝jÏèá˚vlÉLôí≤;ÁöŸ’‹¡›ö“6!êr<˘Äïƒ·wè∆wO)Ë2íÍÏ‰Ë!¿•ÔËÒd\Lì¡´ô(]b,™e,˙÷=t]o-ÂÒ~^Øƒñ=&äCe m¿ì4MZ“ì   ∞?_’
+:[System.Diagnostics.Debug, Version=4.1.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a       System.Runtime                                    ∞?_’
+:            
+v4.0.30319 âC:\Users\jermb\.nuget\packages\microsoft.netcore.universalwindowsplatform\6.2.10\ref\uap10.0.15138\System.Diagnostics.FileVersionInfo.dll    ß]˙πª◊"System.Diagnostics.FileVersionInfo                        Ä     ëfile:///C:/Users/jermb/.nuget/packages/microsoft.netcore.universalwindowsplatform/6.2.10/ref/uap10.0.15138/System.Diagnostics.FileVersionInfo.dll†    $  Ä  î      $  RSA1     —˙WƒÆŸ£.Ñ™Æ˝ÈË˝jÏèá˚vlÉLôí≤;ÁöŸ’‹¡›ö“6!êr<˘Äïƒ·wè∆wO)Ë2íÍÏ‰Ë!¿•ÔËÒd\Lì¡´ô(]b,™e,˙÷=t]o-ÂÒ~^Øƒñ=&äCe m¿ì4MZ“ì   ∞?_’
+:eSystem.Diagnostics.FileVersionInfo, Version=4.0.3.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a       System.Runtime                                    ∞?_’
+:            
+v4.0.30319 ÅC:\Users\jermb\.nuget\packages\microsoft.netcore.universalwindowsplatform\6.2.10\ref\uap10.0.15138\System.Diagnostics.Process.dll    ß]˙πª◊System.Diagnostics.Process                       Ä     âfile:///C:/Users/jermb/.nuget/packages/microsoft.netcore.universalwindowsplatform/6.2.10/ref/uap10.0.15138/System.Diagnostics.Process.dll†    $  Ä  î      $  RSA1     —˙WƒÆŸ£.Ñ™Æ˝ÈË˝jÏèá˚vlÉLôí≤;ÁöŸ’‹¡›ö“6!êr<˘Äïƒ·wè∆wO)Ë2íÍÏ‰Ë!¿•ÔËÒd\Lì¡´ô(]b,™e,˙÷=t]o-ÂÒ~^Øƒñ=&äCe m¿ì4MZ“ì   ∞?_’
+:]System.Diagnostics.Process, Version=4.2.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a       System.Runtime                                    ∞?_’
+:        System.Runtime.InteropServices                                    ∞?_’
+:         System.ComponentModel.Primitives                                    ∞?_’
+:        System.Runtime.Extensions                                    ∞?_’
+:        "System.Diagnostics.FileVersionInfo                                     ∞?_’
+:        System.Collections.NonGeneric                                    ∞?_’
+:        System.Collections.Specialized                                    ∞?_’
+:            
+v4.0.30319 ÑC:\Users\jermb\.nuget\packages\microsoft.netcore.universalwindowsplatform\6.2.10\ref\uap10.0.15138\System.Diagnostics.StackTrace.dll    ß]˙πª◊System.Diagnostics.StackTrace                       Ä     åfile:///C:/Users/jermb/.nuget/packages/microsoft.netcore.universalwindowsplatform/6.2.10/ref/uap10.0.15138/System.Diagnostics.StackTrace.dll†    $  Ä  î      $  RSA1     —˙WƒÆŸ£.Ñ™Æ˝ÈË˝jÏèá˚vlÉLôí≤;ÁöŸ’‹¡›ö“6!êr<˘Äïƒ·wè∆wO)Ë2íÍÏ‰Ë!¿•ÔËÒd\Lì¡´ô(]b,™e,˙÷=t]o-ÂÒ~^Øƒñ=&äCe m¿ì4MZ“ì   ∞?_’
+:`System.Diagnostics.StackTrace, Version=4.1.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a       System.Runtime                                    ∞?_’
+:            
+v4.0.30319 ëC:\Users\jermb\.nuget\packages\microsoft.netcore.universalwindowsplatform\6.2.10\ref\uap10.0.15138\System.Diagnostics.TextWriterTraceListener.dll    ß]˙πª◊*System.Diagnostics.TextWriterTraceListener                       Ä     ôfile:///C:/Users/jermb/.nuget/packages/microsoft.netcore.universalwindowsplatform/6.2.10/ref/uap10.0.15138/System.Diagnostics.TextWriterTraceListener.dll†    $  Ä  î      $  RSA1     —˙WƒÆŸ£.Ñ™Æ˝ÈË˝jÏèá˚vlÉLôí≤;ÁöŸ’‹¡›ö“6!êr<˘Äïƒ·wè∆wO)Ë2íÍÏ‰Ë!¿•ÔËÒd\Lì¡´ô(]b,™e,˙÷=t]o-ÂÒ~^Øƒñ=&äCe m¿ì4MZ“ì   ∞?_’
+:mSystem.Diagnostics.TextWriterTraceListener, Version=4.1.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a       System.Runtime                                    ∞?_’
+:        System.Runtime.Extensions                                    ∞?_’
+:        System.Diagnostics.TraceSource                                    ∞?_’
+:            
+v4.0.30319 C:\Users\jermb\.nuget\packages\microsoft.netcore.universalwindowsplatform\6.2.10\ref\uap10.0.15138\System.Diagnostics.Tools.dll    ß]˙πª◊System.Diagnostics.Tools                       Ä     áfile:///C:/Users/jermb/.nuget/packages/microsoft.netcore.universalwindowsplatform/6.2.10/ref/uap10.0.15138/System.Diagnostics.Tools.dll†    $  Ä  î      $  RSA1     —˙WƒÆŸ£.Ñ™Æ˝ÈË˝jÏèá˚vlÉLôí≤;ÁöŸ’‹¡›ö“6!êr<˘Äïƒ·wè∆wO)Ë2íÍÏ‰Ë!¿•ÔËÒd\Lì¡´ô(]b,™e,˙÷=t]o-ÂÒ~^Øƒñ=&äCe m¿ì4MZ“ì   ∞?_’
+:[System.Diagnostics.Tools, Version=4.1.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a       System.Runtime                                    ∞?_’
+:            
+v4.0.30319 ÖC:\Users\jermb\.nuget\packages\microsoft.netcore.universalwindowsplatform\6.2.10\ref\uap10.0.15138\System.Diagnostics.TraceSource.dll    ß]˙πª◊System.Diagnostics.TraceSource                       Ä     çfile:///C:/Users/jermb/.nuget/packages/microsoft.netcore.universalwindowsplatform/6.2.10/ref/uap10.0.15138/System.Diagnostics.TraceSource.dll†    $  Ä  î      $  RSA1     —˙WƒÆŸ£.Ñ™Æ˝ÈË˝jÏèá˚vlÉLôí≤;ÁöŸ’‹¡›ö“6!êr<˘Äïƒ·wè∆wO)Ë2íÍÏ‰Ë!¿•ÔËÒd\Lì¡´ô(]b,™e,˙÷=t]o-ÂÒ~^Øƒñ=&äCe m¿ì4MZ“ì   ∞?_’
+:aSystem.Diagnostics.TraceSource, Version=4.1.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a       System.Runtime                                    ∞?_’
+:        System.Collections.NonGeneric                                    ∞?_’
+:        System.Collections.Specialized                                    ∞?_’
+:            
+v4.0.30319 ÅC:\Users\jermb\.nuget\packages\microsoft.netcore.universalwindowsplatform\6.2.10\ref\uap10.0.15138\System.Diagnostics.Tracing.dll    ß]˙πª◊System.Diagnostics.Tracing                       Ä     âfile:///C:/Users/jermb/.nuget/packages/microsoft.netcore.universalwindowsplatform/6.2.10/ref/uap10.0.15138/System.Diagnostics.Tracing.dll†    $  Ä  î      $  RSA1     —˙WƒÆŸ£.Ñ™Æ˝ÈË˝jÏèá˚vlÉLôí≤;ÁöŸ’‹¡›ö“6!êr<˘Äïƒ·wè∆wO)Ë2íÍÏ‰Ë!¿•ÔËÒd\Lì¡´ô(]b,™e,˙÷=t]o-ÂÒ~^Øƒñ=&äCe m¿ì4MZ“ì   ∞?_’
+:]System.Diagnostics.Tracing, Version=4.2.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a       System.Runtime                                    ∞?_’
+:            
+v4.0.30319 ÄC:\Users\jermb\.nuget\packages\microsoft.netcore.universalwindowsplatform\6.2.10\ref\uap10.0.15138\System.Drawing.Primitives.dll    ß]˙πª◊System.Drawing.Primitives                        Ä     àfile:///C:/Users/jermb/.nuget/packages/microsoft.netcore.universalwindowsplatform/6.2.10/ref/uap10.0.15138/System.Drawing.Primitives.dll†    $  Ä  î      $  RSA1     —˙WƒÆŸ£.Ñ™Æ˝ÈË˝jÏèá˚vlÉLôí≤;ÁöŸ’‹¡›ö“6!êr<˘Äïƒ·wè∆wO)Ë2íÍÏ‰Ë!¿•ÔËÒd\Lì¡´ô(]b,™e,˙÷=t]o-ÂÒ~^Øƒñ=&äCe m¿ì4MZ“ì   ∞?_’
+:\System.Drawing.Primitives, Version=4.2.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a       System.Runtime                                    ∞?_’
+:         System.ComponentModel.Primitives                                    ∞?_’
+:            
+v4.0.30319 uC:\Users\jermb\.nuget\packages\microsoft.netcore.universalwindowsplatform\6.2.10\ref\uap10.0.15138\System.Drawing.dll    ß]˙πª◊System.Drawing                        Ä     }file:///C:/Users/jermb/.nuget/packages/microsoft.netcore.universalwindowsplatform/6.2.10/ref/uap10.0.15138/System.Drawing.dll†    $  Ä  î      $  RSA1     —˙WƒÆŸ£.Ñ™Æ˝ÈË˝jÏèá˚vlÉLôí≤;ÁöŸ’‹¡›ö“6!êr<˘Äïƒ·wè∆wO)Ë2íÍÏ‰Ë!¿•ÔËÒd\Lì¡´ô(]b,™e,˙÷=t]o-ÂÒ~^Øƒñ=&äCe m¿ì4MZ“ì   ∞?_’
+:QSystem.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a       System.Runtime                                       ∞?_’
+:        System.Drawing.Primitives                                       ∞?_’
+:        #System.ComponentModel.TypeConverter                                       ∞?_’
+:        )System.Configuration.ConfigurationManager                                       Ã{ˇÕ-›Q        System.Security.Permissions                                       Ã{ˇÕ-›Q            
+v4.0.30319 }C:\Users\jermb\.nuget\packages\microsoft.netcore.universalwindowsplatform\6.2.10\ref\uap10.0.15138\System.Dynamic.Runtime.dll    ß]˙πª◊System.Dynamic.Runtime                       Ä     Öfile:///C:/Users/jermb/.nuget/packages/microsoft.netcore.universalwindowsplatform/6.2.10/ref/uap10.0.15138/System.Dynamic.Runtime.dll†    $  Ä  î      $  RSA1     —˙WƒÆŸ£.Ñ™Æ˝ÈË˝jÏèá˚vlÉLôí≤;ÁöŸ’‹¡›ö“6!êr<˘Äïƒ·wè∆wO)Ë2íÍÏ‰Ë!¿•ÔËÒd\Lì¡´ô(]b,™e,˙÷=t]o-ÂÒ~^Øƒñ=&äCe m¿ì4MZ“ì   ∞?_’
+:YSystem.Dynamic.Runtime, Version=4.1.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a       System.Runtime                                    ∞?_’
+:        System.Linq.Expressions                                    ∞?_’
+:            
+v4.0.30319 ÖC:\Users\jermb\.nuget\packages\microsoft.netcore.universalwindowsplatform\6.2.10\ref\uap10.0.15138\System.Globalization.Calendars.dll    ß]˙πª◊System.Globalization.Calendars                       Ä     çfile:///C:/Users/jermb/.nuget/packages/microsoft.netcore.universalwindowsplatform/6.2.10/ref/uap10.0.15138/System.Globalization.Calendars.dll†    $  Ä  î      $  RSA1     —˙WƒÆŸ£.Ñ™Æ˝ÈË˝jÏèá˚vlÉLôí≤;ÁöŸ’‹¡›ö“6!êr<˘Äïƒ·wè∆wO)Ë2íÍÏ‰Ë!¿•ÔËÒd\Lì¡´ô(]b,™e,˙÷=t]o-ÂÒ~^Øƒñ=&äCe m¿ì4MZ“ì   ∞?_’
+:aSystem.Globalization.Calendars, Version=4.1.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a       System.Runtime                                    ∞?_’
+:            
+v4.0.30319 ÜC:\Users\jermb\.nuget\packages\microsoft.netcore.universalwindowsplatform\6.2.10\ref\uap10.0.15138\System.Globalization.Extensions.dll    ß]˙πª◊System.Globalization.Extensions                       Ä     éfile:///C:/Users/jermb/.nuget/packages/microsoft.netcore.universalwindowsplatform/6.2.10/ref/uap10.0.15138/System.Globalization.Extensions.dll†    $  Ä  î      $  RSA1     —˙WƒÆŸ£.Ñ™Æ˝ÈË˝jÏèá˚vlÉLôí≤;ÁöŸ’‹¡›ö“6!êr<˘Äïƒ·wè∆wO)Ë2íÍÏ‰Ë!¿•ÔËÒd\Lì¡´ô(]b,™e,˙÷=t]o-ÂÒ~^Øƒñ=&äCe m¿ì4MZ“ì   ∞?_’
+:bSystem.Globalization.Extensions, Version=4.1.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a       System.Runtime                                    ∞?_’
+:        System.Runtime.Extensions                                    ∞?_’
+:            
+v4.0.30319 {C:\Users\jermb\.nuget\packages\microsoft.netcore.universalwindowsplatform\6.2.10\ref\uap10.0.15138\System.Globalization.dll    ß]˙πª◊System.Globalization                       Ä     Éfile:///C:/Users/jermb/.nuget/packages/microsoft.netcore.universalwindowsplatform/6.2.10/ref/uap10.0.15138/System.Globalization.dll†    $  Ä  î      $  RSA1     —˙WƒÆŸ£.Ñ™Æ˝ÈË˝jÏèá˚vlÉLôí≤;ÁöŸ’‹¡›ö“6!êr<˘Äïƒ·wè∆wO)Ë2íÍÏ‰Ë!¿•ÔËÒd\Lì¡´ô(]b,™e,˙÷=t]o-ÂÒ~^Øƒñ=&äCe m¿ì4MZ“ì   ∞?_’
+:WSystem.Globalization, Version=4.1.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a       System.Runtime                                    ∞?_’
+:            
+v4.0.30319 áC:\Users\jermb\.nuget\packages\microsoft.netcore.universalwindowsplatform\6.2.10\ref\uap10.0.15138\System.IO.Compression.FileSystem.dll    ß]˙πª◊ System.IO.Compression.FileSystem                        Ä     èfile:///C:/Users/jermb/.nuget/packages/microsoft.netcore.universalwindowsplatform/6.2.10/ref/uap10.0.15138/System.IO.Compression.FileSystem.dll                     ∑z\V4‡âcSystem.IO.Compression.FileSystem, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089       System.Runtime                                       ∞?_’
+:        System.IO.Compression.ZipFile                                       ∑z\V4‡â            
+v4.0.30319 ÑC:\Users\jermb\.nuget\packages\microsoft.netcore.universalwindowsplatform\6.2.10\ref\uap10.0.15138\System.IO.Compression.ZipFile.dll    ß]˙πª◊System.IO.Compression.ZipFile                        Ä     åfile:///C:/Users/jermb/.nuget/packages/microsoft.netcore.universalwindowsplatform/6.2.10/ref/uap10.0.15138/System.IO.Compression.ZipFile.dll                     ∑z\V4‡â`System.IO.Compression.ZipFile, Version=4.0.4.0, Culture=neutral, PublicKeyToken=b77a5c561934e089       System.Runtime                                    ∞?_’
+:        System.IO.Compression                                    ∑z\V4‡â            
+v4.0.30319 |C:\Users\jermb\.nuget\packages\microsoft.netcore.universalwindowsplatform\6.2.10\ref\uap10.0.15138\System.IO.Compression.dll    ß]˙πª◊System.IO.Compression                       Ä     Ñfile:///C:/Users/jermb/.nuget/packages/microsoft.netcore.universalwindowsplatform/6.2.10/ref/uap10.0.15138/System.IO.Compression.dll                     ∑z\V4‡âXSystem.IO.Compression, Version=4.2.1.0, Culture=neutral, PublicKeyToken=b77a5c561934e089       System.Runtime                                    ∞?_’
+:            
+v4.0.30319 ÖC:\Users\jermb\.nuget\packages\microsoft.netcore.universalwindowsplatform\6.2.10\ref\uap10.0.15138\System.IO.FileSystem.DriveInfo.dll    ß]˙πª◊System.IO.FileSystem.DriveInfo                       Ä     çfile:///C:/Users/jermb/.nuget/packages/microsoft.netcore.universalwindowsplatform/6.2.10/ref/uap10.0.15138/System.IO.FileSystem.DriveInfo.dll†    $  Ä  î      $  RSA1     —˙WƒÆŸ£.Ñ™Æ˝ÈË˝jÏèá˚vlÉLôí≤;ÁöŸ’‹¡›ö“6!êr<˘Äïƒ·wè∆wO)Ë2íÍÏ‰Ë!¿•ÔËÒd\Lì¡´ô(]b,™e,˙÷=t]o-ÂÒ~^Øƒñ=&äCe m¿ì4MZ“ì   ∞?_’
+:aSystem.IO.FileSystem.DriveInfo, Version=4.1.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a       System.Runtime                                    ∞?_’
+:        System.IO.FileSystem                                    ∞?_’
+:            
+v4.0.30319 ÜC:\Users\jermb\.nuget\packages\microsoft.netcore.universalwindowsplatform\6.2.10\ref\uap10.0.15138\System.IO.FileSystem.Primitives.dll    ß]˙πª◊System.IO.FileSystem.Primitives                       Ä     éfile:///C:/Users/jermb/.nuget/packages/microsoft.netcore.universalwindowsplatform/6.2.10/ref/uap10.0.15138/System.IO.FileSystem.Primitives.dll†    $  Ä  î      $  RSA1     —˙WƒÆŸ£.Ñ™Æ˝ÈË˝jÏèá˚vlÉLôí≤;ÁöŸ’‹¡›ö“6!êr<˘Äïƒ·wè∆wO)Ë2íÍÏ‰Ë!¿•ÔËÒd\Lì¡´ô(]b,™e,˙÷=t]o-ÂÒ~^Øƒñ=&äCe m¿ì4MZ“ì   ∞?_’
+:bSystem.IO.FileSystem.Primitives, Version=4.1.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a       System.Runtime                                    ∞?_’
+:            
+v4.0.30319 ÉC:\Users\jermb\.nuget\packages\microsoft.netcore.universalwindowsplatform\6.2.10\ref\uap10.0.15138\System.IO.FileSystem.Watcher.dll    ß]˙πª◊System.IO.FileSystem.Watcher                       Ä     ãfile:///C:/Users/jermb/.nuget/packages/microsoft.netcore.universalwindowsplatform/6.2.10/ref/uap10.0.15138/System.IO.FileSystem.Watcher.dll†    $  Ä  î      $  RSA1     —˙WƒÆŸ£.Ñ™Æ˝ÈË˝jÏèá˚vlÉLôí≤;ÁöŸ’‹¡›ö“6!êr<˘Äïƒ·wè∆wO)Ë2íÍÏ‰Ë!¿•ÔËÒd\Lì¡´ô(]b,™e,˙÷=t]o-ÂÒ~^Øƒñ=&äCe m¿ì4MZ“ì   ∞?_’
+:_System.IO.FileSystem.Watcher, Version=4.1.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a       System.Runtime                                    ∞?_’
+:         System.ComponentModel.Primitives                                    ∞?_’
+:            
+v4.0.30319 {C:\Users\jermb\.nuget\packages\microsoft.netcore.universalwindowsplatform\6.2.10\ref\uap10.0.15138\System.IO.FileSystem.dll    ß]˙πª◊System.IO.FileSystem                       Ä     Éfile:///C:/Users/jermb/.nuget/packages/microsoft.netcore.universalwindowsplatform/6.2.10/ref/uap10.0.15138/System.IO.FileSystem.dll†    $  Ä  î      $  RSA1     —˙WƒÆŸ£.Ñ™Æ˝ÈË˝jÏèá˚vlÉLôí≤;ÁöŸ’‹¡›ö“6!êr<˘Äïƒ·wè∆wO)Ë2íÍÏ‰Ë!¿•ÔËÒd\Lì¡´ô(]b,™e,˙÷=t]o-ÂÒ~^Øƒñ=&äCe m¿ì4MZ“ì   ∞?_’
+:WSystem.IO.FileSystem, Version=4.1.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a       System.Runtime                                    ∞?_’
+:        System.Runtime.Extensions                                    ∞?_’
+:            
+v4.0.30319 ÄC:\Users\jermb\.nuget\packages\microsoft.netcore.universalwindowsplatform\6.2.10\ref\uap10.0.15138\System.IO.IsolatedStorage.dll    ß]˙πª◊System.IO.IsolatedStorage                       Ä     àfile:///C:/Users/jermb/.nuget/packages/microsoft.netcore.universalwindowsplatform/6.2.10/ref/uap10.0.15138/System.IO.IsolatedStorage.dll†    $  Ä  î      $  RSA1     —˙WƒÆŸ£.Ñ™Æ˝ÈË˝jÏèá˚vlÉLôí≤;ÁöŸ’‹¡›ö“6!êr<˘Äïƒ·wè∆wO)Ë2íÍÏ‰Ë!¿•ÔËÒd\Lì¡´ô(]b,™e,˙÷=t]o-ÂÒ~^Øƒñ=&äCe m¿ì4MZ“ì   ∞?_’
+:\System.IO.IsolatedStorage, Version=4.1.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a       System.Runtime                                    ∞?_’
+:            
+v4.0.30319 ÇC:\Users\jermb\.nuget\packages\microsoft.netcore.universalwindowsplatform\6.2.10\ref\uap10.0.15138\System.IO.MemoryMappedFiles.dll    ß]˙πª◊System.IO.MemoryMappedFiles                       Ä     äfile:///C:/Users/jermb/.nuget/packages/microsoft.netcore.universalwindowsplatform/6.2.10/ref/uap10.0.15138/System.IO.MemoryMappedFiles.dll†    $  Ä  î      $  RSA1     —˙WƒÆŸ£.Ñ™Æ˝ÈË˝jÏèá˚vlÉLôí≤;ÁöŸ’‹¡›ö“6!êr<˘Äïƒ·wè∆wO)Ë2íÍÏ‰Ë!¿•ÔËÒd\Lì¡´ô(]b,™e,˙÷=t]o-ÂÒ~^Øƒñ=&äCe m¿ì4MZ“ì   ∞?_’
+:^System.IO.MemoryMappedFiles, Version=4.1.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a       System.Runtime                                    ∞?_’
+:        System.Runtime.InteropServices                                    ∞?_’
+:            
+v4.0.30319 vC:\Users\jermb\.nuget\packages\microsoft.netcore.universalwindowsplatform\6.2.10\ref\uap10.0.15138\System.IO.Pipes.dll    ß]˙πª◊System.IO.Pipes                       Ä     ~file:///C:/Users/jermb/.nuget/packages/microsoft.netcore.universalwindowsplatform/6.2.10/ref/uap10.0.15138/System.IO.Pipes.dll†    $  Ä  î      $  RSA1     —˙WƒÆŸ£.Ñ™Æ˝ÈË˝jÏèá˚vlÉLôí≤;ÁöŸ’‹¡›ö“6!êr<˘Äïƒ·wè∆wO)Ë2íÍÏ‰Ë!¿•ÔËÒd\Lì¡´ô(]b,™e,˙÷=t]o-ÂÒ~^Øƒñ=&äCe m¿ì4MZ“ì   ∞?_’
+:RSystem.IO.Pipes, Version=4.1.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a       System.Runtime                                    ∞?_’
+:        System.Security.Principal                                    ∞?_’
+:            
+v4.0.30319 vC:\Users\jermb\.nuget\packages\microsoft.netcore.universalwindowsplatform\6.2.10\ref\uap10.0.15138\System.IO.Ports.dll    ß]˙πª◊System.IO.Ports                        Ä     ~file:///C:/Users/jermb/.nuget/packages/microsoft.netcore.universalwindowsplatform/6.2.10/ref/uap10.0.15138/System.IO.Ports.dll†    $  Ä  î      $  RSA1     KÜƒÀxTõ4∫∂; ‚;˛µ≥Ï9 t6ß„ÀŸ_œÖqU®íé™)Î˝œª≠;ß˛ßΩ£"ljç7
+L”˜Hknº"YÖ¶8GnıqÃí§a< ∏˙e÷Œ‡ÀÂÛc0…†AÉUüÔ$Ã)∆Ÿ„•A3:Ÿæ“+8À   Ã{ˇÕ-›QRSystem.IO.Ports, Version=4.0.1.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51       netstandard                                      Ã{ˇÕ-›Q            
+v4.0.30319 ÜC:\Users\jermb\.nuget\packages\microsoft.netcore.universalwindowsplatform\6.2.10\ref\uap10.0.15138\System.IO.UnmanagedMemoryStream.dll    ß]˙πª◊System.IO.UnmanagedMemoryStream                       Ä     éfile:///C:/Users/jermb/.nuget/packages/microsoft.netcore.universalwindowsplatform/6.2.10/ref/uap10.0.15138/System.IO.UnmanagedMemoryStream.dll†    $  Ä  î      $  RSA1     —˙WƒÆŸ£.Ñ™Æ˝ÈË˝jÏèá˚vlÉLôí≤;ÁöŸ’‹¡›ö“6!êr<˘Äïƒ·wè∆wO)Ë2íÍÏ‰Ë!¿•ÔËÒd\Lì¡´ô(]b,™e,˙÷=t]o-ÂÒ~^Øƒñ=&äCe m¿ì4MZ“ì   ∞?_’
+:bSystem.IO.UnmanagedMemoryStream, Version=4.1.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a       System.Runtime                                    ∞?_’
+:        System.Runtime.InteropServices                                    ∞?_’
+:            
+v4.0.30319 pC:\Users\jermb\.nuget\packages\microsoft.netcore.universalwindowsplatform\6.2.10\ref\uap10.0.15138\System.IO.dll    ß]˙πª◊	System.IO                       Ä     xfile:///C:/Users/jermb/.nuget/packages/microsoft.netcore.universalwindowsplatform/6.2.10/ref/uap10.0.15138/System.IO.dll†    $  Ä  î      $  RSA1     —˙WƒÆŸ£.Ñ™Æ˝ÈË˝jÏèá˚vlÉLôí≤;ÁöŸ’‹¡›ö“6!êr<˘Äïƒ·wè∆wO)Ë2íÍÏ‰Ë!¿•ÔËÒd\Lì¡´ô(]b,™e,˙÷=t]o-ÂÒ~^Øƒñ=&äCe m¿ì4MZ“ì   ∞?_’
+:LSystem.IO, Version=4.2.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a       System.Runtime                                    ∞?_’
+:        System.Runtime.Extensions                                    ∞?_’
+:            
+v4.0.30319 ~C:\Users\jermb\.nuget\packages\microsoft.netcore.universalwindowsplatform\6.2.10\ref\uap10.0.15138\System.Linq.Expressions.dll    ß]˙πª◊System.Linq.Expressions                       Ä     Üfile:///C:/Users/jermb/.nuget/packages/microsoft.netcore.universalwindowsplatform/6.2.10/ref/uap10.0.15138/System.Linq.Expressions.dll†    $  Ä  î      $  RSA1     —˙WƒÆŸ£.Ñ™Æ˝ÈË˝jÏèá˚vlÉLôí≤;ÁöŸ’‹¡›ö“6!êr<˘Äïƒ·wè∆wO)Ë2íÍÏ‰Ë!¿•ÔËÒd\Lì¡´ô(]b,™e,˙÷=t]o-ÂÒ~^Øƒñ=&äCe m¿ì4MZ“ì   ∞?_’
+:ZSystem.Linq.Expressions, Version=4.2.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a       System.Runtime                                    ∞?_’
+:        System.ObjectModel                                    ∞?_’
+:            
+v4.0.30319 {C:\Users\jermb\.nuget\packages\microsoft.netcore.universalwindowsplatform\6.2.10\ref\uap10.0.15138\System.Linq.Parallel.dll    ß]˙πª◊System.Linq.Parallel                        Ä     Éfile:///C:/Users/jermb/.nuget/packages/microsoft.netcore.universalwindowsplatform/6.2.10/ref/uap10.0.15138/System.Linq.Parallel.dll†    $  Ä  î      $  RSA1     —˙WƒÆŸ£.Ñ™Æ˝ÈË˝jÏèá˚vlÉLôí≤;ÁöŸ’‹¡›ö“6!êr<˘Äïƒ·wè∆wO)Ë2íÍÏ‰Ë!¿•ÔËÒd\Lì¡´ô(]b,™e,˙÷=t]o-ÂÒ~^Øƒñ=&äCe m¿ì4MZ“ì   ∞?_’
+:WSystem.Linq.Parallel, Version=4.0.3.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a       System.Runtime                                    ∞?_’
+:        System.Collections.Concurrent                                     ∞?_’
+:        System.Linq                                    ∞?_’
+:        System.Collections                                    ∞?_’
+:            
+v4.0.30319 |C:\Users\jermb\.nuget\packages\microsoft.netcore.universalwindowsplatform\6.2.10\ref\uap10.0.15138\System.Linq.Queryable.dll    ß]˙πª◊System.Linq.Queryable                        Ä     Ñfile:///C:/Users/jermb/.nuget/packages/microsoft.netcore.universalwindowsplatform/6.2.10/ref/uap10.0.15138/System.Linq.Queryable.dll†    $  Ä  î      $  RSA1     —˙WƒÆŸ£.Ñ™Æ˝ÈË˝jÏèá˚vlÉLôí≤;ÁöŸ’‹¡›ö“6!êr<˘Äïƒ·wè∆wO)Ë2íÍÏ‰Ë!¿•ÔËÒd\Lì¡´ô(]b,™e,˙÷=t]o-ÂÒ~^Øƒñ=&äCe m¿ì4MZ“ì   ∞?_’
+:XSystem.Linq.Queryable, Version=4.0.3.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a       System.Runtime                                    ∞?_’
+:        System.Linq.Expressions                                    ∞?_’
+:        System.Linq                                    ∞?_’
+:            
+v4.0.30319 rC:\Users\jermb\.nuget\packages\microsoft.netcore.universalwindowsplatform\6.2.10\ref\uap10.0.15138\System.Linq.dll    ß]˙πª◊System.Linq                       Ä     zfile:///C:/Users/jermb/.nuget/packages/microsoft.netcore.universalwindowsplatform/6.2.10/ref/uap10.0.15138/System.Linq.dll†    $  Ä  î      $  RSA1     —˙WƒÆŸ£.Ñ™Æ˝ÈË˝jÏèá˚vlÉLôí≤;ÁöŸ’‹¡›ö“6!êr<˘Äïƒ·wè∆wO)Ë2íÍÏ‰Ë!¿•ÔËÒd\Lì¡´ô(]b,™e,˙÷=t]o-ÂÒ~^Øƒñ=&äCe m¿ì4MZ“ì   ∞?_’
+:NSystem.Linq, Version=4.2.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a       System.Runtime                                    ∞?_’
+:        System.Collections                                    ∞?_’
+:            
+v4.0.30319 zC:\Users\jermb\.nuget\packages\microsoft.netcore.universalwindowsplatform\6.2.10\ref\uap10.0.15138\System.Net.Http.Rtc.dll    ß]˙πª◊System.Net.Http.Rtc                        Ä     Çfile:///C:/Users/jermb/.nuget/packages/microsoft.netcore.universalwindowsplatform/6.2.10/ref/uap10.0.15138/System.Net.Http.Rtc.dll†    $  Ä  î      $  RSA1     —˙WƒÆŸ£.Ñ™Æ˝ÈË˝jÏèá˚vlÉLôí≤;ÁöŸ’‹¡›ö“6!êr<˘Äïƒ·wè∆wO)Ë2íÍÏ‰Ë!¿•ÔËÒd\Lì¡´ô(]b,™e,˙÷=t]o-ÂÒ~^Øƒñ=&äCe m¿ì4MZ“ì   ∞?_’
+:VSystem.Net.Http.Rtc, Version=4.0.4.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a       System.Runtime                                    ∞?_’
+:        System.Net.Http                                   ∞?_’
+:            
+v4.0.30319 vC:\Users\jermb\.nuget\packages\microsoft.netcore.universalwindowsplatform\6.2.10\ref\uap10.0.15138\System.Net.Http.dll    ß]˙πª◊System.Net.Http                      Ä     ~file:///C:/Users/jermb/.nuget/packages/microsoft.netcore.universalwindowsplatform/6.2.10/ref/uap10.0.15138/System.Net.Http.dll†    $  Ä  î      $  RSA1     —˙WƒÆŸ£.Ñ™Æ˝ÈË˝jÏèá˚vlÉLôí≤;ÁöŸ’‹¡›ö“6!êr<˘Äïƒ·wè∆wO)Ë2íÍÏ‰Ë!¿•ÔËÒd\Lì¡´ô(]b,™e,˙÷=t]o-ÂÒ~^Øƒñ=&äCe m¿ì4MZ“ì   ∞?_’
+:RSystem.Net.Http, Version=4.2.1.1, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a       System.Runtime                                    ∞?_’
+:        System.Net.Primitives                                    ∞?_’
+:        -System.Security.Cryptography.X509Certificates                                    ∞?_’
+:            
+v4.0.30319 ~C:\Users\jermb\.nuget\packages\microsoft.netcore.universalwindowsplatform\6.2.10\ref\uap10.0.15138\System.Net.HttpListener.dll    ß]˙πª◊System.Net.HttpListener                        Ä     Üfile:///C:/Users/jermb/.nuget/packages/microsoft.netcore.universalwindowsplatform/6.2.10/ref/uap10.0.15138/System.Net.HttpListener.dll†    $  Ä  î      $  RSA1     KÜƒÀxTõ4∫∂; ‚;˛µ≥Ï9 t6ß„ÀŸ_œÖqU®íé™)Î˝œª≠;ß˛ßΩ£"ljç7
+L”˜Hknº"YÖ¶8GnıqÃí§a< ∏˙e÷Œ‡ÀÂÛc0…†AÉUüÔ$Ã)∆Ÿ„•A3:Ÿæ“+8À   Ã{ˇÕ-›QZSystem.Net.HttpListener, Version=4.0.1.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51    
+   System.Runtime                                    ∞?_’
+:        System.Net.Primitives                                    ∞?_’
+:        System.Net.Security                                    ∞?_’
+:        System.Security.Claims                                    ∞?_’
+:        System.Security.Principal                                    ∞?_’
+:        Microsoft.Win32.Primitives                                    ∞?_’
+:        System.Collections.Specialized                                    ∞?_’
+:        -System.Security.Cryptography.X509Certificates                                    ∞?_’
+:        System.Net.WebHeaderCollection                                    ∞?_’
+:        System.Net.WebSockets                                    ∞?_’
+:            
+v4.0.30319 vC:\Users\jermb\.nuget\packages\microsoft.netcore.universalwindowsplatform\6.2.10\ref\uap10.0.15138\System.Net.Mail.dll    ß]˙πª◊System.Net.Mail                        Ä     ~file:///C:/Users/jermb/.nuget/packages/microsoft.netcore.universalwindowsplatform/6.2.10/ref/uap10.0.15138/System.Net.Mail.dll†    $  Ä  î      $  RSA1     KÜƒÀxTõ4∫∂; ‚;˛µ≥Ï9 t6ß„ÀŸ_œÖqU®íé™)Î˝œª≠;ß˛ßΩ£"ljç7
+L”˜Hknº"YÖ¶8GnıqÃí§a< ∏˙e÷Œ‡ÀÂÛc0…†AÉUüÔ$Ã)∆Ÿ„•A3:Ÿæ“+8À   Ã{ˇÕ-›QRSystem.Net.Mail, Version=4.0.1.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51       System.Runtime                                    ∞?_’
+:        System.Collections.Specialized                                    ∞?_’
+:        %System.ComponentModel.EventBasedAsync                                    ∞?_’
+:        -System.Security.Cryptography.X509Certificates                                    ∞?_’
+:        System.Net.Primitives                                    ∞?_’
+:        System.Net.ServicePoint                                     Ã{ˇÕ-›Q            
+v4.0.30319 ÄC:\Users\jermb\.nuget\packages\microsoft.netcore.universalwindowsplatform\6.2.10\ref\uap10.0.15138\System.Net.NameResolution.dll    ß]˙πª◊System.Net.NameResolution                       Ä     àfile:///C:/Users/jermb/.nuget/packages/microsoft.netcore.universalwindowsplatform/6.2.10/ref/uap10.0.15138/System.Net.NameResolution.dll†    $  Ä  î      $  RSA1     —˙WƒÆŸ£.Ñ™Æ˝ÈË˝jÏèá˚vlÉLôí≤;ÁöŸ’‹¡›ö“6!êr<˘Äïƒ·wè∆wO)Ë2íÍÏ‰Ë!¿•ÔËÒd\Lì¡´ô(]b,™e,˙÷=t]o-ÂÒ~^Øƒñ=&äCe m¿ì4MZ“ì   ∞?_’
+:\System.Net.NameResolution, Version=4.1.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a       System.Runtime                                    ∞?_’
+:        System.Net.Primitives                                    ∞?_’
+:            
+v4.0.30319 ÑC:\Users\jermb\.nuget\packages\microsoft.netcore.universalwindowsplatform\6.2.10\ref\uap10.0.15138\System.Net.NetworkInformation.dll    ß]˙πª◊System.Net.NetworkInformation                       Ä     åfile:///C:/Users/jermb/.nuget/packages/microsoft.netcore.universalwindowsplatform/6.2.10/ref/uap10.0.15138/System.Net.NetworkInformation.dll†    $  Ä  î      $  RSA1     —˙WƒÆŸ£.Ñ™Æ˝ÈË˝jÏèá˚vlÉLôí≤;ÁöŸ’‹¡›ö“6!êr<˘Äïƒ·wè∆wO)Ë2íÍÏ‰Ë!¿•ÔËÒd\Lì¡´ô(]b,™e,˙÷=t]o-ÂÒ~^Øƒñ=&äCe m¿ì4MZ“ì   ∞?_’
+:`System.Net.NetworkInformation, Version=4.2.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a       System.Runtime                                    ∞?_’
+:        System.Net.Primitives                                    ∞?_’
+:        Microsoft.Win32.Primitives                                    ∞?_’
+:            
+v4.0.30319 vC:\Users\jermb\.nuget\packages\microsoft.netcore.universalwindowsplatform\6.2.10\ref\uap10.0.15138\System.Net.Ping.dll    ß]˙πª◊System.Net.Ping                       Ä     ~file:///C:/Users/jermb/.nuget/packages/microsoft.netcore.universalwindowsplatform/6.2.10/ref/uap10.0.15138/System.Net.Ping.dll†    $  Ä  î      $  RSA1     —˙WƒÆŸ£.Ñ™Æ˝ÈË˝jÏèá˚vlÉLôí≤;ÁöŸ’‹¡›ö“6!êr<˘Äïƒ·wè∆wO)Ë2íÍÏ‰Ë!¿•ÔËÒd\Lì¡´ô(]b,™e,˙÷=t]o-ÂÒ~^Øƒñ=&äCe m¿ì4MZ“ì   ∞?_’
+:RSystem.Net.Ping, Version=4.1.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a       System.Runtime                                    ∞?_’
+:         System.ComponentModel.Primitives                                    ∞?_’
+:        System.Net.Primitives                                    ∞?_’
+:        %System.ComponentModel.EventBasedAsync                                    ∞?_’
+:            
+v4.0.30319 |C:\Users\jermb\.nuget\packages\microsoft.netcore.universalwindowsplatform\6.2.10\ref\uap10.0.15138\System.Net.Primitives.dll    ß]˙πª◊System.Net.Primitives                       Ä     Ñfile:///C:/Users/jermb/.nuget/packages/microsoft.netcore.universalwindowsplatform/6.2.10/ref/uap10.0.15138/System.Net.Primitives.dll†    $  Ä  î      $  RSA1     —˙WƒÆŸ£.Ñ™Æ˝ÈË˝jÏèá˚vlÉLôí≤;ÁöŸ’‹¡›ö“6!êr<˘Äïƒ·wè∆wO)Ë2íÍÏ‰Ë!¿•ÔËÒd\Lì¡´ô(]b,™e,˙÷=t]o-ÂÒ~^Øƒñ=&äCe m¿ì4MZ“ì   ∞?_’
+:XSystem.Net.Primitives, Version=4.1.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a       System.Runtime                                    ∞?_’
+:        System.Runtime.InteropServices                                    ∞?_’
+:        Microsoft.Win32.Primitives                                    ∞?_’
+:            
+v4.0.30319 zC:\Users\jermb\.nuget\packages\microsoft.netcore.universalwindowsplatform\6.2.10\ref\uap10.0.15138\System.Net.Requests.dll    ß]˙πª◊System.Net.Requests                       Ä     Çfile:///C:/Users/jermb/.nuget/packages/microsoft.netcore.universalwindowsplatform/6.2.10/ref/uap10.0.15138/System.Net.Requests.dll†    $  Ä  î      $  RSA1     —˙WƒÆŸ£.Ñ™Æ˝ÈË˝jÏèá˚vlÉLôí≤;ÁöŸ’‹¡›ö“6!êr<˘Äïƒ·wè∆wO)Ë2íÍÏ‰Ë!¿•ÔËÒd\Lì¡´ô(]b,™e,˙÷=t]o-ÂÒ~^Øƒñ=&äCe m¿ì4MZ“ì   ∞?_’
+:VSystem.Net.Requests, Version=4.1.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a       System.Runtime                                    ∞?_’
+:        System.Net.WebHeaderCollection                                    ∞?_’
+:        System.Collections.Specialized                                    ∞?_’
+:        System.Net.Primitives                                    ∞?_’
+:        -System.Security.Cryptography.X509Certificates                                    ∞?_’
+:        System.Net.ServicePoint                                     Ã{ˇÕ-›Q        System.Net.Security                                    ∞?_’
+:        System.Security.Principal                                    ∞?_’
+:            
+v4.0.30319 zC:\Users\jermb\.nuget\packages\microsoft.netcore.universalwindowsplatform\6.2.10\ref\uap10.0.15138\System.Net.Security.dll    ß]˙πª◊System.Net.Security                       Ä     Çfile:///C:/Users/jermb/.nuget/packages/microsoft.netcore.universalwindowsplatform/6.2.10/ref/uap10.0.15138/System.Net.Security.dll†    $  Ä  î      $  RSA1     —˙WƒÆŸ£.Ñ™Æ˝ÈË˝jÏèá˚vlÉLôí≤;ÁöŸ’‹¡›ö“6!êr<˘Äïƒ·wè∆wO)Ë2íÍÏ‰Ë!¿•ÔËÒd\Lì¡´ô(]b,™e,˙÷=t]o-ÂÒ~^Øƒñ=&äCe m¿ì4MZ“ì   ∞?_’
+:VSystem.Net.Security, Version=4.1.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a       System.Runtime                                    ∞?_’
+:        System.Net.Primitives                                    ∞?_’
+:        System.Collections.NonGeneric                                    ∞?_’
+:        -System.Security.Cryptography.X509Certificates                                    ∞?_’
+:        System.Security.Principal                                    ∞?_’
+:            
+v4.0.30319 ~C:\Users\jermb\.nuget\packages\microsoft.netcore.universalwindowsplatform\6.2.10\ref\uap10.0.15138\System.Net.ServicePoint.dll    ß]˙πª◊System.Net.ServicePoint                        Ä     Üfile:///C:/Users/jermb/.nuget/packages/microsoft.netcore.universalwindowsplatform/6.2.10/ref/uap10.0.15138/System.Net.ServicePoint.dll†    $  Ä  î      $  RSA1     KÜƒÀxTõ4∫∂; ‚;˛µ≥Ï9 t6ß„ÀŸ_œÖqU®íé™)Î˝œª≠;ß˛ßΩ£"ljç7
+L”˜Hknº"YÖ¶8GnıqÃí§a< ∏˙e÷Œ‡ÀÂÛc0…†AÉUüÔ$Ã)∆Ÿ„•A3:Ÿæ“+8À   Ã{ˇÕ-›QZSystem.Net.ServicePoint, Version=4.0.1.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51       System.Runtime                                    ∞?_’
+:        System.Net.Primitives                                    ∞?_’
+:        -System.Security.Cryptography.X509Certificates                                    ∞?_’
+:        System.Net.Security                                    ∞?_’
+:            
+v4.0.30319 yC:\Users\jermb\.nuget\packages\microsoft.netcore.universalwindowsplatform\6.2.10\ref\uap10.0.15138\System.Net.Sockets.dll    ß]˙πª◊System.Net.Sockets                       Ä     Åfile:///C:/Users/jermb/.nuget/packages/microsoft.netcore.universalwindowsplatform/6.2.10/ref/uap10.0.15138/System.Net.Sockets.dll†    $  Ä  î      $  RSA1     —˙WƒÆŸ£.Ñ™Æ˝ÈË˝jÏèá˚vlÉLôí≤;ÁöŸ’‹¡›ö“6!êr<˘Äïƒ·wè∆wO)Ë2íÍÏ‰Ë!¿•ÔËÒd\Lì¡´ô(]b,™e,˙÷=t]o-ÂÒ~^Øƒñ=&äCe m¿ì4MZ“ì   ∞?_’
+:USystem.Net.Sockets, Version=4.2.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a       System.Runtime                                    ∞?_’
+:        System.Net.Primitives                                    ∞?_’
+:            
+v4.0.30319 {C:\Users\jermb\.nuget\packages\microsoft.netcore.universalwindowsplatform\6.2.10\ref\uap10.0.15138\System.Net.WebClient.dll    ß]˙πª◊System.Net.WebClient                        Ä     Éfile:///C:/Users/jermb/.nuget/packages/microsoft.netcore.universalwindowsplatform/6.2.10/ref/uap10.0.15138/System.Net.WebClient.dll†    $  Ä  î      $  RSA1     KÜƒÀxTõ4∫∂; ‚;˛µ≥Ï9 t6ß„ÀŸ_œÖqU®íé™)Î˝œª≠;ß˛ßΩ£"ljç7
+L”˜Hknº"YÖ¶8GnıqÃí§a< ∏˙e÷Œ‡ÀÂÛc0…†AÉUüÔ$Ã)∆Ÿ„•A3:Ÿæ“+8À   Ã{ˇÕ-›QWSystem.Net.WebClient, Version=4.0.1.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51       System.Runtime                                    ∞?_’
+:        %System.ComponentModel.EventBasedAsync                                    ∞?_’
+:         System.ComponentModel.Primitives                                    ∞?_’
+:        System.Net.Primitives                                    ∞?_’
+:        System.Net.WebHeaderCollection                                    ∞?_’
+:        System.Collections.Specialized                                    ∞?_’
+:        System.Net.Requests                                    ∞?_’
+:            
+v4.0.30319 ÖC:\Users\jermb\.nuget\packages\microsoft.netcore.universalwindowsplatform\6.2.10\ref\uap10.0.15138\System.Net.WebHeaderCollection.dll    ß]˙πª◊System.Net.WebHeaderCollection                       Ä     çfile:///C:/Users/jermb/.nuget/packages/microsoft.netcore.universalwindowsplatform/6.2.10/ref/uap10.0.15138/System.Net.WebHeaderCollection.dll†    $  Ä  î      $  RSA1     —˙WƒÆŸ£.Ñ™Æ˝ÈË˝jÏèá˚vlÉLôí≤;ÁöŸ’‹¡›ö“6!êr<˘Äïƒ·wè∆wO)Ë2íÍÏ‰Ë!¿•ÔËÒd\Lì¡´ô(]b,™e,˙÷=t]o-ÂÒ~^Øƒñ=&äCe m¿ì4MZ“ì   ∞?_’
+:aSystem.Net.WebHeaderCollection, Version=4.1.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a       System.Runtime                                    ∞?_’
+:        System.Collections.Specialized                                    ∞?_’
+:            
+v4.0.30319 zC:\Users\jermb\.nuget\packages\microsoft.netcore.universalwindowsplatform\6.2.10\ref\uap10.0.15138\System.Net.WebProxy.dll    ß]˙πª◊System.Net.WebProxy                        Ä     Çfile:///C:/Users/jermb/.nuget/packages/microsoft.netcore.universalwindowsplatform/6.2.10/ref/uap10.0.15138/System.Net.WebProxy.dll†    $  Ä  î      $  RSA1     KÜƒÀxTõ4∫∂; ‚;˛µ≥Ï9 t6ß„ÀŸ_œÖqU®íé™)Î˝œª≠;ß˛ßΩ£"ljç7
+L”˜Hknº"YÖ¶8GnıqÃí§a< ∏˙e÷Œ‡ÀÂÛc0…†AÉUüÔ$Ã)∆Ÿ„•A3:Ÿæ“+8À   Ã{ˇÕ-›QVSystem.Net.WebProxy, Version=4.0.1.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51       System.Runtime                                    ∞?_’
+:        System.Net.Primitives                                    ∞?_’
+:        System.Runtime.Extensions                                    ∞?_’
+:            
+v4.0.30319 ÉC:\Users\jermb\.nuget\packages\microsoft.netcore.universalwindowsplatform\6.2.10\ref\uap10.0.15138\System.Net.WebSockets.Client.dll    ß]˙πª◊System.Net.WebSockets.Client                       Ä     ãfile:///C:/Users/jermb/.nuget/packages/microsoft.netcore.universalwindowsplatform/6.2.10/ref/uap10.0.15138/System.Net.WebSockets.Client.dll†    $  Ä  î      $  RSA1     —˙WƒÆŸ£.Ñ™Æ˝ÈË˝jÏèá˚vlÉLôí≤;ÁöŸ’‹¡›ö“6!êr<˘Äïƒ·wè∆wO)Ë2íÍÏ‰Ë!¿•ÔËÒd\Lì¡´ô(]b,™e,˙÷=t]o-ÂÒ~^Øƒñ=&äCe m¿ì4MZ“ì   ∞?_’
+:_System.Net.WebSockets.Client, Version=4.1.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a       System.Runtime                                    ∞?_’
+:        System.Net.WebSockets                                    ∞?_’
+:        -System.Security.Cryptography.X509Certificates                                    ∞?_’
+:        System.Net.Primitives                                    ∞?_’
+:            
+v4.0.30319 |C:\Users\jermb\.nuget\packages\microsoft.netcore.universalwindowsplatform\6.2.10\ref\uap10.0.15138\System.Net.WebSockets.dll    ß]˙πª◊System.Net.WebSockets                       Ä     Ñfile:///C:/Users/jermb/.nuget/packages/microsoft.netcore.universalwindowsplatform/6.2.10/ref/uap10.0.15138/System.Net.WebSockets.dll†    $  Ä  î      $  RSA1     —˙WƒÆŸ£.Ñ™Æ˝ÈË˝jÏèá˚vlÉLôí≤;ÁöŸ’‹¡›ö“6!êr<˘Äïƒ·wè∆wO)Ë2íÍÏ‰Ë!¿•ÔËÒd\Lì¡´ô(]b,™e,˙÷=t]o-ÂÒ~^Øƒñ=&äCe m¿ì4MZ“ì   ∞?_’
+:XSystem.Net.WebSockets, Version=4.1.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a       System.Runtime                                    ∞?_’
+:        System.Collections.Specialized                                    ∞?_’
+:        System.Net.Primitives                                    ∞?_’
+:        System.Security.Principal                                    ∞?_’
+:        Microsoft.Win32.Primitives                                    ∞?_’
+:            
+v4.0.30319 qC:\Users\jermb\.nuget\packages\microsoft.netcore.universalwindowsplatform\6.2.10\ref\uap10.0.15138\System.Net.dll    ß]˙πª◊
+System.Net                        Ä     yfile:///C:/Users/jermb/.nuget/packages/microsoft.netcore.universalwindowsplatform/6.2.10/ref/uap10.0.15138/System.Net.dll†    $  Ä  î      $  RSA1     —˙WƒÆŸ£.Ñ™Æ˝ÈË˝jÏèá˚vlÉLôí≤;ÁöŸ’‹¡›ö“6!êr<˘Äïƒ·wè∆wO)Ë2íÍÏ‰Ë!¿•ÔËÒd\Lì¡´ô(]b,™e,˙÷=t]o-ÂÒ~^Øƒñ=&äCe m¿ì4MZ“ì   ∞?_’
+:MSystem.Net, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a       System.Runtime                                       ∞?_’
+:        System.Net.Primitives                                       ∞?_’
+:        System.Net.WebClient                                       Ã{ˇÕ-›Q        System.Net.WebHeaderCollection                                       ∞?_’
+:        System.Net.Requests                                       ∞?_’
+:        System.Net.NetworkInformation                                       ∞?_’
+:        System.Security.Permissions                                       Ã{ˇÕ-›Q        System.Net.Sockets                                       ∞?_’
+:            
+v4.0.30319 çC:\Users\jermb\.nuget\packages\microsoft.netcore.universalwindowsplatform\6.2.10\ref\uap10.0.15138\System.Numerics.Vectors.WindowsRuntime.dll    ß]˙πª◊&System.Numerics.Vectors.WindowsRuntime                       Ä     ïfile:///C:/Users/jermb/.nuget/packages/microsoft.netcore.universalwindowsplatform/6.2.10/ref/uap10.0.15138/System.Numerics.Vectors.WindowsRuntime.dll†    $  Ä  î      $  RSA1     —˙WƒÆŸ£.Ñ™Æ˝ÈË˝jÏèá˚vlÉLôí≤;ÁöŸ’‹¡›ö“6!êr<˘Äïƒ·wè∆wO)Ë2íÍÏ‰Ë!¿•ÔËÒd\Lì¡´ô(]b,™e,˙÷=t]o-ÂÒ~^Øƒñ=&äCe m¿ì4MZ“ì   ∞?_’
+:iSystem.Numerics.Vectors.WindowsRuntime, Version=4.0.4.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a       System.Runtime                                    ∞?_’
+:        System.Runtime.WindowsRuntime                                     ∑z\V4‡â        System.Numerics.Vectors                                    ∞?_’
+:            
+v4.0.30319 ~C:\Users\jermb\.nuget\packages\microsoft.netcore.universalwindowsplatform\6.2.10\ref\uap10.0.15138\System.Numerics.Vectors.dll    ß]˙πª◊System.Numerics.Vectors                       Ä     Üfile:///C:/Users/jermb/.nuget/packages/microsoft.netcore.universalwindowsplatform/6.2.10/ref/uap10.0.15138/System.Numerics.Vectors.dll†    $  Ä  î      $  RSA1     —˙WƒÆŸ£.Ñ™Æ˝ÈË˝jÏèá˚vlÉLôí≤;ÁöŸ’‹¡›ö“6!êr<˘Äïƒ·wè∆wO)Ë2íÍÏ‰Ë!¿•ÔËÒd\Lì¡´ô(]b,™e,˙÷=t]o-ÂÒ~^Øƒñ=&äCe m¿ì4MZ“ì   ∞?_’
+:ZSystem.Numerics.Vectors, Version=4.1.4.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a       System.Runtime                                    ∞?_’
+:            
+v4.0.30319 vC:\Users\jermb\.nuget\packages\microsoft.netcore.universalwindowsplatform\6.2.10\ref\uap10.0.15138\System.Numerics.dll    ß]˙πª◊System.Numerics                        Ä     ~file:///C:/Users/jermb/.nuget/packages/microsoft.netcore.universalwindowsplatform/6.2.10/ref/uap10.0.15138/System.Numerics.dll                     ∑z\V4‡âRSystem.Numerics, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089       System.Runtime                                       ∞?_’
+:        System.Runtime.Numerics                                       ∞?_’
+:        System.Numerics.Vectors                                       ∞?_’
+:            
+v4.0.30319 yC:\Users\jermb\.nuget\packages\microsoft.netcore.universalwindowsplatform\6.2.10\ref\uap10.0.15138\System.ObjectModel.dll    ß]˙πª◊System.ObjectModel                       Ä     Åfile:///C:/Users/jermb/.nuget/packages/microsoft.netcore.universalwindowsplatform/6.2.10/ref/uap10.0.15138/System.ObjectModel.dll†    $  Ä  î      $  RSA1     —˙WƒÆŸ£.Ñ™Æ˝ÈË˝jÏèá˚vlÉLôí≤;ÁöŸ’‹¡›ö“6!êr<˘Äïƒ·wè∆wO)Ë2íÍÏ‰Ë!¿•ÔËÒd\Lì¡´ô(]b,™e,˙÷=t]o-ÂÒ~^Øƒñ=&äCe m¿ì4MZ“ì   ∞?_’
+:USystem.ObjectModel, Version=4.1.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a       System.Runtime                                    ∞?_’
+:        System.Collections                                    ∞?_’
+:            
+v4.0.30319 ÄC:\Users\jermb\.nuget\packages\microsoft.netcore.universalwindowsplatform\6.2.10\ref\uap10.0.15138\System.Reflection.Context.dll    ß]˙πª◊System.Reflection.Context                        Ä     àfile:///C:/Users/jermb/.nuget/packages/microsoft.netcore.universalwindowsplatform/6.2.10/ref/uap10.0.15138/System.Reflection.Context.dll                     ∑z\V4‡â\System.Reflection.Context, Version=4.0.3.0, Culture=neutral, PublicKeyToken=b77a5c561934e089       netstandard                                      Ã{ˇÕ-›Q            
+v4.0.30319 ÜC:\Users\jermb\.nuget\packages\microsoft.netcore.universalwindowsplatform\6.2.10\ref\uap10.0.15138\System.Reflection.DispatchProxy.dll    ß]˙πª◊System.Reflection.DispatchProxy                        Ä     éfile:///C:/Users/jermb/.nuget/packages/microsoft.netcore.universalwindowsplatform/6.2.10/ref/uap10.0.15138/System.Reflection.DispatchProxy.dll†    $  Ä  î      $  RSA1     —˙WƒÆŸ£.Ñ™Æ˝ÈË˝jÏèá˚vlÉLôí≤;ÁöŸ’‹¡›ö“6!êr<˘Äïƒ·wè∆wO)Ë2íÍÏ‰Ë!¿•ÔËÒd\Lì¡´ô(]b,™e,˙÷=t]o-ÂÒ~^Øƒñ=&äCe m¿ì4MZ“ì   ∞?_’
+:bSystem.Reflection.DispatchProxy, Version=4.0.4.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a       netstandard                                      Ã{ˇÕ-›Q            
+v4.0.30319 ÉC:\Users\jermb\.nuget\packages\microsoft.netcore.universalwindowsplatform\6.2.10\ref\uap10.0.15138\System.Reflection.Extensions.dll    ß]˙πª◊System.Reflection.Extensions                       Ä     ãfile:///C:/Users/jermb/.nuget/packages/microsoft.netcore.universalwindowsplatform/6.2.10/ref/uap10.0.15138/System.Reflection.Extensions.dll†    $  Ä  î      $  RSA1     —˙WƒÆŸ£.Ñ™Æ˝ÈË˝jÏèá˚vlÉLôí≤;ÁöŸ’‹¡›ö“6!êr<˘Äïƒ·wè∆wO)Ë2íÍÏ‰Ë!¿•ÔËÒd\Lì¡´ô(]b,™e,˙÷=t]o-ÂÒ~^Øƒñ=&äCe m¿ì4MZ“ì   ∞?_’
+:_System.Reflection.Extensions, Version=4.1.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a       System.Runtime                                    ∞?_’
+:            
+v4.0.30319 ÅC:\Users\jermb\.nuget\packages\microsoft.netcore.universalwindowsplatform\6.2.10\ref\uap10.0.15138\System.Reflection.Metadata.dll    ß]˙πª◊System.Reflection.Metadata                       Ä     âfile:///C:/Users/jermb/.nuget/packages/microsoft.netcore.universalwindowsplatform/6.2.10/ref/uap10.0.15138/System.Reflection.Metadata.dll†    $  Ä  î      $  RSA1     —˙WƒÆŸ£.Ñ™Æ˝ÈË˝jÏèá˚vlÉLôí≤;ÁöŸ’‹¡›ö“6!êr<˘Äïƒ·wè∆wO)Ë2íÍÏ‰Ë!¿•ÔËÒd\Lì¡´ô(]b,™e,˙÷=t]o-ÂÒ~^Øƒñ=&äCe m¿ì4MZ“ì   ∞?_’
+:]System.Reflection.Metadata, Version=1.4.3.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a       System.Runtime                                    ∞?_’
+:        System.Collections.Immutable                                    ∞?_’
+:            
+v4.0.30319 ÉC:\Users\jermb\.nuget\packages\microsoft.netcore.universalwindowsplatform\6.2.10\ref\uap10.0.15138\System.Reflection.Primitives.dll    ß]˙πª◊System.Reflection.Primitives                       Ä     ãfile:///C:/Users/jermb/.nuget/packages/microsoft.netcore.universalwindowsplatform/6.2.10/ref/uap10.0.15138/System.Reflection.Primitives.dll†    $  Ä  î      $  RSA1     —˙WƒÆŸ£.Ñ™Æ˝ÈË˝jÏèá˚vlÉLôí≤;ÁöŸ’‹¡›ö“6!êr<˘Äïƒ·wè∆wO)Ë2íÍÏ‰Ë!¿•ÔËÒd\Lì¡´ô(]b,™e,˙÷=t]o-ÂÒ~^Øƒñ=&äCe m¿ì4MZ“ì   ∞?_’
+:_System.Reflection.Primitives, Version=4.1.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a       System.Runtime                                    ∞?_’
+:            
+v4.0.30319 áC:\Users\jermb\.nuget\packages\microsoft.netcore.universalwindowsplatform\6.2.10\ref\uap10.0.15138\System.Reflection.TypeExtensions.dll    ß]˙πª◊ System.Reflection.TypeExtensions                       Ä     èfile:///C:/Users/jermb/.nuget/packages/microsoft.netcore.universalwindowsplatform/6.2.10/ref/uap10.0.15138/System.Reflection.TypeExtensions.dll†    $  Ä  î      $  RSA1     —˙WƒÆŸ£.Ñ™Æ˝ÈË˝jÏèá˚vlÉLôí≤;ÁöŸ’‹¡›ö“6!êr<˘Äïƒ·wè∆wO)Ë2íÍÏ‰Ë!¿•ÔËÒd\Lì¡´ô(]b,™e,˙÷=t]o-ÂÒ~^Øƒñ=&äCe m¿ì4MZ“ì   ∞?_’
+:cSystem.Reflection.TypeExtensions, Version=4.1.3.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a       netstandard                                      Ã{ˇÕ-›Q            
+v4.0.30319 xC:\Users\jermb\.nuget\packages\microsoft.netcore.universalwindowsplatform\6.2.10\ref\uap10.0.15138\System.Reflection.dll    ß]˙πª◊System.Reflection                       Ä     Äfile:///C:/Users/jermb/.nuget/packages/microsoft.netcore.universalwindowsplatform/6.2.10/ref/uap10.0.15138/System.Reflection.dll†    $  Ä  î      $  RSA1     —˙WƒÆŸ£.Ñ™Æ˝ÈË˝jÏèá˚vlÉLôí≤;ÁöŸ’‹¡›ö“6!êr<˘Äïƒ·wè∆wO)Ë2íÍÏ‰Ë!¿•ÔËÒd\Lì¡´ô(]b,™e,˙÷=t]o-ÂÒ~^Øƒñ=&äCe m¿ì4MZ“ì   ∞?_’
+:TSystem.Reflection, Version=4.2.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a       System.Runtime                                    ∞?_’
+:            
+v4.0.30319 ~C:\Users\jermb\.nuget\packages\microsoft.netcore.universalwindowsplatform\6.2.10\ref\uap10.0.15138\System.Resources.Reader.dll    ß]˙πª◊System.Resources.Reader                       Ä     Üfile:///C:/Users/jermb/.nuget/packages/microsoft.netcore.universalwindowsplatform/6.2.10/ref/uap10.0.15138/System.Resources.Reader.dll†    $  Ä  î      $  RSA1     —˙WƒÆŸ£.Ñ™Æ˝ÈË˝jÏèá˚vlÉLôí≤;ÁöŸ’‹¡›ö“6!êr<˘Äïƒ·wè∆wO)Ë2íÍÏ‰Ë!¿•ÔËÒd\Lì¡´ô(]b,™e,˙÷=t]o-ÂÒ~^Øƒñ=&äCe m¿ì4MZ“ì   ∞?_’
+:ZSystem.Resources.Reader, Version=4.1.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a       System.Runtime                                    ∞?_’
+:         System.Resources.ResourceManager                                    ∞?_’
+:            
+v4.0.30319 áC:\Users\jermb\.nuget\packages\microsoft.netcore.universalwindowsplatform\6.2.10\ref\uap10.0.15138\System.Resources.ResourceManager.dll    ß]˙πª◊ System.Resources.ResourceManager                       Ä     èfile:///C:/Users/jermb/.nuget/packages/microsoft.netcore.universalwindowsplatform/6.2.10/ref/uap10.0.15138/System.Resources.ResourceManager.dll†    $  Ä  î      $  RSA1     —˙WƒÆŸ£.Ñ™Æ˝ÈË˝jÏèá˚vlÉLôí≤;ÁöŸ’‹¡›ö“6!êr<˘Äïƒ·wè∆wO)Ë2íÍÏ‰Ë!¿•ÔËÒd\Lì¡´ô(]b,™e,˙÷=t]o-ÂÒ~^Øƒñ=&äCe m¿ì4MZ“ì   ∞?_’
+:cSystem.Resources.ResourceManager, Version=4.1.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a       System.Runtime                                    ∞?_’
+:        System.Runtime.InteropServices                                    ∞?_’
+:            
+v4.0.30319 ~C:\Users\jermb\.nuget\packages\microsoft.netcore.universalwindowsplatform\6.2.10\ref\uap10.0.15138\System.Resources.Writer.dll    ß]˙πª◊System.Resources.Writer                       Ä     Üfile:///C:/Users/jermb/.nuget/packages/microsoft.netcore.universalwindowsplatform/6.2.10/ref/uap10.0.15138/System.Resources.Writer.dll†    $  Ä  î      $  RSA1     —˙WƒÆŸ£.Ñ™Æ˝ÈË˝jÏèá˚vlÉLôí≤;ÁöŸ’‹¡›ö“6!êr<˘Äïƒ·wè∆wO)Ë2íÍÏ‰Ë!¿•ÔËÒd\Lì¡´ô(]b,™e,˙÷=t]o-ÂÒ~^Øƒñ=&äCe m¿ì4MZ“ì   ∞?_’
+:ZSystem.Resources.Writer, Version=4.1.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a       System.Runtime                                    ∞?_’
+:            
+v4.0.30319 éC:\Users\jermb\.nuget\packages\microsoft.netcore.universalwindowsplatform\6.2.10\ref\uap10.0.15138\System.Runtime.CompilerServices.VisualC.dll    ß]˙πª◊'System.Runtime.CompilerServices.VisualC                       Ä     ñfile:///C:/Users/jermb/.nuget/packages/microsoft.netcore.universalwindowsplatform/6.2.10/ref/uap10.0.15138/System.Runtime.CompilerServices.VisualC.dll†    $  Ä  î      $  RSA1     —˙WƒÆŸ£.Ñ™Æ˝ÈË˝jÏèá˚vlÉLôí≤;ÁöŸ’‹¡›ö“6!êr<˘Äïƒ·wè∆wO)Ë2íÍÏ‰Ë!¿•ÔËÒd\Lì¡´ô(]b,™e,˙÷=t]o-ÂÒ~^Øƒñ=&äCe m¿ì4MZ“ì   ∞?_’
+:jSystem.Runtime.CompilerServices.VisualC, Version=4.1.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a       System.Runtime                                    ∞?_’
+:            
+v4.0.30319 ÄC:\Users\jermb\.nuget\packages\microsoft.netcore.universalwindowsplatform\6.2.10\ref\uap10.0.15138\System.Runtime.Extensions.dll    ß]˙πª◊System.Runtime.Extensions                       Ä     àfile:///C:/Users/jermb/.nuget/packages/microsoft.netcore.universalwindowsplatform/6.2.10/ref/uap10.0.15138/System.Runtime.Extensions.dll†    $  Ä  î      $  RSA1     —˙WƒÆŸ£.Ñ™Æ˝ÈË˝jÏèá˚vlÉLôí≤;ÁöŸ’‹¡›ö“6!êr<˘Äïƒ·wè∆wO)Ë2íÍÏ‰Ë!¿•ÔËÒd\Lì¡´ô(]b,™e,˙÷=t]o-ÂÒ~^Øƒñ=&äCe m¿ì4MZ“ì   ∞?_’
+:\System.Runtime.Extensions, Version=4.2.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a       System.Runtime                                    ∞?_’
+:        System.Security.Principal                                    ∞?_’
+:            
+v4.0.30319 }C:\Users\jermb\.nuget\packages\microsoft.netcore.universalwindowsplatform\6.2.10\ref\uap10.0.15138\System.Runtime.Handles.dll    ß]˙πª◊System.Runtime.Handles                       Ä     Öfile:///C:/Users/jermb/.nuget/packages/microsoft.netcore.universalwindowsplatform/6.2.10/ref/uap10.0.15138/System.Runtime.Handles.dll†    $  Ä  î      $  RSA1     —˙WƒÆŸ£.Ñ™Æ˝ÈË˝jÏèá˚vlÉLôí≤;ÁöŸ’‹¡›ö“6!êr<˘Äïƒ·wè∆wO)Ë2íÍÏ‰Ë!¿•ÔËÒd\Lì¡´ô(]b,™e,˙÷=t]o-ÂÒ~^Øƒñ=&äCe m¿ì4MZ“ì   ∞?_’
+:YSystem.Runtime.Handles, Version=4.1.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a       System.Runtime                                    ∞?_’
+:            
+v4.0.30319 òC:\Users\jermb\.nuget\packages\microsoft.netcore.universalwindowsplatform\6.2.10\ref\uap10.0.15138\System.Runtime.InteropServices.RuntimeInformation.dll    ß]˙πª◊1System.Runtime.InteropServices.RuntimeInformation                        Ä     †file:///C:/Users/jermb/.nuget/packages/microsoft.netcore.universalwindowsplatform/6.2.10/ref/uap10.0.15138/System.Runtime.InteropServices.RuntimeInformation.dll†    $  Ä  î      $  RSA1     —˙WƒÆŸ£.Ñ™Æ˝ÈË˝jÏèá˚vlÉLôí≤;ÁöŸ’‹¡›ö“6!êr<˘Äïƒ·wè∆wO)Ë2íÍÏ‰Ë!¿•ÔËÒd\Lì¡´ô(]b,™e,˙÷=t]o-ÂÒ~^Øƒñ=&äCe m¿ì4MZ“ì   ∞?_’
+:tSystem.Runtime.InteropServices.RuntimeInformation, Version=4.0.3.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a       System.Runtime                                    ∞?_’
+:            
+v4.0.30319 îC:\Users\jermb\.nuget\packages\microsoft.netcore.universalwindowsplatform\6.2.10\ref\uap10.0.15138\System.Runtime.InteropServices.WindowsRuntime.dll    ß]˙πª◊-System.Runtime.InteropServices.WindowsRuntime                        Ä     úfile:///C:/Users/jermb/.nuget/packages/microsoft.netcore.universalwindowsplatform/6.2.10/ref/uap10.0.15138/System.Runtime.InteropServices.WindowsRuntime.dll†    $  Ä  î      $  RSA1     —˙WƒÆŸ£.Ñ™Æ˝ÈË˝jÏèá˚vlÉLôí≤;ÁöŸ’‹¡›ö“6!êr<˘Äïƒ·wè∆wO)Ë2íÍÏ‰Ë!¿•ÔËÒd\Lì¡´ô(]b,™e,˙÷=t]o-ÂÒ~^Øƒñ=&äCe m¿ì4MZ“ì   ∞?_’
+:pSystem.Runtime.InteropServices.WindowsRuntime, Version=4.0.3.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a       System.Runtime                                    ∞?_’
+:            
+v4.0.30319 ÖC:\Users\jermb\.nuget\packages\microsoft.netcore.universalwindowsplatform\6.2.10\ref\uap10.0.15138\System.Runtime.InteropServices.dll    ß]˙πª◊System.Runtime.InteropServices                       Ä     çfile:///C:/Users/jermb/.nuget/packages/microsoft.netcore.universalwindowsplatform/6.2.10/ref/uap10.0.15138/System.Runtime.InteropServices.dll†    $  Ä  î      $  RSA1     —˙WƒÆŸ£.Ñ™Æ˝ÈË˝jÏèá˚vlÉLôí≤;ÁöŸ’‹¡›ö“6!êr<˘Äïƒ·wè∆wO)Ë2íÍÏ‰Ë!¿•ÔËÒd\Lì¡´ô(]b,™e,˙÷=t]o-ÂÒ~^Øƒñ=&äCe m¿ì4MZ“ì   ∞?_’
+:aSystem.Runtime.InteropServices, Version=4.2.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a       System.Runtime                                    ∞?_’
+:            
+v4.0.30319 ~C:\Users\jermb\.nuget\packages\microsoft.netcore.universalwindowsplatform\6.2.10\ref\uap10.0.15138\System.Runtime.Numerics.dll    ß]˙πª◊System.Runtime.Numerics                       Ä     Üfile:///C:/Users/jermb/.nuget/packages/microsoft.netcore.universalwindowsplatform/6.2.10/ref/uap10.0.15138/System.Runtime.Numerics.dll†    $  Ä  î      $  RSA1     —˙WƒÆŸ£.Ñ™Æ˝ÈË˝jÏèá˚vlÉLôí≤;ÁöŸ’‹¡›ö“6!êr<˘Äïƒ·wè∆wO)Ë2íÍÏ‰Ë!¿•ÔËÒd\Lì¡´ô(]b,™e,˙÷=t]o-ÂÒ~^Øƒñ=&äCe m¿ì4MZ“ì   ∞?_’
+:ZSystem.Runtime.Numerics, Version=4.1.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a       System.Runtime                                    ∞?_’
+:            
+v4.0.30319 éC:\Users\jermb\.nuget\packages\microsoft.netcore.universalwindowsplatform\6.2.10\ref\uap10.0.15138\System.Runtime.Serialization.Formatters.dll    ß]˙πª◊'System.Runtime.Serialization.Formatters                        Ä     ñfile:///C:/Users/jermb/.nuget/packages/microsoft.netcore.universalwindowsplatform/6.2.10/ref/uap10.0.15138/System.Runtime.Serialization.Formatters.dll†    $  Ä  î      $  RSA1     —˙WƒÆŸ£.Ñ™Æ˝ÈË˝jÏèá˚vlÉLôí≤;ÁöŸ’‹¡›ö“6!êr<˘Äïƒ·wè∆wO)Ë2íÍÏ‰Ë!¿•ÔËÒd\Lì¡´ô(]b,™e,˙÷=t]o-ÂÒ~^Øƒñ=&äCe m¿ì4MZ“ì   ∞?_’
+:jSystem.Runtime.Serialization.Formatters, Version=4.0.3.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a       System.Runtime                                    ∞?_’
+:        System.Collections.NonGeneric                                    ∞?_’
+:            
+v4.0.30319 àC:\Users\jermb\.nuget\packages\microsoft.netcore.universalwindowsplatform\6.2.10\ref\uap10.0.15138\System.Runtime.Serialization.Json.dll    ß]˙πª◊!System.Runtime.Serialization.Json                        Ä     êfile:///C:/Users/jermb/.nuget/packages/microsoft.netcore.universalwindowsplatform/6.2.10/ref/uap10.0.15138/System.Runtime.Serialization.Json.dll†    $  Ä  î      $  RSA1     —˙WƒÆŸ£.Ñ™Æ˝ÈË˝jÏèá˚vlÉLôí≤;ÁöŸ’‹¡›ö“6!êr<˘Äïƒ·wè∆wO)Ë2íÍÏ‰Ë!¿•ÔËÒd\Lì¡´ô(]b,™e,˙÷=t]o-ÂÒ~^Øƒñ=&äCe m¿ì4MZ“ì   ∞?_’
+:dSystem.Runtime.Serialization.Json, Version=4.0.4.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a       System.Runtime                                    ∞?_’
+:         System.Runtime.Serialization.Xml                                    ∞?_’
+:        System.Xml.ReaderWriter                                    ∞?_’
+:            
+v4.0.30319 éC:\Users\jermb\.nuget\packages\microsoft.netcore.universalwindowsplatform\6.2.10\ref\uap10.0.15138\System.Runtime.Serialization.Primitives.dll    ß]˙πª◊'System.Runtime.Serialization.Primitives                       Ä     ñfile:///C:/Users/jermb/.nuget/packages/microsoft.netcore.universalwindowsplatform/6.2.10/ref/uap10.0.15138/System.Runtime.Serialization.Primitives.dll†    $  Ä  î      $  RSA1     —˙WƒÆŸ£.Ñ™Æ˝ÈË˝jÏèá˚vlÉLôí≤;ÁöŸ’‹¡›ö“6!êr<˘Äïƒ·wè∆wO)Ë2íÍÏ‰Ë!¿•ÔËÒd\Lì¡´ô(]b,™e,˙÷=t]o-ÂÒ~^Øƒñ=&äCe m¿ì4MZ“ì   ∞?_’
+:jSystem.Runtime.Serialization.Primitives, Version=4.2.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a       System.Runtime                                    ∞?_’
+:            
+v4.0.30319 áC:\Users\jermb\.nuget\packages\microsoft.netcore.universalwindowsplatform\6.2.10\ref\uap10.0.15138\System.Runtime.Serialization.Xml.dll    ß]˙πª◊ System.Runtime.Serialization.Xml                       Ä     èfile:///C:/Users/jermb/.nuget/packages/microsoft.netcore.universalwindowsplatform/6.2.10/ref/uap10.0.15138/System.Runtime.Serialization.Xml.dll†    $  Ä  î      $  RSA1     —˙WƒÆŸ£.Ñ™Æ˝ÈË˝jÏèá˚vlÉLôí≤;ÁöŸ’‹¡›ö“6!êr<˘Äïƒ·wè∆wO)Ë2íÍÏ‰Ë!¿•ÔËÒd\Lì¡´ô(]b,™e,˙÷=t]o-ÂÒ~^Øƒñ=&äCe m¿ì4MZ“ì   ∞?_’
+:cSystem.Runtime.Serialization.Xml, Version=4.1.4.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a       System.Runtime                                    ∞?_’
+:        System.Xml.ReaderWriter                                    ∞?_’
+:        'System.Runtime.Serialization.Primitives                                    ∞?_’
+:            
+v4.0.30319 ÉC:\Users\jermb\.nuget\packages\microsoft.netcore.universalwindowsplatform\6.2.10\ref\uap10.0.15138\System.Runtime.Serialization.dll    ß]˙πª◊System.Runtime.Serialization                        Ä     ãfile:///C:/Users/jermb/.nuget/packages/microsoft.netcore.universalwindowsplatform/6.2.10/ref/uap10.0.15138/System.Runtime.Serialization.dll                     ∑z\V4‡â_System.Runtime.Serialization, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089       System.Runtime                                       ∞?_’
+:        'System.Runtime.Serialization.Primitives                                       ∞?_’
+:         System.Runtime.Serialization.Xml                                       ∞?_’
+:        !System.Runtime.Serialization.Json                                       ∞?_’
+:            
+v4.0.30319 åC:\Users\jermb\.nuget\packages\microsoft.netcore.universalwindowsplatform\6.2.10\ref\uap10.0.15138\System.Runtime.WindowsRuntime.UI.Xaml.dll    ß]˙πª◊%System.Runtime.WindowsRuntime.UI.Xaml                        Ä     îfile:///C:/Users/jermb/.nuget/packages/microsoft.netcore.universalwindowsplatform/6.2.10/ref/uap10.0.15138/System.Runtime.WindowsRuntime.UI.Xaml.dll                     ∑z\V4‡âhSystem.Runtime.WindowsRuntime.UI.Xaml, Version=4.0.4.0, Culture=neutral, PublicKeyToken=b77a5c561934e089       System.Runtime                                    ∞?_’
+:        System.Runtime.WindowsRuntime                                     ∑z\V4‡â            
+v4.0.30319 ÑC:\Users\jermb\.nuget\packages\microsoft.netcore.universalwindowsplatform\6.2.10\ref\uap10.0.15138\System.Runtime.WindowsRuntime.dll    ß]˙πª◊System.Runtime.WindowsRuntime                        Ä     åfile:///C:/Users/jermb/.nuget/packages/microsoft.netcore.universalwindowsplatform/6.2.10/ref/uap10.0.15138/System.Runtime.WindowsRuntime.dll                     ∑z\V4‡âaSystem.Runtime.WindowsRuntime, Version=4.0.14.0, Culture=neutral, PublicKeyToken=b77a5c561934e089       System.Runtime                                    ∞?_’
+:        Windowsˇ   ˇ   ˇ   ˇ                                   System.Runtime.Extensions                                    ∞?_’
+:            
+v4.0.30319 uC:\Users\jermb\.nuget\packages\microsoft.netcore.universalwindowsplatform\6.2.10\ref\uap10.0.15138\System.Runtime.dll    ß]˙πª◊System.Runtime                       Ä     }file:///C:/Users/jermb/.nuget/packages/microsoft.netcore.universalwindowsplatform/6.2.10/ref/uap10.0.15138/System.Runtime.dll†    $  Ä  î      $  RSA1     —˙WƒÆŸ£.Ñ™Æ˝ÈË˝jÏèá˚vlÉLôí≤;ÁöŸ’‹¡›ö“6!êr<˘Äïƒ·wè∆wO)Ë2íÍÏ‰Ë!¿•ÔËÒd\Lì¡´ô(]b,™e,˙÷=t]o-ÂÒ~^Øƒñ=&äCe m¿ì4MZ“ì   ∞?_’
+:QSystem.Runtime, Version=4.2.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a            
+v4.0.30319 ÑC:\Users\jermb\.nuget\packages\microsoft.netcore.universalwindowsplatform\6.2.10\ref\uap10.0.15138\System.Security.AccessControl.dll    ß]˙πª◊System.Security.AccessControl                       Ä     åfile:///C:/Users/jermb/.nuget/packages/microsoft.netcore.universalwindowsplatform/6.2.10/ref/uap10.0.15138/System.Security.AccessControl.dll†    $  Ä  î      $  RSA1     —˙WƒÆŸ£.Ñ™Æ˝ÈË˝jÏèá˚vlÉLôí≤;ÁöŸ’‹¡›ö“6!êr<˘Äïƒ·wè∆wO)Ë2íÍÏ‰Ë!¿•ÔËÒd\Lì¡´ô(]b,™e,˙÷=t]o-ÂÒ~^Øƒñ=&äCe m¿ì4MZ“ì   ∞?_’
+:`System.Security.AccessControl, Version=4.1.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a       netstandard                                      Ã{ˇÕ-›Q        !System.Security.Principal.Windows                                    ∞?_’
+:            
+v4.0.30319 }C:\Users\jermb\.nuget\packages\microsoft.netcore.universalwindowsplatform\6.2.10\ref\uap10.0.15138\System.Security.Claims.dll    ß]˙πª◊System.Security.Claims                       Ä     Öfile:///C:/Users/jermb/.nuget/packages/microsoft.netcore.universalwindowsplatform/6.2.10/ref/uap10.0.15138/System.Security.Claims.dll†    $  Ä  î      $  RSA1     —˙WƒÆŸ£.Ñ™Æ˝ÈË˝jÏèá˚vlÉLôí≤;ÁöŸ’‹¡›ö“6!êr<˘Äïƒ·wè∆wO)Ë2íÍÏ‰Ë!¿•ÔËÒd\Lì¡´ô(]b,™e,˙÷=t]o-ÂÒ~^Øƒñ=&äCe m¿ì4MZ“ì   ∞?_’
+:YSystem.Security.Claims, Version=4.1.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a       System.Runtime                                    ∞?_’
+:        System.Security.Principal                                    ∞?_’
+:        System.Runtime.Extensions                                    ∞?_’
+:            
+v4.0.30319 éC:\Users\jermb\.nuget\packages\microsoft.netcore.universalwindowsplatform\6.2.10\ref\uap10.0.15138\System.Security.Cryptography.Algorithms.dll    ß]˙πª◊'System.Security.Cryptography.Algorithms                       Ä     ñfile:///C:/Users/jermb/.nuget/packages/microsoft.netcore.universalwindowsplatform/6.2.10/ref/uap10.0.15138/System.Security.Cryptography.Algorithms.dll†    $  Ä  î      $  RSA1     —˙WƒÆŸ£.Ñ™Æ˝ÈË˝jÏèá˚vlÉLôí≤;ÁöŸ’‹¡›ö“6!êr<˘Äïƒ·wè∆wO)Ë2íÍÏ‰Ë!¿•ÔËÒd\Lì¡´ô(]b,™e,˙÷=t]o-ÂÒ~^Øƒñ=&äCe m¿ì4MZ“ì   ∞?_’
+:jSystem.Security.Cryptography.Algorithms, Version=4.3.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a       System.Runtime                                    ∞?_’
+:        'System.Security.Cryptography.Primitives                                    ∞?_’
+:        %System.Security.Cryptography.Encoding                                    ∞?_’
+:        System.Runtime.Extensions                                    ∞?_’
+:            
+v4.0.30319 áC:\Users\jermb\.nuget\packages\microsoft.netcore.universalwindowsplatform\6.2.10\ref\uap10.0.15138\System.Security.Cryptography.Cng.dll    ß]˙πª◊ System.Security.Cryptography.Cng                       Ä     èfile:///C:/Users/jermb/.nuget/packages/microsoft.netcore.universalwindowsplatform/6.2.10/ref/uap10.0.15138/System.Security.Cryptography.Cng.dll†    $  Ä  î      $  RSA1     —˙WƒÆŸ£.Ñ™Æ˝ÈË˝jÏèá˚vlÉLôí≤;ÁöŸ’‹¡›ö“6!êr<˘Äïƒ·wè∆wO)Ë2íÍÏ‰Ë!¿•ÔËÒd\Lì¡´ô(]b,™e,˙÷=t]o-ÂÒ~^Øƒñ=&äCe m¿ì4MZ“ì   ∞?_’
+:cSystem.Security.Cryptography.Cng, Version=4.3.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a       System.Runtime                                    ∞?_’
+:        'System.Security.Cryptography.Algorithms                                    ∞?_’
+:        'System.Security.Cryptography.Primitives                                    ∞?_’
+:            
+v4.0.30319 áC:\Users\jermb\.nuget\packages\microsoft.netcore.universalwindowsplatform\6.2.10\ref\uap10.0.15138\System.Security.Cryptography.Csp.dll    ß]˙πª◊ System.Security.Cryptography.Csp                       Ä     èfile:///C:/Users/jermb/.nuget/packages/microsoft.netcore.universalwindowsplatform/6.2.10/ref/uap10.0.15138/System.Security.Cryptography.Csp.dll†    $  Ä  î      $  RSA1     —˙WƒÆŸ£.Ñ™Æ˝ÈË˝jÏèá˚vlÉLôí≤;ÁöŸ’‹¡›ö“6!êr<˘Äïƒ·wè∆wO)Ë2íÍÏ‰Ë!¿•ÔËÒd\Lì¡´ô(]b,™e,˙÷=t]o-ÂÒ~^Øƒñ=&äCe m¿ì4MZ“ì   ∞?_’
+:cSystem.Security.Cryptography.Csp, Version=4.1.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a       System.Runtime                                    ∞?_’
+:        System.Runtime.InteropServices                                    ∞?_’
+:        'System.Security.Cryptography.Algorithms                                    ∞?_’
+:        'System.Security.Cryptography.Primitives                                    ∞?_’
+:            
+v4.0.30319 åC:\Users\jermb\.nuget\packages\microsoft.netcore.universalwindowsplatform\6.2.10\ref\uap10.0.15138\System.Security.Cryptography.Encoding.dll    ß]˙πª◊%System.Security.Cryptography.Encoding                       Ä     îfile:///C:/Users/jermb/.nuget/packages/microsoft.netcore.universalwindowsplatform/6.2.10/ref/uap10.0.15138/System.Security.Cryptography.Encoding.dll†    $  Ä  î      $  RSA1     —˙WƒÆŸ£.Ñ™Æ˝ÈË˝jÏèá˚vlÉLôí≤;ÁöŸ’‹¡›ö“6!êr<˘Äïƒ·wè∆wO)Ë2íÍÏ‰Ë!¿•ÔËÒd\Lì¡´ô(]b,™e,˙÷=t]o-ÂÒ~^Øƒñ=&äCe m¿ì4MZ“ì   ∞?_’
+:hSystem.Security.Cryptography.Encoding, Version=4.1.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a       System.Runtime                                    ∞?_’
+:        'System.Security.Cryptography.Primitives                                    ∞?_’
+:            
+v4.0.30319 éC:\Users\jermb\.nuget\packages\microsoft.netcore.universalwindowsplatform\6.2.10\ref\uap10.0.15138\System.Security.Cryptography.Primitives.dll    ß]˙πª◊'System.Security.Cryptography.Primitives                       Ä     ñfile:///C:/Users/jermb/.nuget/packages/microsoft.netcore.universalwindowsplatform/6.2.10/ref/uap10.0.15138/System.Security.Cryptography.Primitives.dll†    $  Ä  î      $  RSA1     —˙WƒÆŸ£.Ñ™Æ˝ÈË˝jÏèá˚vlÉLôí≤;ÁöŸ’‹¡›ö“6!êr<˘Äïƒ·wè∆wO)Ë2íÍÏ‰Ë!¿•ÔËÒd\Lì¡´ô(]b,™e,˙÷=t]o-ÂÒ~^Øƒñ=&äCe m¿ì4MZ“ì   ∞?_’
+:jSystem.Security.Cryptography.Primitives, Version=4.1.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a       System.Runtime                                    ∞?_’
+:            
+v4.0.30319 îC:\Users\jermb\.nuget\packages\microsoft.netcore.universalwindowsplatform\6.2.10\ref\uap10.0.15138\System.Security.Cryptography.X509Certificates.dll    ß]˙πª◊-System.Security.Cryptography.X509Certificates                       Ä     úfile:///C:/Users/jermb/.nuget/packages/microsoft.netcore.universalwindowsplatform/6.2.10/ref/uap10.0.15138/System.Security.Cryptography.X509Certificates.dll†    $  Ä  î      $  RSA1     —˙WƒÆŸ£.Ñ™Æ˝ÈË˝jÏèá˚vlÉLôí≤;ÁöŸ’‹¡›ö“6!êr<˘Äïƒ·wè∆wO)Ë2íÍÏ‰Ë!¿•ÔËÒd\Lì¡´ô(]b,™e,˙÷=t]o-ÂÒ~^Øƒñ=&äCe m¿ì4MZ“ì   ∞?_’
+:pSystem.Security.Cryptography.X509Certificates, Version=4.2.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a       System.Runtime                                    ∞?_’
+:        System.Runtime.InteropServices                                    ∞?_’
+:        'System.Security.Cryptography.Algorithms                                    ∞?_’
+:        'System.Security.Cryptography.Primitives                                    ∞?_’
+:        %System.Security.Cryptography.Encoding                                    ∞?_’
+:        System.Net.Primitives                                    ∞?_’
+:        System.Collections.NonGeneric                                    ∞?_’
+:            
+v4.0.30319 àC:\Users\jermb\.nuget\packages\microsoft.netcore.universalwindowsplatform\6.2.10\ref\uap10.0.15138\System.Security.Principal.Windows.dll    ß]˙πª◊!System.Security.Principal.Windows                       Ä     êfile:///C:/Users/jermb/.nuget/packages/microsoft.netcore.universalwindowsplatform/6.2.10/ref/uap10.0.15138/System.Security.Principal.Windows.dll†    $  Ä  î      $  RSA1     —˙WƒÆŸ£.Ñ™Æ˝ÈË˝jÏèá˚vlÉLôí≤;ÁöŸ’‹¡›ö“6!êr<˘Äïƒ·wè∆wO)Ë2íÍÏ‰Ë!¿•ÔËÒd\Lì¡´ô(]b,™e,˙÷=t]o-ÂÒ~^Øƒñ=&äCe m¿ì4MZ“ì   ∞?_’
+:dSystem.Security.Principal.Windows, Version=4.1.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a       netstandard                                      Ã{ˇÕ-›Q            
+v4.0.30319 ÄC:\Users\jermb\.nuget\packages\microsoft.netcore.universalwindowsplatform\6.2.10\ref\uap10.0.15138\System.Security.Principal.dll    ß]˙πª◊System.Security.Principal                       Ä     àfile:///C:/Users/jermb/.nuget/packages/microsoft.netcore.universalwindowsplatform/6.2.10/ref/uap10.0.15138/System.Security.Principal.dll†    $  Ä  î      $  RSA1     —˙WƒÆŸ£.Ñ™Æ˝ÈË˝jÏèá˚vlÉLôí≤;ÁöŸ’‹¡›ö“6!êr<˘Äïƒ·wè∆wO)Ë2íÍÏ‰Ë!¿•ÔËÒd\Lì¡´ô(]b,™e,˙÷=t]o-ÂÒ~^Øƒñ=&äCe m¿ì4MZ“ì   ∞?_’
+:\System.Security.Principal, Version=4.1.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a       System.Runtime                                    ∞?_’
+:            
+v4.0.30319 ÉC:\Users\jermb\.nuget\packages\microsoft.netcore.universalwindowsplatform\6.2.10\ref\uap10.0.15138\System.Security.SecureString.dll    ß]˙πª◊System.Security.SecureString                       Ä     ãfile:///C:/Users/jermb/.nuget/packages/microsoft.netcore.universalwindowsplatform/6.2.10/ref/uap10.0.15138/System.Security.SecureString.dll†    $  Ä  î      $  RSA1     —˙WƒÆŸ£.Ñ™Æ˝ÈË˝jÏèá˚vlÉLôí≤;ÁöŸ’‹¡›ö“6!êr<˘Äïƒ·wè∆wO)Ë2íÍÏ‰Ë!¿•ÔËÒd\Lì¡´ô(]b,™e,˙÷=t]o-ÂÒ~^Øƒñ=&äCe m¿ì4MZ“ì   ∞?_’
+:_System.Security.SecureString, Version=4.1.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a       System.Runtime                                    ∞?_’
+:        System.Runtime.InteropServices                                    ∞?_’
+:            
+v4.0.30319 vC:\Users\jermb\.nuget\packages\microsoft.netcore.universalwindowsplatform\6.2.10\ref\uap10.0.15138\System.Security.dll    ß]˙πª◊System.Security                        Ä     ~file:///C:/Users/jermb/.nuget/packages/microsoft.netcore.universalwindowsplatform/6.2.10/ref/uap10.0.15138/System.Security.dll†    $  Ä  î      $  RSA1     —˙WƒÆŸ£.Ñ™Æ˝ÈË˝jÏèá˚vlÉLôí≤;ÁöŸ’‹¡›ö“6!êr<˘Äïƒ·wè∆wO)Ë2íÍÏ‰Ë!¿•ÔËÒd\Lì¡´ô(]b,™e,˙÷=t]o-ÂÒ~^Øƒñ=&äCe m¿ì4MZ“ì   ∞?_’
+:RSystem.Security, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a       System.Runtime                                       ∞?_’
+:        !System.Security.Cryptography.Pkcs                                       ∞?_’
+:        *System.Security.Cryptography.ProtectedData                                       ∞?_’
+:         System.Security.Cryptography.Xml                                       Ã{ˇÕ-›Q            
+v4.0.30319 ÅC:\Users\jermb\.nuget\packages\microsoft.netcore.universalwindowsplatform\6.2.10\ref\uap10.0.15138\System.ServiceModel.Duplex.dll    ß]˙πª◊System.ServiceModel.Duplex                       Ä     âfile:///C:/Users/jermb/.nuget/packages/microsoft.netcore.universalwindowsplatform/6.2.10/ref/uap10.0.15138/System.ServiceModel.Duplex.dll†    $  Ä  î      $  RSA1     —˙WƒÆŸ£.Ñ™Æ˝ÈË˝jÏèá˚vlÉLôí≤;ÁöŸ’‹¡›ö“6!êr<˘Äïƒ·wè∆wO)Ë2íÍÏ‰Ë!¿•ÔËÒd\Lì¡´ô(]b,™e,˙÷=t]o-ÂÒ~^Øƒñ=&äCe m¿ì4MZ“ì   ∞?_’
+:]System.ServiceModel.Duplex, Version=4.5.0.4, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a       System.Runtime                                    ∞?_’
+:        System.ServiceModel.Primitives                                    ∞?_’
+:        System.Threading                                    ∞?_’
+:            
+v4.0.30319 C:\Users\jermb\.nuget\packages\microsoft.netcore.universalwindowsplatform\6.2.10\ref\uap10.0.15138\System.ServiceModel.Http.dll    ß]˙πª◊System.ServiceModel.Http                       Ä     áfile:///C:/Users/jermb/.nuget/packages/microsoft.netcore.universalwindowsplatform/6.2.10/ref/uap10.0.15138/System.ServiceModel.Http.dll†    $  Ä  î      $  RSA1     —˙WƒÆŸ£.Ñ™Æ˝ÈË˝jÏèá˚vlÉLôí≤;ÁöŸ’‹¡›ö“6!êr<˘Äïƒ·wè∆wO)Ë2íÍÏ‰Ë!¿•ÔËÒd\Lì¡´ô(]b,™e,˙÷=t]o-ÂÒ~^Øƒñ=&äCe m¿ì4MZ“ì   ∞?_’
+:[System.ServiceModel.Http, Version=4.5.0.4, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a       System.Runtime                                    ∞?_’
+:        System.ServiceModel.Primitives                                    ∞?_’
+:         System.Runtime.Serialization.Xml                                    ∞?_’
+:        #System.ComponentModel.TypeConverter                                    ∞?_’
+:        System.Net.WebHeaderCollection                                    ∞?_’
+:        System.Net.Primitives                                    ∞?_’
+:            
+v4.0.30319 ÅC:\Users\jermb\.nuget\packages\microsoft.netcore.universalwindowsplatform\6.2.10\ref\uap10.0.15138\System.ServiceModel.NetTcp.dll    ß]˙πª◊System.ServiceModel.NetTcp                       Ä     âfile:///C:/Users/jermb/.nuget/packages/microsoft.netcore.universalwindowsplatform/6.2.10/ref/uap10.0.15138/System.ServiceModel.NetTcp.dll†    $  Ä  î      $  RSA1     —˙WƒÆŸ£.Ñ™Æ˝ÈË˝jÏèá˚vlÉLôí≤;ÁöŸ’‹¡›ö“6!êr<˘Äïƒ·wè∆wO)Ë2íÍÏ‰Ë!¿•ÔËÒd\Lì¡´ô(]b,™e,˙÷=t]o-ÂÒ~^Øƒñ=&äCe m¿ì4MZ“ì   ∞?_’
+:]System.ServiceModel.NetTcp, Version=4.5.0.4, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a       System.Runtime                                    ∞?_’
+:        System.ServiceModel.Primitives                                    ∞?_’
+:         System.Runtime.Serialization.Xml                                    ∞?_’
+:        System.Net.Primitives                                    ∞?_’
+:            
+v4.0.30319 ÖC:\Users\jermb\.nuget\packages\microsoft.netcore.universalwindowsplatform\6.2.10\ref\uap10.0.15138\System.ServiceModel.Primitives.dll    ß]˙πª◊System.ServiceModel.Primitives                       Ä     çfile:///C:/Users/jermb/.nuget/packages/microsoft.netcore.universalwindowsplatform/6.2.10/ref/uap10.0.15138/System.ServiceModel.Primitives.dll†    $  Ä  î      $  RSA1     —˙WƒÆŸ£.Ñ™Æ˝ÈË˝jÏèá˚vlÉLôí≤;ÁöŸ’‹¡›ö“6!êr<˘Äïƒ·wè∆wO)Ë2íÍÏ‰Ë!¿•ÔËÒd\Lì¡´ô(]b,™e,˙÷=t]o-ÂÒ~^Øƒñ=&äCe m¿ì4MZ“ì   ∞?_’
+:aSystem.ServiceModel.Primitives, Version=4.5.0.4, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a       System.Runtime                                    ∞?_’
+:        System.Threading                                    ∞?_’
+:        %System.ComponentModel.EventBasedAsync                                    ∞?_’
+:         System.Runtime.Serialization.Xml                                    ∞?_’
+:        'System.Runtime.Serialization.Primitives                                    ∞?_’
+:        System.Net.Primitives                                    ∞?_’
+:        System.Security.Principal                                    ∞?_’
+:        -System.Security.Cryptography.X509Certificates                                    ∞?_’
+:        System.Collections                                    ∞?_’
+:        System.ObjectModel                                    ∞?_’
+:        System.Xml.ReaderWriter                                    ∞?_’
+:        System.Xml.XmlSerializer                                    ∞?_’
+:            
+v4.0.30319 ÉC:\Users\jermb\.nuget\packages\microsoft.netcore.universalwindowsplatform\6.2.10\ref\uap10.0.15138\System.ServiceModel.Security.dll    ß]˙πª◊System.ServiceModel.Security                       Ä     ãfile:///C:/Users/jermb/.nuget/packages/microsoft.netcore.universalwindowsplatform/6.2.10/ref/uap10.0.15138/System.ServiceModel.Security.dll†    $  Ä  î      $  RSA1     —˙WƒÆŸ£.Ñ™Æ˝ÈË˝jÏèá˚vlÉLôí≤;ÁöŸ’‹¡›ö“6!êr<˘Äïƒ·wè∆wO)Ë2íÍÏ‰Ë!¿•ÔËÒd\Lì¡´ô(]b,™e,˙÷=t]o-ÂÒ~^Øƒñ=&äCe m¿ì4MZ“ì   ∞?_’
+:_System.ServiceModel.Security, Version=4.5.0.4, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a       System.Runtime                                    ∞?_’
+:        System.ServiceModel.Primitives                                    ∞?_’
+:         System.Runtime.Serialization.Xml                                    ∞?_’
+:            
+v4.0.30319 ~C:\Users\jermb\.nuget\packages\microsoft.netcore.universalwindowsplatform\6.2.10\ref\uap10.0.15138\System.ServiceModel.Web.dll    ß]˙πª◊System.ServiceModel.Web                        Ä     Üfile:///C:/Users/jermb/.nuget/packages/microsoft.netcore.universalwindowsplatform/6.2.10/ref/uap10.0.15138/System.ServiceModel.Web.dll†    $  Ä  î      $  RSA1     µ¸êÁgáw:èﬁâ8»‘∫eπ `Y>ñƒíeàú¡?Îµ?¨1Æ”3≈Ó`!g-óÍ1®ÆΩ†/%ÿ}∫o…˝Yé‘⁄5‰L9åECË„;Ñ&=Æ…ıñÉoó»˜GPÂó\d‚üEﬁÙk*+G≠√e+ı√]©   1ø8V≠6N5ZSystem.ServiceModel.Web, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35       System.Runtime                                       ∞?_’
+:        !System.Runtime.Serialization.Json                                       ∞?_’
+:            
+v4.0.30319 zC:\Users\jermb\.nuget\packages\microsoft.netcore.universalwindowsplatform\6.2.10\ref\uap10.0.15138\System.ServiceModel.dll    ß]˙πª◊System.ServiceModel                        Ä     Çfile:///C:/Users/jermb/.nuget/packages/microsoft.netcore.universalwindowsplatform/6.2.10/ref/uap10.0.15138/System.ServiceModel.dll                     ∑z\V4‡âVSystem.ServiceModel, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089       System.Runtime                                       ∞?_’
+:        System.ServiceModel.Primitives                                       ∞?_’
+:        System.ServiceModel.Http                                       ∞?_’
+:        System.ServiceModel.Duplex                                       ∞?_’
+:        System.ServiceModel.NetTcp                                       ∞?_’
+:        System.ServiceModel.Security                                       ∞?_’
+:        System.ServiceModel.Syndication                                       Ã{ˇÕ-›Q            
+v4.0.30319 |C:\Users\jermb\.nuget\packages\microsoft.netcore.universalwindowsplatform\6.2.10\ref\uap10.0.15138\System.ServiceProcess.dll    ß]˙πª◊System.ServiceProcess                        Ä     Ñfile:///C:/Users/jermb/.nuget/packages/microsoft.netcore.universalwindowsplatform/6.2.10/ref/uap10.0.15138/System.ServiceProcess.dll†    $  Ä  î      $  RSA1     —˙WƒÆŸ£.Ñ™Æ˝ÈË˝jÏèá˚vlÉLôí≤;ÁöŸ’‹¡›ö“6!êr<˘Äïƒ·wè∆wO)Ë2íÍÏ‰Ë!¿•ÔËÒd\Lì¡´ô(]b,™e,˙÷=t]o-ÂÒ~^Øƒñ=&äCe m¿ì4MZ“ì   ∞?_’
+:XSystem.ServiceProcess, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a       System.Runtime                                       ∞?_’
+:        'System.ServiceProcess.ServiceController                                       ∞?_’
+:            
+v4.0.30319 ÖC:\Users\jermb\.nuget\packages\microsoft.netcore.universalwindowsplatform\6.2.10\ref\uap10.0.15138\System.Text.Encoding.CodePages.dll    ß]˙πª◊System.Text.Encoding.CodePages                       Ä     çfile:///C:/Users/jermb/.nuget/packages/microsoft.netcore.universalwindowsplatform/6.2.10/ref/uap10.0.15138/System.Text.Encoding.CodePages.dll†    $  Ä  î      $  RSA1     —˙WƒÆŸ£.Ñ™Æ˝ÈË˝jÏèá˚vlÉLôí≤;ÁöŸ’‹¡›ö“6!êr<˘Äïƒ·wè∆wO)Ë2íÍÏ‰Ë!¿•ÔËÒd\Lì¡´ô(]b,™e,˙÷=t]o-ÂÒ~^Øƒñ=&äCe m¿ì4MZ“ì   ∞?_’
+:aSystem.Text.Encoding.CodePages, Version=4.1.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a       netstandard                                      Ã{ˇÕ-›Q            
+v4.0.30319 ÜC:\Users\jermb\.nuget\packages\microsoft.netcore.universalwindowsplatform\6.2.10\ref\uap10.0.15138\System.Text.Encoding.Extensions.dll    ß]˙πª◊System.Text.Encoding.Extensions                       Ä     éfile:///C:/Users/jermb/.nuget/packages/microsoft.netcore.universalwindowsplatform/6.2.10/ref/uap10.0.15138/System.Text.Encoding.Extensions.dll†    $  Ä  î      $  RSA1     —˙WƒÆŸ£.Ñ™Æ˝ÈË˝jÏèá˚vlÉLôí≤;ÁöŸ’‹¡›ö“6!êr<˘Äïƒ·wè∆wO)Ë2íÍÏ‰Ë!¿•ÔËÒd\Lì¡´ô(]b,™e,˙÷=t]o-ÂÒ~^Øƒñ=&äCe m¿ì4MZ“ì   ∞?_’
+:bSystem.Text.Encoding.Extensions, Version=4.1.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a       System.Runtime                                    ∞?_’
+:            
+v4.0.30319 {C:\Users\jermb\.nuget\packages\microsoft.netcore.universalwindowsplatform\6.2.10\ref\uap10.0.15138\System.Text.Encoding.dll    ß]˙πª◊System.Text.Encoding                       Ä     Éfile:///C:/Users/jermb/.nuget/packages/microsoft.netcore.universalwindowsplatform/6.2.10/ref/uap10.0.15138/System.Text.Encoding.dll†    $  Ä  î      $  RSA1     —˙WƒÆŸ£.Ñ™Æ˝ÈË˝jÏèá˚vlÉLôí≤;ÁöŸ’‹¡›ö“6!êr<˘Äïƒ·wè∆wO)Ë2íÍÏ‰Ë!¿•ÔËÒd\Lì¡´ô(]b,™e,˙÷=t]o-ÂÒ~^Øƒñ=&äCe m¿ì4MZ“ì   ∞?_’
+:WSystem.Text.Encoding, Version=4.1.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a       System.Runtime                                    ∞?_’
+:            
+v4.0.30319 ÖC:\Users\jermb\.nuget\packages\microsoft.netcore.universalwindowsplatform\6.2.10\ref\uap10.0.15138\System.Text.RegularExpressions.dll    ß]˙πª◊System.Text.RegularExpressions                       Ä     çfile:///C:/Users/jermb/.nuget/packages/microsoft.netcore.universalwindowsplatform/6.2.10/ref/uap10.0.15138/System.Text.RegularExpressions.dll†    $  Ä  î      $  RSA1     —˙WƒÆŸ£.Ñ™Æ˝ÈË˝jÏèá˚vlÉLôí≤;ÁöŸ’‹¡›ö“6!êr<˘Äïƒ·wè∆wO)Ë2íÍÏ‰Ë!¿•ÔËÒd\Lì¡´ô(]b,™e,˙÷=t]o-ÂÒ~^Øƒñ=&äCe m¿ì4MZ“ì   ∞?_’
+:aSystem.Text.RegularExpressions, Version=4.2.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a       System.Runtime                                    ∞?_’
+:        System.Runtime.Extensions                                    ∞?_’
+:            
+v4.0.30319 ÇC:\Users\jermb\.nuget\packages\microsoft.netcore.universalwindowsplatform\6.2.10\ref\uap10.0.15138\System.Threading.Overlapped.dll    ß]˙πª◊System.Threading.Overlapped                       Ä     äfile:///C:/Users/jermb/.nuget/packages/microsoft.netcore.universalwindowsplatform/6.2.10/ref/uap10.0.15138/System.Threading.Overlapped.dll†    $  Ä  î      $  RSA1     —˙WƒÆŸ£.Ñ™Æ˝ÈË˝jÏèá˚vlÉLôí≤;ÁöŸ’‹¡›ö“6!êr<˘Äïƒ·wè∆wO)Ë2íÍÏ‰Ë!¿•ÔËÒd\Lì¡´ô(]b,™e,˙÷=t]o-ÂÒ~^Øƒñ=&äCe m¿ì4MZ“ì   ∞?_’
+:^System.Threading.Overlapped, Version=4.1.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a       System.Runtime                                    ∞?_’
+:            
+v4.0.30319 ÜC:\Users\jermb\.nuget\packages\microsoft.netcore.universalwindowsplatform\6.2.10\ref\uap10.0.15138\System.Threading.Tasks.Dataflow.dll    ß]˙πª◊System.Threading.Tasks.Dataflow                       Ä     éfile:///C:/Users/jermb/.nuget/packages/microsoft.netcore.universalwindowsplatform/6.2.10/ref/uap10.0.15138/System.Threading.Tasks.Dataflow.dll†    $  Ä  î      $  RSA1     —˙WƒÆŸ£.Ñ™Æ˝ÈË˝jÏèá˚vlÉLôí≤;ÁöŸ’‹¡›ö“6!êr<˘Äïƒ·wè∆wO)Ë2íÍÏ‰Ë!¿•ÔËÒd\Lì¡´ô(]b,™e,˙÷=t]o-ÂÒ~^Øƒñ=&äCe m¿ì4MZ“ì   ∞?_’
+:bSystem.Threading.Tasks.Dataflow, Version=4.6.3.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a       netstandard                                      Ã{ˇÕ-›Q            
+v4.0.30319 ÜC:\Users\jermb\.nuget\packages\microsoft.netcore.universalwindowsplatform\6.2.10\ref\uap10.0.15138\System.Threading.Tasks.Parallel.dll    ß]˙πª◊System.Threading.Tasks.Parallel                        Ä     éfile:///C:/Users/jermb/.nuget/packages/microsoft.netcore.universalwindowsplatform/6.2.10/ref/uap10.0.15138/System.Threading.Tasks.Parallel.dll†    $  Ä  î      $  RSA1     —˙WƒÆŸ£.Ñ™Æ˝ÈË˝jÏèá˚vlÉLôí≤;ÁöŸ’‹¡›ö“6!êr<˘Äïƒ·wè∆wO)Ë2íÍÏ‰Ë!¿•ÔËÒd\Lì¡´ô(]b,™e,˙÷=t]o-ÂÒ~^Øƒñ=&äCe m¿ì4MZ“ì   ∞?_’
+:bSystem.Threading.Tasks.Parallel, Version=4.0.3.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a       System.Runtime                                    ∞?_’
+:        System.Collections.Concurrent                                     ∞?_’
+:            
+v4.0.30319 }C:\Users\jermb\.nuget\packages\microsoft.netcore.universalwindowsplatform\6.2.10\ref\uap10.0.15138\System.Threading.Tasks.dll    ß]˙πª◊System.Threading.Tasks                       Ä     Öfile:///C:/Users/jermb/.nuget/packages/microsoft.netcore.universalwindowsplatform/6.2.10/ref/uap10.0.15138/System.Threading.Tasks.dll†    $  Ä  î      $  RSA1     —˙WƒÆŸ£.Ñ™Æ˝ÈË˝jÏèá˚vlÉLôí≤;ÁöŸ’‹¡›ö“6!êr<˘Äïƒ·wè∆wO)Ë2íÍÏ‰Ë!¿•ÔËÒd\Lì¡´ô(]b,™e,˙÷=t]o-ÂÒ~^Øƒñ=&äCe m¿ì4MZ“ì   ∞?_’
+:YSystem.Threading.Tasks, Version=4.1.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a       System.Runtime                                    ∞?_’
+:            
+v4.0.30319 ~C:\Users\jermb\.nuget\packages\microsoft.netcore.universalwindowsplatform\6.2.10\ref\uap10.0.15138\System.Threading.Thread.dll    ß]˙πª◊System.Threading.Thread                       Ä     Üfile:///C:/Users/jermb/.nuget/packages/microsoft.netcore.universalwindowsplatform/6.2.10/ref/uap10.0.15138/System.Threading.Thread.dll†    $  Ä  î      $  RSA1     —˙WƒÆŸ£.Ñ™Æ˝ÈË˝jÏèá˚vlÉLôí≤;ÁöŸ’‹¡›ö“6!êr<˘Äïƒ·wè∆wO)Ë2íÍÏ‰Ë!¿•ÔËÒd\Lì¡´ô(]b,™e,˙÷=t]o-ÂÒ~^Øƒñ=&äCe m¿ì4MZ“ì   ∞?_’
+:ZSystem.Threading.Thread, Version=4.1.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a       System.Runtime                                    ∞?_’
+:        System.Threading                                    ∞?_’
+:        System.Security.Principal                                    ∞?_’
+:        System.Runtime.Extensions                                    ∞?_’
+:            
+v4.0.30319 ÇC:\Users\jermb\.nuget\packages\microsoft.netcore.universalwindowsplatform\6.2.10\ref\uap10.0.15138\System.Threading.ThreadPool.dll    ß]˙πª◊System.Threading.ThreadPool                       Ä     äfile:///C:/Users/jermb/.nuget/packages/microsoft.netcore.universalwindowsplatform/6.2.10/ref/uap10.0.15138/System.Threading.ThreadPool.dll†    $  Ä  î      $  RSA1     —˙WƒÆŸ£.Ñ™Æ˝ÈË˝jÏèá˚vlÉLôí≤;ÁöŸ’‹¡›ö“6!êr<˘Äïƒ·wè∆wO)Ë2íÍÏ‰Ë!¿•ÔËÒd\Lì¡´ô(]b,™e,˙÷=t]o-ÂÒ~^Øƒñ=&äCe m¿ì4MZ“ì   ∞?_’
+:^System.Threading.ThreadPool, Version=4.1.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a       System.Runtime                                    ∞?_’
+:        System.Threading.Overlapped                                    ∞?_’
+:            
+v4.0.30319 }C:\Users\jermb\.nuget\packages\microsoft.netcore.universalwindowsplatform\6.2.10\ref\uap10.0.15138\System.Threading.Timer.dll    ß]˙πª◊System.Threading.Timer                       Ä     Öfile:///C:/Users/jermb/.nuget/packages/microsoft.netcore.universalwindowsplatform/6.2.10/ref/uap10.0.15138/System.Threading.Timer.dll†    $  Ä  î      $  RSA1     —˙WƒÆŸ£.Ñ™Æ˝ÈË˝jÏèá˚vlÉLôí≤;ÁöŸ’‹¡›ö“6!êr<˘Äïƒ·wè∆wO)Ë2íÍÏ‰Ë!¿•ÔËÒd\Lì¡´ô(]b,™e,˙÷=t]o-ÂÒ~^Øƒñ=&äCe m¿ì4MZ“ì   ∞?_’
+:YSystem.Threading.Timer, Version=4.1.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a       System.Runtime                                    ∞?_’
+:            
+v4.0.30319 wC:\Users\jermb\.nuget\packages\microsoft.netcore.universalwindowsplatform\6.2.10\ref\uap10.0.15138\System.Threading.dll    ß]˙πª◊System.Threading                       Ä     file:///C:/Users/jermb/.nuget/packages/microsoft.netcore.universalwindowsplatform/6.2.10/ref/uap10.0.15138/System.Threading.dll†    $  Ä  î      $  RSA1     —˙WƒÆŸ£.Ñ™Æ˝ÈË˝jÏèá˚vlÉLôí≤;ÁöŸ’‹¡›ö“6!êr<˘Äïƒ·wè∆wO)Ë2íÍÏ‰Ë!¿•ÔËÒd\Lì¡´ô(]b,™e,˙÷=t]o-ÂÒ~^Øƒñ=&äCe m¿ì4MZ“ì   ∞?_’
+:SSystem.Threading, Version=4.1.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a       System.Runtime                                    ∞?_’
+:            
+v4.0.30319 ÄC:\Users\jermb\.nuget\packages\microsoft.netcore.universalwindowsplatform\6.2.10\ref\uap10.0.15138\System.Transactions.Local.dll    ß]˙πª◊System.Transactions.Local                        Ä     àfile:///C:/Users/jermb/.nuget/packages/microsoft.netcore.universalwindowsplatform/6.2.10/ref/uap10.0.15138/System.Transactions.Local.dll†    $  Ä  î      $  RSA1     KÜƒÀxTõ4∫∂; ‚;˛µ≥Ï9 t6ß„ÀŸ_œÖqU®íé™)Î˝œª≠;ß˛ßΩ£"ljç7
+L”˜Hknº"YÖ¶8GnıqÃí§a< ∏˙e÷Œ‡ÀÂÛc0…†AÉUüÔ$Ã)∆Ÿ„•A3:Ÿæ“+8À   Ã{ˇÕ-›Q\System.Transactions.Local, Version=4.0.1.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51       System.Runtime                                    ∞?_’
+:            
+v4.0.30319 zC:\Users\jermb\.nuget\packages\microsoft.netcore.universalwindowsplatform\6.2.10\ref\uap10.0.15138\System.Transactions.dll    ß]˙πª◊System.Transactions                        Ä     Çfile:///C:/Users/jermb/.nuget/packages/microsoft.netcore.universalwindowsplatform/6.2.10/ref/uap10.0.15138/System.Transactions.dll                     ∑z\V4‡âVSystem.Transactions, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089       System.Runtime                                       ∞?_’
+:        System.Transactions.Local                                       Ã{ˇÕ-›Q        System.Security.Permissions                                       Ã{ˇÕ-›Q            
+v4.0.30319 xC:\Users\jermb\.nuget\packages\microsoft.netcore.universalwindowsplatform\6.2.10\ref\uap10.0.15138\System.ValueTuple.dll    ß]˙πª◊System.ValueTuple                        Ä     Äfile:///C:/Users/jermb/.nuget/packages/microsoft.netcore.universalwindowsplatform/6.2.10/ref/uap10.0.15138/System.ValueTuple.dll†    $  Ä  î      $  RSA1     KÜƒÀxTõ4∫∂; ‚;˛µ≥Ï9 t6ß„ÀŸ_œÖqU®íé™)Î˝œª≠;ß˛ßΩ£"ljç7
+L”˜Hknº"YÖ¶8GnıqÃí§a< ∏˙e÷Œ‡ÀÂÛc0…†AÉUüÔ$Ã)∆Ÿ„•A3:Ÿæ“+8À   Ã{ˇÕ-›QTSystem.ValueTuple, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51       System.Runtime                                    ∞?_’
+:            
+v4.0.30319 }C:\Users\jermb\.nuget\packages\microsoft.netcore.universalwindowsplatform\6.2.10\ref\uap10.0.15138\System.Web.HttpUtility.dll    ß]˙πª◊System.Web.HttpUtility                        Ä     Öfile:///C:/Users/jermb/.nuget/packages/microsoft.netcore.universalwindowsplatform/6.2.10/ref/uap10.0.15138/System.Web.HttpUtility.dll†    $  Ä  î      $  RSA1     KÜƒÀxTõ4∫∂; ‚;˛µ≥Ï9 t6ß„ÀŸ_œÖqU®íé™)Î˝œª≠;ß˛ßΩ£"ljç7
+L”˜Hknº"YÖ¶8GnıqÃí§a< ∏˙e÷Œ‡ÀÂÛc0…†AÉUüÔ$Ã)∆Ÿ„•A3:Ÿæ“+8À   Ã{ˇÕ-›QYSystem.Web.HttpUtility, Version=4.0.1.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51       System.Runtime                                    ∞?_’
+:        System.Runtime.Extensions                                    ∞?_’
+:        System.Collections.Specialized                                    ∞?_’
+:            
+v4.0.30319 qC:\Users\jermb\.nuget\packages\microsoft.netcore.universalwindowsplatform\6.2.10\ref\uap10.0.15138\System.Web.dll    ß]˙πª◊
+System.Web                        Ä     yfile:///C:/Users/jermb/.nuget/packages/microsoft.netcore.universalwindowsplatform/6.2.10/ref/uap10.0.15138/System.Web.dll†    $  Ä  î      $  RSA1     —˙WƒÆŸ£.Ñ™Æ˝ÈË˝jÏèá˚vlÉLôí≤;ÁöŸ’‹¡›ö“6!êr<˘Äïƒ·wè∆wO)Ë2íÍÏ‰Ë!¿•ÔËÒd\Lì¡´ô(]b,™e,˙÷=t]o-ÂÒ~^Øƒñ=&äCe m¿ì4MZ“ì   ∞?_’
+:MSystem.Web, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a       System.Runtime                                       ∞?_’
+:        System.Web.HttpUtility                                       Ã{ˇÕ-›Q            
+v4.0.30319 uC:\Users\jermb\.nuget\packages\microsoft.netcore.universalwindowsplatform\6.2.10\ref\uap10.0.15138\System.Windows.dll    ß]˙πª◊System.Windows                        Ä     }file:///C:/Users/jermb/.nuget/packages/microsoft.netcore.universalwindowsplatform/6.2.10/ref/uap10.0.15138/System.Windows.dll†    $  Ä  î      $  RSA1     —˙WƒÆŸ£.Ñ™Æ˝ÈË˝jÏèá˚vlÉLôí≤;ÁöŸ’‹¡›ö“6!êr<˘Äïƒ·wè∆wO)Ë2íÍÏ‰Ë!¿•ÔËÒd\Lì¡´ô(]b,™e,˙÷=t]o-ÂÒ~^Øƒñ=&äCe m¿ì4MZ“ì   ∞?_’
+:QSystem.Windows, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a       System.Runtime                                       ∞?_’
+:        System.ObjectModel                                       ∞?_’
+:            
+v4.0.30319 vC:\Users\jermb\.nuget\packages\microsoft.netcore.universalwindowsplatform\6.2.10\ref\uap10.0.15138\System.Xml.Linq.dll    ß]˙πª◊System.Xml.Linq                        Ä     ~file:///C:/Users/jermb/.nuget/packages/microsoft.netcore.universalwindowsplatform/6.2.10/ref/uap10.0.15138/System.Xml.Linq.dll                     ∑z\V4‡âRSystem.Xml.Linq, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089       System.Runtime                                       ∞?_’
+:        System.Xml.XDocument                                       ∞?_’
+:        System.Xml.XPath.XDocument                                       ∞?_’
+:            
+v4.0.30319 ~C:\Users\jermb\.nuget\packages\microsoft.netcore.universalwindowsplatform\6.2.10\ref\uap10.0.15138\System.Xml.ReaderWriter.dll    ß]˙πª◊System.Xml.ReaderWriter                       Ä     Üfile:///C:/Users/jermb/.nuget/packages/microsoft.netcore.universalwindowsplatform/6.2.10/ref/uap10.0.15138/System.Xml.ReaderWriter.dll†    $  Ä  î      $  RSA1     —˙WƒÆŸ£.Ñ™Æ˝ÈË˝jÏèá˚vlÉLôí≤;ÁöŸ’‹¡›ö“6!êr<˘Äïƒ·wè∆wO)Ë2íÍÏ‰Ë!¿•ÔËÒd\Lì¡´ô(]b,™e,˙÷=t]o-ÂÒ~^Øƒñ=&äCe m¿ì4MZ“ì   ∞?_’
+:ZSystem.Xml.ReaderWriter, Version=4.2.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a       System.Runtime                                    ∞?_’
+:        System.Runtime.Extensions                                    ∞?_’
+:        System.Diagnostics.Debug                                    ∞?_’
+:        System.Net.Primitives                                    ∞?_’
+:        System.Collections.NonGeneric                                    ∞?_’
+:            
+v4.0.30319 C:\Users\jermb\.nuget\packages\microsoft.netcore.universalwindowsplatform\6.2.10\ref\uap10.0.15138\System.Xml.Serialization.dll    ß]˙πª◊System.Xml.Serialization                        Ä     áfile:///C:/Users/jermb/.nuget/packages/microsoft.netcore.universalwindowsplatform/6.2.10/ref/uap10.0.15138/System.Xml.Serialization.dll                     ∑z\V4‡â[System.Xml.Serialization, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089       System.Runtime                                       ∞?_’
+:        System.Xml.ReaderWriter                                       ∞?_’
+:        System.Xml.XmlSerializer                                       ∞?_’
+:            
+v4.0.30319 {C:\Users\jermb\.nuget\packages\microsoft.netcore.universalwindowsplatform\6.2.10\ref\uap10.0.15138\System.Xml.XDocument.dll    ß]˙πª◊System.Xml.XDocument                       Ä     Éfile:///C:/Users/jermb/.nuget/packages/microsoft.netcore.universalwindowsplatform/6.2.10/ref/uap10.0.15138/System.Xml.XDocument.dll†    $  Ä  î      $  RSA1     —˙WƒÆŸ£.Ñ™Æ˝ÈË˝jÏèá˚vlÉLôí≤;ÁöŸ’‹¡›ö“6!êr<˘Äïƒ·wè∆wO)Ë2íÍÏ‰Ë!¿•ÔËÒd\Lì¡´ô(]b,™e,˙÷=t]o-ÂÒ~^Øƒñ=&äCe m¿ì4MZ“ì   ∞?_’
+:WSystem.Xml.XDocument, Version=4.1.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a       System.Runtime                                    ∞?_’
+:        System.Xml.ReaderWriter                                    ∞?_’
+:        System.Runtime.Extensions                                    ∞?_’
+:            
+v4.0.30319 ÅC:\Users\jermb\.nuget\packages\microsoft.netcore.universalwindowsplatform\6.2.10\ref\uap10.0.15138\System.Xml.XPath.XDocument.dll    ß]˙πª◊System.Xml.XPath.XDocument                       Ä     âfile:///C:/Users/jermb/.nuget/packages/microsoft.netcore.universalwindowsplatform/6.2.10/ref/uap10.0.15138/System.Xml.XPath.XDocument.dll†    $  Ä  î      $  RSA1     —˙WƒÆŸ£.Ñ™Æ˝ÈË˝jÏèá˚vlÉLôí≤;ÁöŸ’‹¡›ö“6!êr<˘Äïƒ·wè∆wO)Ë2íÍÏ‰Ë!¿•ÔËÒd\Lì¡´ô(]b,™e,˙÷=t]o-ÂÒ~^Øƒñ=&äCe m¿ì4MZ“ì   ∞?_’
+:]System.Xml.XPath.XDocument, Version=4.1.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a       System.Runtime                                    ∞?_’
+:        System.Xml.ReaderWriter                                    ∞?_’
+:        System.Xml.XDocument                                    ∞?_’
+:            
+v4.0.30319 wC:\Users\jermb\.nuget\packages\microsoft.netcore.universalwindowsplatform\6.2.10\ref\uap10.0.15138\System.Xml.XPath.dll    ß]˙πª◊System.Xml.XPath                       Ä     file:///C:/Users/jermb/.nuget/packages/microsoft.netcore.universalwindowsplatform/6.2.10/ref/uap10.0.15138/System.Xml.XPath.dll†    $  Ä  î      $  RSA1     —˙WƒÆŸ£.Ñ™Æ˝ÈË˝jÏèá˚vlÉLôí≤;ÁöŸ’‹¡›ö“6!êr<˘Äïƒ·wè∆wO)Ë2íÍÏ‰Ë!¿•ÔËÒd\Lì¡´ô(]b,™e,˙÷=t]o-ÂÒ~^Øƒñ=&äCe m¿ì4MZ“ì   ∞?_’
+:SSystem.Xml.XPath, Version=4.1.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a       System.Runtime                                    ∞?_’
+:        System.Xml.ReaderWriter                                    ∞?_’
+:        System.Runtime.Extensions                                    ∞?_’
+:            
+v4.0.30319 }C:\Users\jermb\.nuget\packages\microsoft.netcore.universalwindowsplatform\6.2.10\ref\uap10.0.15138\System.Xml.XmlDocument.dll    ß]˙πª◊System.Xml.XmlDocument                       Ä     Öfile:///C:/Users/jermb/.nuget/packages/microsoft.netcore.universalwindowsplatform/6.2.10/ref/uap10.0.15138/System.Xml.XmlDocument.dll†    $  Ä  î      $  RSA1     —˙WƒÆŸ£.Ñ™Æ˝ÈË˝jÏèá˚vlÉLôí≤;ÁöŸ’‹¡›ö“6!êr<˘Äïƒ·wè∆wO)Ë2íÍÏ‰Ë!¿•ÔËÒd\Lì¡´ô(]b,™e,˙÷=t]o-ÂÒ~^Øƒñ=&äCe m¿ì4MZ“ì   ∞?_’
+:YSystem.Xml.XmlDocument, Version=4.1.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a       System.Runtime                                    ∞?_’
+:        System.Xml.ReaderWriter                                    ∞?_’
+:            
+v4.0.30319 C:\Users\jermb\.nuget\packages\microsoft.netcore.universalwindowsplatform\6.2.10\ref\uap10.0.15138\System.Xml.XmlSerializer.dll    ß]˙πª◊System.Xml.XmlSerializer                       Ä     áfile:///C:/Users/jermb/.nuget/packages/microsoft.netcore.universalwindowsplatform/6.2.10/ref/uap10.0.15138/System.Xml.XmlSerializer.dll†    $  Ä  î      $  RSA1     —˙WƒÆŸ£.Ñ™Æ˝ÈË˝jÏèá˚vlÉLôí≤;ÁöŸ’‹¡›ö“6!êr<˘Äïƒ·wè∆wO)Ë2íÍÏ‰Ë!¿•ÔËÒd\Lì¡´ô(]b,™e,˙÷=t]o-ÂÒ~^Øƒñ=&äCe m¿ì4MZ“ì   ∞?_’
+:[System.Xml.XmlSerializer, Version=4.1.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a       System.Runtime                                    ∞?_’
+:        System.Collections.Specialized                                    ∞?_’
+:        System.Xml.ReaderWriter                                    ∞?_’
+:        System.Collections.NonGeneric                                    ∞?_’
+:        System.Runtime.Extensions                                    ∞?_’
+:            
+v4.0.30319 qC:\Users\jermb\.nuget\packages\microsoft.netcore.universalwindowsplatform\6.2.10\ref\uap10.0.15138\System.Xml.dll    ß]˙πª◊
+System.Xml                        Ä     yfile:///C:/Users/jermb/.nuget/packages/microsoft.netcore.universalwindowsplatform/6.2.10/ref/uap10.0.15138/System.Xml.dll                     ∑z\V4‡âMSystem.Xml, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089       System.Runtime                                       ∞?_’
+:        System.Xml.ReaderWriter                                       ∞?_’
+:        System.Xml.XmlSerializer                                       ∞?_’
+:        System.Xml.XPath                                       ∞?_’
+:            
+v4.0.30319 mC:\Users\jermb\.nuget\packages\microsoft.netcore.universalwindowsplatform\6.2.10\ref\uap10.0.15138\System.dll    ß]˙πª◊System                        Ä     ufile:///C:/Users/jermb/.nuget/packages/microsoft.netcore.universalwindowsplatform/6.2.10/ref/uap10.0.15138/System.dll                     ∑z\V4‡âISystem, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089    .   System.Runtime                                       ∞?_’
+:        System.CodeDom                                       Ã{ˇÕ-›Q        System.Diagnostics.Process                                       ∞?_’
+:        -System.Security.Cryptography.X509Certificates                                       ∞?_’
+:        System.Diagnostics.Tools                                       ∞?_’
+:        System.Runtime.Extensions                                       ∞?_’
+:        System.Collections.Concurrent                                       ∞?_’
+:        System.Collections                                       ∞?_’
+:        System.ObjectModel                                       ∞?_’
+:        System.Collections.Specialized                                       ∞?_’
+:        System.Collections.NonGeneric                                       ∞?_’
+:        #System.ComponentModel.TypeConverter                                       ∞?_’
+:        %System.ComponentModel.EventBasedAsync                                       ∞?_’
+:         System.ComponentModel.Primitives                                       ∞?_’
+:        System.ComponentModel                                       ∞?_’
+:        Microsoft.Win32.Primitives                                       ∞?_’
+:        )System.Configuration.ConfigurationManager                                       Ã{ˇÕ-›Q        System.Diagnostics.TraceSource                                       ∞?_’
+:        System.Diagnostics.Debug                                       ∞?_’
+:        *System.Diagnostics.TextWriterTraceListener                                       ∞?_’
+:        System.Security.Permissions                                       Ã{ˇÕ-›Q        "System.Diagnostics.FileVersionInfo                                       ∞?_’
+:        System.IO.Compression                                       ∑z\V4‡â        System.IO.FileSystem.Watcher                                       ∞?_’
+:        System.IO.Ports                                       Ã{ˇÕ-›Q        System.Net.Requests                                       ∞?_’
+:        System.Net.Primitives                                       ∞?_’
+:        System.Net.HttpListener                                       Ã{ˇÕ-›Q        System.Net.ServicePoint                                       Ã{ˇÕ-›Q        System.Net.NameResolution                                       ∞?_’
+:        System.Net.WebClient                                       Ã{ˇÕ-›Q        System.Net.WebHeaderCollection                                       ∞?_’
+:        System.Net.WebProxy                                       Ã{ˇÕ-›Q        System.Net.Mail                                       Ã{ˇÕ-›Q        System.Net.NetworkInformation                                       ∞?_’
+:        System.Net.Ping                                       ∞?_’
+:        System.Net.Security                                       ∞?_’
+:        System.Net.Sockets                                       ∞?_’
+:        System.Net.WebSockets.Client                                       ∞?_’
+:        System.Net.WebSockets                                       ∞?_’
+:        System.Runtime.InteropServices                                       ∞?_’
+:        System.Threading.AccessControl                                       ∞?_’
+:        %System.Security.Cryptography.Encoding                                       ∞?_’
+:        System.Text.RegularExpressions                                       ∞?_’
+:        System.Threading                                       ∞?_’
+:        System.Threading.Thread                                       ∞?_’
+:            
+v4.0.30319 rC:\Users\jermb\.nuget\packages\microsoft.netcore.universalwindowsplatform\6.2.10\ref\uap10.0.15138\WindowsBase.dll    ß]˙πª◊WindowsBase                        Ä     zfile:///C:/Users/jermb/.nuget/packages/microsoft.netcore.universalwindowsplatform/6.2.10/ref/uap10.0.15138/WindowsBase.dll†    $  Ä  î      $  RSA1     µ¸êÁgáw:èﬁâ8»‘∫eπ `Y>ñƒíeàú¡?Îµ?¨1Æ”3≈Ó`!g-óÍ1®ÆΩ†/%ÿ}∫o…˝Yé‘⁄5‰L9åECË„;Ñ&=Æ…ıñÉoó»˜GPÂó\d‚üEﬁÙk*+G≠√e+ı√]©   1ø8V≠6N5NWindowsBase, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35       System.Runtime                                       ∞?_’
+:        System.ObjectModel                                       ∞?_’
+:        System.IO.Packaging                                       ∞?_’
+:            
+v4.0.30319 oC:\Users\jermb\.nuget\packages\microsoft.netcore.universalwindowsplatform\6.2.10\ref\uap10.0.15138\mscorlib.dll    ß]˙πª◊mscorlib                        Ä     wfile:///C:/Users/jermb/.nuget/packages/microsoft.netcore.universalwindowsplatform/6.2.10/ref/uap10.0.15138/mscorlib.dll                     ∑z\V4‡âKmscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089    /   System.Runtime                                       ∞?_’
+:        Microsoft.Win32.Registry                                       ∞?_’
+:        !System.Security.Principal.Windows                                       ∞?_’
+:        System.Runtime.Extensions                                       ∞?_’
+:        System.Security.Permissions                                       Ã{ˇÕ-›Q        System.Collections                                       ∞?_’
+:        System.Collections.NonGeneric                                       ∞?_’
+:        System.Collections.Concurrent                                       ∞?_’
+:        System.ObjectModel                                       ∞?_’
+:        System.Console                                       ∞?_’
+:        System.Runtime.InteropServices                                       ∞?_’
+:        System.Diagnostics.Tools                                       ∞?_’
+:        System.Diagnostics.Contracts                                       ∞?_’
+:        System.Diagnostics.Debug                                       ∞?_’
+:        System.Diagnostics.StackTrace                                       ∞?_’
+:        System.Diagnostics.Tracing                                       ∞?_’
+:        System.IO.FileSystem                                       ∞?_’
+:        System.IO.FileSystem.DriveInfo                                       ∞?_’
+:        System.IO.IsolatedStorage                                       ∞?_’
+:        System.ComponentModel                                       ∞?_’
+:        System.Threading.Thread                                       ∞?_’
+:        System.Threading.Tasks                                       ∞?_’
+:        System.Reflection.Emit                                       ∞?_’
+:        #System.Reflection.Emit.ILGeneration                                       ∞?_’
+:        "System.Reflection.Emit.Lightweight                                       ∞?_’
+:        System.Reflection.Primitives                                       ∞?_’
+:         System.Resources.ResourceManager                                       ∞?_’
+:        System.Resources.Writer                                       ∞?_’
+:        'System.Runtime.CompilerServices.VisualC                                       ∞?_’
+:        -System.Runtime.InteropServices.WindowsRuntime                                       ∞?_’
+:        'System.Runtime.Serialization.Formatters                                       ∞?_’
+:        System.Security.AccessControl                                       ∞?_’
+:        "System.IO.FileSystem.AccessControl                                       ∞?_’
+:        System.Threading.AccessControl                                       ∞?_’
+:        System.Security.Claims                                       ∞?_’
+:        'System.Security.Cryptography.Algorithms                                       ∞?_’
+:        'System.Security.Cryptography.Primitives                                       ∞?_’
+:         System.Security.Cryptography.Csp                                       ∞?_’
+:        %System.Security.Cryptography.Encoding                                       ∞?_’
+:        -System.Security.Cryptography.X509Certificates                                       ∞?_’
+:        System.Security.Principal                                       ∞?_’
+:        System.Text.Encoding.Extensions                                       ∞?_’
+:        System.Threading                                       ∞?_’
+:        System.Threading.Overlapped                                       ∞?_’
+:        System.Threading.ThreadPool                                       ∞?_’
+:        System.Threading.Tasks.Parallel                                       ∞?_’
+:        System.Threading.Timer                                       ∞?_’
+:            
+v4.0.30319 rC:\Users\jermb\.nuget\packages\microsoft.netcore.universalwindowsplatform\6.2.10\ref\uap10.0.15138\netstandard.dll    ß]˙πª◊netstandard                        Ä     zfile:///C:/Users/jermb/.nuget/packages/microsoft.netcore.universalwindowsplatform/6.2.10/ref/uap10.0.15138/netstandard.dll†    $  Ä  î      $  RSA1     KÜƒÀxTõ4∫∂; ‚;˛µ≥Ï9 t6ß„ÀŸ_œÖqU®íé™)Î˝œª≠;ß˛ßΩ£"ljç7
+L”˜Hknº"YÖ¶8GnıqÃí§a< ∏˙e÷Œ‡ÀÂÛc0…†AÉUüÔ$Ã)∆Ÿ„•A3:Ÿæ“+8À   Ã{ˇÕ-›QNnetstandard, Version=2.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51    V   System.Runtime                                       ∞?_’
+:        System.IO.MemoryMappedFiles                                       ∞?_’
+:        System.IO.Pipes                                       ∞?_’
+:        System.Diagnostics.Process                                       ∞?_’
+:        -System.Security.Cryptography.X509Certificates                                       ∞?_’
+:        System.Runtime.Extensions                                       ∞?_’
+:        System.Diagnostics.Tools                                       ∞?_’
+:        System.Collections                                       ∞?_’
+:        System.Collections.NonGeneric                                       ∞?_’
+:        System.Collections.Concurrent                                       ∞?_’
+:        System.ObjectModel                                       ∞?_’
+:        System.Collections.Specialized                                       ∞?_’
+:        #System.ComponentModel.TypeConverter                                       ∞?_’
+:        %System.ComponentModel.EventBasedAsync                                       ∞?_’
+:         System.ComponentModel.Primitives                                       ∞?_’
+:        System.ComponentModel                                       ∞?_’
+:        Microsoft.Win32.Primitives                                       ∞?_’
+:        System.Console                                       ∞?_’
+:        System.Data.Common                                       ∞?_’
+:        System.Runtime.InteropServices                                       ∞?_’
+:        System.Diagnostics.TraceSource                                       ∞?_’
+:        System.Diagnostics.Contracts                                       ∞?_’
+:        System.Diagnostics.Debug                                       ∞?_’
+:        *System.Diagnostics.TextWriterTraceListener                                       ∞?_’
+:        "System.Diagnostics.FileVersionInfo                                       ∞?_’
+:        System.Diagnostics.StackTrace                                       ∞?_’
+:        System.Diagnostics.Tracing                                       ∞?_’
+:        System.Drawing.Primitives                                       ∞?_’
+:        System.Linq.Expressions                                       ∞?_’
+:        System.IO.Compression                                       ∑z\V4‡â        System.IO.Compression.ZipFile                                       ∑z\V4‡â        System.IO.FileSystem                                       ∞?_’
+:        System.IO.FileSystem.DriveInfo                                       ∞?_’
+:        System.IO.FileSystem.Watcher                                       ∞?_’
+:        System.IO.IsolatedStorage                                       ∞?_’
+:        System.Linq                                       ∞?_’
+:        System.Linq.Queryable                                       ∞?_’
+:        System.Linq.Parallel                                       ∞?_’
+:        System.Threading.Thread                                       ∞?_’
+:        System.Net.Requests                                       ∞?_’
+:        System.Net.Primitives                                       ∞?_’
+:        System.Net.HttpListener                                       Ã{ˇÕ-›Q        System.Net.ServicePoint                                       Ã{ˇÕ-›Q        System.Net.NameResolution                                       ∞?_’
+:        System.Net.WebClient                                       Ã{ˇÕ-›Q        System.Net.Http                                       ∞?_’
+:        System.Net.WebHeaderCollection                                       ∞?_’
+:        System.Net.WebProxy                                       Ã{ˇÕ-›Q        System.Net.Mail                                       Ã{ˇÕ-›Q        System.Net.NetworkInformation                                       ∞?_’
+:        System.Net.Ping                                       ∞?_’
+:        System.Net.Security                                       ∞?_’
+:        System.Net.Sockets                                       ∞?_’
+:        System.Net.WebSockets.Client                                       ∞?_’
+:        System.Net.WebSockets                                       ∞?_’
+:        System.Runtime.Numerics                                       ∞?_’
+:        System.Threading.Tasks                                       ∞?_’
+:        System.Reflection.Primitives                                       ∞?_’
+:         System.Resources.ResourceManager                                       ∞?_’
+:        System.Resources.Writer                                       ∞?_’
+:        'System.Runtime.CompilerServices.VisualC                                       ∞?_’
+:        1System.Runtime.InteropServices.RuntimeInformation                                       ∞?_’
+:        'System.Runtime.Serialization.Primitives                                       ∞?_’
+:         System.Runtime.Serialization.Xml                                       ∞?_’
+:        !System.Runtime.Serialization.Json                                       ∞?_’
+:        'System.Runtime.Serialization.Formatters                                       ∞?_’
+:        System.Security.Claims                                       ∞?_’
+:        'System.Security.Cryptography.Algorithms                                       ∞?_’
+:         System.Security.Cryptography.Csp                                       ∞?_’
+:        %System.Security.Cryptography.Encoding                                       ∞?_’
+:        'System.Security.Cryptography.Primitives                                       ∞?_’
+:        System.Security.Principal                                       ∞?_’
+:        System.Text.Encoding.Extensions                                       ∞?_’
+:        System.Text.RegularExpressions                                       ∞?_’
+:        System.Threading                                       ∞?_’
+:        System.Threading.Overlapped                                       ∞?_’
+:        System.Threading.ThreadPool                                       ∞?_’
+:        System.Threading.Tasks.Parallel                                       ∞?_’
+:        System.Threading.Timer                                       ∞?_’
+:        System.Transactions.Local                                       Ã{ˇÕ-›Q        System.Web.HttpUtility                                       Ã{ˇÕ-›Q        System.Xml.ReaderWriter                                       ∞?_’
+:        System.Xml.XDocument                                       ∞?_’
+:        System.Xml.XmlSerializer                                       ∞?_’
+:        System.Xml.XPath.XDocument                                       ∞?_’
+:        System.Xml.XPath                                       ∞?_’
+:            
+v4.0.30319 oC:\Users\jermb\.nuget\packages\microsoft.ui.xaml\2.5.0-prerelease.200609001\lib\uap10.0\Microsoft.UI.Xaml.winmd    ≠Ô‹ÿMicrosoft.UI.Xamlˇ   ˇ   ˇ   ˇ             Ä     wfile:///C:/Users/jermb/.nuget/packages/microsoft.ui.xaml/2.5.0-prerelease.200609001/lib/uap10.0/Microsoft.UI.Xaml.winmd     lMicrosoft.UI.Xaml, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime    	   mscorlib                                      ∑z\V4‡â        'Windows.Foundation.UniversalApiContractˇ   ˇ   ˇ   ˇ                                   %Windows.Foundation.FoundationContractˇ   ˇ   ˇ   ˇ                                   System.Runtime                                      ∞?_’
+:        -System.Runtime.InteropServices.WindowsRuntime                                      ∞?_’
+:        System.ObjectModel                                      ∞?_’
+:        System.Runtime.WindowsRuntime                                      ∑z\V4‡â        %System.Runtime.WindowsRuntime.UI.Xaml                                      ∑z\V4‡â        System.Numerics.Vectors                                      ∞?_’
+:            WindowsRuntime 1.4 kC:\Windows\Microsoft.Net\assembly\GAC_MSIL\System.Runtime\v4.0_4.0.0.0__b03f5f7f11d50a3a\System.Runtime.dll   ﬁ¿?Qız◊    mscorlib                                      ∑z\V4‡â        System.Core                                      ∑z\V4‡â        System                                      ∑z\V4‡â        !System.ComponentModel.Composition                                      ∑z\V4‡â            
+v4.0.30319 C:\Windows\Microsoft.Net\assembly\GAC_MSIL\System.Diagnostics.Debug\v4.0_4.0.0.0__b03f5f7f11d50a3a\System.Diagnostics.Debug.dll   ¨˚,Rız◊    mscorlib                                      ∑z\V4‡â        System                                      ∑z\V4‡â            
+v4.0.30319 sC:\Windows\Microsoft.Net\assembly\GAC_MSIL\System.Collections\v4.0_4.0.0.0__b03f5f7f11d50a3a\System.Collections.dll   Œ∞KQız◊    mscorlib                                      ∑z\V4‡â        System.Core                                      ∑z\V4‡â        System                                      ∑z\V4‡â            
+v4.0.30319 {C:\Windows\Microsoft.Net\assembly\GAC_MSIL\System.Threading.Tasks\v4.0_4.0.0.0__b03f5f7f11d50a3a\System.Threading.Tasks.dll   Œ∞KQız◊    mscorlib                                      ∑z\V4‡â        System.Core                                      ∑z\V4‡â            
+v4.0.30319 qC:\Windows\Microsoft.Net\assembly\GAC_MSIL\System.Reflection\v4.0_4.0.0.0__b03f5f7f11d50a3a\System.Reflection.dll   Èm)Rız◊    mscorlib                                      ∑z\V4‡â            
+v4.0.30319 oC:\Windows\Microsoft.Net\assembly\GAC_MSIL\System.Threading\v4.0_4.0.0.0__b03f5f7f11d50a3a\System.Threading.dll   ñNQız◊    mscorlib                                      ∑z\V4‡â        System                                      ∑z\V4‡â        System.Core                                      ∑z\V4‡â            
+v4.0.30319 áC:\Windows\Microsoft.Net\assembly\GAC_MSIL\System.Reflection.Extensions\v4.0_4.0.0.0__b03f5f7f11d50a3a\System.Reflection.Extensions.dll   ïÓ*Sız◊    mscorlib                                      ∑z\V4‡â            
+v4.0.30319 eC:\Windows\Microsoft.Net\assembly\GAC_MSIL\System.Linq\v4.0_4.0.0.0__b03f5f7f11d50a3a\System.Linq.dll   Xı2Rız◊    mscorlib                                      ∑z\V4‡â        System.Core                                      ∑z\V4‡â            
+v4.0.30319 ÅC:\Windows\Microsoft.Net\assembly\GAC_MSIL\System.Runtime.Extensions\v4.0_4.0.0.0__b03f5f7f11d50a3a\System.Runtime.Extensions.dll   2õSız◊    mscorlib                                      ∑z\V4‡â        System                                      ∑z\V4‡â            
+v4.0.30319 âC:\Windows\Microsoft.Net\assembly\GAC_MSIL\System.Runtime.WindowsRuntime\v4.0_4.0.0.0__b77a5c561934e089\System.Runtime.WindowsRuntime.dll   Kõ(Sız◊    mscorlib                                      ∑z\V4‡â        Windowsˇ   ˇ   ˇ   ˇ                                   System                                      ∑z\V4‡â            
+v4.0.30319 ©C:\Windows\Microsoft.Net\assembly\GAC_MSIL\System.Runtime.InteropServices.WindowsRuntime\v4.0_4.0.0.0__b03f5f7f11d50a3a\System.Runtime.InteropServices.WindowsRuntime.dll   q™$Rız◊    mscorlib                                      ∑z\V4‡â            
+v4.0.30319 sC:\Windows\Microsoft.Net\assembly\GAC_MSIL\System.ObjectModel\v4.0_4.0.0.0__b03f5f7f11d50a3a\System.ObjectModel.dll   ©"2Sız◊    mscorlib                                      ∑z\V4‡â        System                                      ∑z\V4‡â            
+v4.0.30319 ôC:\Windows\Microsoft.Net\assembly\GAC_MSIL\System.Runtime.WindowsRuntime.UI.Xaml\v4.0_4.0.0.0__b77a5c561934e089\System.Runtime.WindowsRuntime.UI.Xaml.dll   Œ∞KQız◊    mscorlib                                      ∑z\V4‡â        System.Runtime.WindowsRuntime                                      ∑z\V4‡â            
+v4.0.30319  bin\x86\Debug\System.Runtime.dll    22}πª◊System.Runtime                      Ä     _file:///C:/Users/jermb/Source/Repos/IT.NET/TextEditor/TextEditor/bin/x86/Debug/System.Runtime.dll†    $  Ä  î      $  RSA1     —˙WƒÆŸ£.Ñ™Æ˝ÈË˝jÏèá˚vlÉLôí≤;ÁöŸ’‹¡›ö“6!êr<˘Äïƒ·wè∆wO)Ë2íÍÏ‰Ë!¿•ÔËÒd\Lì¡´ô(]b,™e,˙÷=t]o-ÂÒ~^Øƒñ=&äCe m¿ì4MZ“ì   ∞?_’
+:         pC:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\PublicAssemblies\System.Numerics.Vectors.dll   Ò‡¥–\€System.Numerics.Vectors                      Ä     xfile:///C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/PublicAssemblies/System.Numerics.Vectors.dll†    $  Ä  î      $  RSA1     —˙WƒÆŸ£.Ñ™Æ˝ÈË˝jÏèá˚vlÉLôí≤;ÁöŸ’‹¡›ö“6!êr<˘Äïƒ·wè∆wO)Ë2íÍÏ‰Ë!¿•ÔËÒd\Lì¡´ô(]b,™e,˙÷=t]o-ÂÒ~^Øƒñ=&äCe m¿ì4MZ“ì   ∞?_’
+:         wC:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\PublicAssemblies\System.Threading.AccessControl.dll   Ê –\€System.Threading.AccessControl                        Ä     file:///C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/PublicAssemblies/System.Threading.AccessControl.dll†    $  Ä  î      $  RSA1     —˙WƒÆŸ£.Ñ™Æ˝ÈË˝jÏèá˚vlÉLôí≤;ÁöŸ’‹¡›ö“6!êr<˘Äïƒ·wè∆wO)Ë2íÍÏ‰Ë!¿•ÔËÒd\Lì¡´ô(]b,™e,˙÷=t]o-ÂÒ~^Øƒñ=&äCe m¿ì4MZ“ì   ∞?_’
+:         qC:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\PublicAssemblies\Microsoft.Win32.Registry.dll   	(ß–\€Microsoft.Win32.Registry                        Ä     yfile:///C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/PublicAssemblies/Microsoft.Win32.Registry.dll†    $  Ä  î      $  RSA1     —˙WƒÆŸ£.Ñ™Æ˝ÈË˝jÏèá˚vlÉLôí≤;ÁöŸ’‹¡›ö“6!êr<˘Äïƒ·wè∆wO)Ë2íÍÏ‰Ë!¿•ÔËÒd\Lì¡´ô(]b,™e,˙÷=t]o-ÂÒ~^Øƒñ=&äCe m¿ì4MZ“ì   ∞?_’
+:         zC:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\PublicAssemblies\System.Security.Principal.Windows.dll   {æ–\€!System.Security.Principal.Windows                        Ä     Çfile:///C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/PublicAssemblies/System.Security.Principal.Windows.dll†    $  Ä  î      $  RSA1     —˙WƒÆŸ£.Ñ™Æ˝ÈË˝jÏèá˚vlÉLôí≤;ÁöŸ’‹¡›ö“6!êr<˘Äïƒ·wè∆wO)Ë2íÍÏ‰Ë!¿•ÔËÒd\Lì¡´ô(]b,™e,˙÷=t]o-ÂÒ~^Øƒñ=&äCe m¿ì4MZ“ì   ∞?_’
+:         vC:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\PublicAssemblies\System.Security.AccessControl.dll   ∏Ω–\€System.Security.AccessControl                        Ä     ~file:///C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/PublicAssemblies/System.Security.AccessControl.dll†    $  Ä  î      $  RSA1     —˙WƒÆŸ£.Ñ™Æ˝ÈË˝jÏèá˚vlÉLôí≤;ÁöŸ’‹¡›ö“6!êr<˘Äïƒ·wè∆wO)Ë2íÍÏ‰Ë!¿•ÔËÒd\Lì¡´ô(]b,™e,˙÷=t]o-ÂÒ~^Øƒñ=&äCe m¿ì4MZ“ì   ∞?_’
+:         }C:\Windows\Microsoft.Net\assembly\GAC_MSIL\System.Numerics.Vectors\v4.0_4.0.0.0__b03f5f7f11d50a3a\System.Numerics.Vectors.dll   ﬁ¿?Qız◊    mscorlib                                      ∑z\V4‡â        System.Numerics                                      ∑z\V4‡â            
+v4.0.30319 
