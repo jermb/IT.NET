@@ -19,10 +19,18 @@ namespace JobDemo
 
             for (int i = 0; i < 3; i++)
             {
-                bool rush = Input("Rush Job (y/n)?").Equals("y");
-
-                int num = int.Parse(Input("Enter job number: "));
-                int 
+                bool rush = Input("\nRush Job (y/n)?").Equals("y");
+                int num;
+                while (true)
+                {
+                    num = int.Parse(Input("\nEnter job number: "));   
+                    
+                }
+                
+                
+                string cust = Input("\nEnter customer's name: ");
+                string desc = Input("\nEnter job description: ");
+                double hours = double.Parse(Input("\nEnter estimated hours ");
             }
 
             //TODO: Use the jobs array, display all jobs information
@@ -30,7 +38,7 @@ namespace JobDemo
 
         static string Input(string message)
         {
-            Console.WriteLine(message);
+            Console.Write(message);
             return Console.ReadLine();
         }
     }
