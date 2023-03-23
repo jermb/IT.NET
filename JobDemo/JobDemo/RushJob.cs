@@ -11,11 +11,7 @@ namespace JobDemo
         public const double PREMIUM = 150.00;
 
         //TODO: Constructor with no parameters: public RushJob() 
-        public RushJob() : base(0, null, null, 0)
-        {
-            
-        }
-
+        public RushJob() : base() { }
 
 
         //TODO: update Hour property with new price calculation: price = hours * RATE + PREMIUM;

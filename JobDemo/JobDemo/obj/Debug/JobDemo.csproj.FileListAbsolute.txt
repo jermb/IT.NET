@@ -5,3 +5,11 @@ E:\FangWang\Courses\C#\SP18\Week10\HW\JobDemo\JobDemo\bin\Debug\JobDemo.exe
 E:\FangWang\Courses\C#\SP18\Week10\HW\JobDemo\JobDemo\bin\Debug\JobDemo.pdb
 E:\FangWang\Courses\C#\SP18\Week10\HW\JobDemo\JobDemo\obj\Debug\JobDemo.exe
 E:\FangWang\Courses\C#\SP18\Week10\HW\JobDemo\JobDemo\obj\Debug\JobDemo.pdb
+C:\Users\jermb\Source\Repos\IT.NET\JobDemo\JobDemo\obj\Debug\JobDemo.csproj.AssemblyReference.cache
+C:\Users\jermb\Source\Repos\IT.NET\JobDemo\JobDemo\obj\Debug\JobDemo.csproj.SuggestedBindingRedirects.cache
+C:\Users\jermb\Source\Repos\IT.NET\JobDemo\JobDemo\obj\Debug\JobDemo.csproj.CoreCompileInputs.cache
+C:\Users\jermb\Source\Repos\IT.NET\JobDemo\JobDemo\obj\Debug\JobDemo.exe
+C:\Users\jermb\Source\Repos\IT.NET\JobDemo\JobDemo\obj\Debug\JobDemo.pdb
+C:\Users\jermb\Source\Repos\IT.NET\JobDemo\JobDemo\bin\Debug\JobDemo.exe.config
+C:\Users\jermb\Source\Repos\IT.NET\JobDemo\JobDemo\bin\Debug\JobDemo.exe
+C:\Users\jermb\Source\Repos\IT.NET\JobDemo\JobDemo\bin\Debug\JobDemo.pdb

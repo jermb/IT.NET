@@ -12,6 +12,8 @@ namespace JobDemo
         protected double price;
         public const double RATE = 45.00;
 
+        public Job() { }
+
         public Job(int num, string cust, string desc, double hrs)
         {
             //TODO:
@@ -46,7 +48,7 @@ namespace JobDemo
             {
                 return this.JobNumber == ((Job)e).JobNumber;
             }
-            catch (InvalidCastException ex)
+            catch (InvalidCastException)
             {
                 return false;
             }
