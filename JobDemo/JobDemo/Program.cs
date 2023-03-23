@@ -20,27 +20,29 @@ namespace JobDemo
             {
                 bool rush = Input("Rush Job (y/n)?").Equals("y");
                 int num;
-                while (true)
+
+                do
                 {
                     try
                     {
                         num = int.Parse(Input("Enter job number: "));
+                        if (num < 0) { Console.WriteLine("Job number cannot be negative. Please reenter"); continue; }
                         for (int k = i; k-- > 0; k--)
                         {
                             if (jobs[k].JobNumber == num)
                             {
                                 Console.WriteLine($"Sorry, job number {num} is a duplicate. Please reenter.");
-                                continue; 
+                                num = -1;
                             }
                         }
                     }
-                    catch (FormatException) 
+                    catch (FormatException)
                     {
                         Console.WriteLine("Please enter a valid number.");
-                        continue;
+                        num = -1;
                     }
-                    break;
                 }
+                while (num < 0);
                 
                 
                 string cust = Input("Enter customer's name: ");
@@ -51,6 +53,11 @@ namespace JobDemo
                     try
                     {
                         hours = double.Parse(Input("Enter estimated hours "));
+                        if (hours < 0)
+                        {
+                            Console.WriteLine("Hours cannot be negative. Please reenter.");
+                            continue;
+                        }
                         break;
                     }
                     catch (FormatException)
@@ -83,9 +90,9 @@ namespace JobDemo
                 total += j.Price;
             }
 
-            Console.WriteLine($"Total for all jobs is {total}");
+            Console.WriteLine($"\nTotal for all jobs is {total.ToString("C")}");
 
-            Input("Press any key to continue...");
+            Input("Press enter to continue...");
         }
 
         static string Input(string message)
