@@ -1,0 +1,7 @@
+E:\FangWang\Courses\C#\SP18\Week10\HW\JobDemo\JobDemo\obj\Debug\JobDemo.csprojResolveAssemblyReference.cache
+E:\FangWang\Courses\C#\SP18\Week10\HW\JobDemo\JobDemo\obj\Debug\JobDemo.csproj.CoreCompileInputs.cache
+E:\FangWang\Courses\C#\SP18\Week10\HW\JobDemo\JobDemo\bin\Debug\JobDemo.exe.config
+E:\FangWang\Courses\C#\SP18\Week10\HW\JobDemo\JobDemo\bin\Debug\JobDemo.exe
+E:\FangWang\Courses\C#\SP18\Week10\HW\JobDemo\JobDemo\bin\Debug\JobDemo.pdb
+E:\FangWang\Courses\C#\SP18\Week10\HW\JobDemo\JobDemo\obj\Debug\JobDemo.exe
+E:\FangWang\Courses\C#\SP18\Week10\HW\JobDemo\JobDemo\obj\Debug\JobDemo.pdb
