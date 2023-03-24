@@ -82,6 +82,8 @@ namespace JobDemo
                 Console.WriteLine();
             }
 
+            Console.WriteLine("Summary:\n");
+
             //TODO: Use the jobs array, display all jobs information
             double total = 0;
             foreach (Job j in jobs)
