@@ -1,27 +1,25 @@
 {
   "format": 1,
   "restore": {
-    "D:\\FangWang\\Course\\IT4400\\SP23\\M11\\HW\\StudentManagement_Starter\\StudentManagement\\StudentManagement\\StudentManagement.csproj": {}
+    "C:\\Users\\jermb\\Source\\Repos\\IT.NET\\StudentManagement\\StudentManagement\\StudentManagement.csproj": {}
   },
   "projects": {
-    "D:\\FangWang\\Course\\IT4400\\SP23\\M11\\HW\\StudentManagement_Starter\\StudentManagement\\StudentManagement\\StudentManagement.csproj": {
+    "C:\\Users\\jermb\\Source\\Repos\\IT.NET\\StudentManagement\\StudentManagement\\StudentManagement.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\FangWang\\Course\\IT4400\\SP23\\M11\\HW\\StudentManagement_Starter\\StudentManagement\\StudentManagement\\StudentManagement.csproj",
+        "projectUniqueName": "C:\\Users\\jermb\\Source\\Repos\\IT.NET\\StudentManagement\\StudentManagement\\StudentManagement.csproj",
         "projectName": "StudentManagement",
-        "projectPath": "D:\\FangWang\\Course\\IT4400\\SP23\\M11\\HW\\StudentManagement_Starter\\StudentManagement\\StudentManagement\\StudentManagement.csproj",
-        "packagesPath": "C:\\Users\\wangfan\\.nuget\\packages\\",
-        "outputPath": "D:\\FangWang\\Course\\IT4400\\SP23\\M11\\HW\\StudentManagement_Starter\\StudentManagement\\StudentManagement\\obj\\",
+        "projectPath": "C:\\Users\\jermb\\Source\\Repos\\IT.NET\\StudentManagement\\StudentManagement\\StudentManagement.csproj",
+        "packagesPath": "C:\\Users\\jermb\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\jermb\\Source\\Repos\\IT.NET\\StudentManagement\\StudentManagement\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
-          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\wangfan\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\jermb\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net6.0-windows7.0"
@@ -63,7 +61,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.115\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.101\\RuntimeIdentifierGraph.json"
         }
       }
     }
