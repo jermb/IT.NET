@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -20,6 +21,7 @@ namespace StudentManagement
     /// </summary>
     public partial class MainWindow : Window
     {
+        //private ObservableCollection<Person> people = new ObservableCollection<Person>();
         public MainWindow()
         {
             InitializeComponent();
@@ -29,6 +31,25 @@ namespace StudentManagement
             ListBoxItem studentListBoxItem = new ListBoxItem();
             studentListBoxItem.Content = LastNameTextBox.Text + " " + FirstNameTextBox.Text;
             StudentsListBox.Items.Add(studentListBoxItem);
+            ClearStudentFields();
+        }
+
+
+        private void ClearStudentFields()
+        {
+            FirstNameTextBox.Text = "";
+            LastNameTextBox.Text = "";
+            StudentIDTextBox.Text = "";
+            AgeTextBox.Text = "";
+        }
+
+        private void ClearCourseFields()
+        {
+            CourseNameTextBox.Text = "";
+            CourseNumberTextBox.Text = "";
+            CoursePrefixTextBox.Text = "";
+            CreditHoursTextBox.Text = "";
+            GPATextBox.Text = "";
         }
     }
 }

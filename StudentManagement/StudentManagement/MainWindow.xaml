@@ -7,8 +7,11 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="1000">
     <Grid>
+        <Grid.Resources>
+            <local:Students x:Key="StudentList"/>
+        </Grid.Resources>
         <Label Content="Students List" HorizontalAlignment="Left" Margin="34,22,0,0" VerticalAlignment="Top"/>
-        <ListBox Name="StudentsListBox" HorizontalAlignment="Left" Height="334" Margin="34,47,0,0" VerticalAlignment="Top" Width="138">
+        <ListBox Name="StudentsListBox" HorizontalAlignment="Left" Height="334" Margin="34,47,0,0" VerticalAlignment="Top" Width="138" ItemsSource="{StaticResource StudentList}">
 
         </ListBox>
         <TextBox Name="FirstNameTextBox"  HorizontalAlignment="Left" Height="23" Margin="308,70,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
