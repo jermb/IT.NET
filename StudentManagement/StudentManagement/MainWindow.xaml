@@ -6,19 +6,16 @@
         xmlns:local="clr-namespace:StudentManagement"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="1000">
-    <Window.DataContext>
-        <local:MainWindow/>
-    </Window.DataContext>
     <Grid>
-        <!--<Grid.Resources>
+        <Grid.Resources>
             <local:Students x:Key="StudentList"/>
-        </Grid.Resources>-->
+        </Grid.Resources>
         <Label Content="Students List" HorizontalAlignment="Left" Margin="34,22,0,0" VerticalAlignment="Top"/>
-        <ListBox Name="StudentsListBox" HorizontalAlignment="Left" Height="334" Margin="34,47,0,0" VerticalAlignment="Top" Width="138" ItemsSource="{Binding students}">
+        <ListBox Name="StudentsListBox" HorizontalAlignment="Left" Height="334" Margin="34,47,0,0" VerticalAlignment="Top" Width="138" ItemsSource="{StaticResource StudentList}">
             <!--ItemsSource="{StaticResource StudentList}"-->
             <ListBox.ItemTemplate>
                 <DataTemplate>
-                    <TextBlock Text="{Binding Display}"/>
+                    <TextBlock Text="{Binding Path=Display}"/>
                 </DataTemplate>
             </ListBox.ItemTemplate>
 

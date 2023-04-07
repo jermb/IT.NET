@@ -6,24 +6,34 @@ using System.Threading.Tasks;
 
 namespace StudentManagement
 {
-    internal class Course : IComparable<Course>
+    public class Course : IComparable<Course>
     {
 
-        public string Name { get; }
-        public string Prefix { get; }
-        public int Number { get; }
-        public int CreditHours { get; }
-        public double Grade { get; }
+        private string name;
+        private string prefix;
+        public int number;
+        public int hours;
+        public double grade;
+
+        public string Name { get => name; }
+        public string Prefix { get => prefix; }
+        public int Number { get => number; }
+        public int CreditHours { get => hours; }
+        public double Grade { get => grade; }
         public string Display { get => $"{Prefix} {Number}"; }
 
         public Course(string name, string prefix, int number, int hours, double grade)
         {
-
+            this.name = name;
+            this.prefix = prefix;
+            this.number = number;
+            this.hours = hours;
+            this.grade = grade;
         }
 
         public int CompareTo(Course? other)
         {
-            int prefixCompare = Prefix.CompareTo(other.Prefix);
+            int prefixCompare = Prefix.CompareTo(other?.Prefix);
 
             if (prefixCompare == -1) return -1;
             else if (prefixCompare == 1) return 1;

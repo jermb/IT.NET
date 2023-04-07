@@ -22,13 +22,13 @@ namespace StudentManagement
     public partial class MainWindow : Window
     {
         //public ObservableCollection<Person> people = new ObservableCollection<Person>();
-        public ObservableCollection<Student> students;
-        private Student selectedStudent;
+        ////public ObservableCollection<Student> students = new ObservableCollection<Student>();
+        //public List<Student> students = new List<Student>();
+        //private Student? selectedStudent;
         public MainWindow()
         {
             InitializeComponent();
-            students = new ObservableCollection<Student>();
-            students.OrderBy(s => s.Display);
+            //students.OrderBy(s => s.Display);
         }
         private void AddStudentButton_Click(object sender, RoutedEventArgs e)
         {
@@ -45,7 +45,7 @@ namespace StudentManagement
             if (level == 0) s = new UndergraduateStudent(firstName, lastName, gender, age, studentID);
             else s = new GraduateStudent(firstName, lastName, gender, age, studentID);
 
-            students.Add(s);
+            StudentsListBox.Items.Add(s);
             RefreshStudentList();
 
             ClearStudentFields();
@@ -60,7 +60,9 @@ namespace StudentManagement
             int hours = int.Parse(CreditHoursTextBox.Text);
             double grade = double.Parse(GPATextBox.Text);
 
-            if (selectedStudent.Add(name, prefix, number, hours, grade))
+            Student s = (Student)StudentsListBox.SelectedItem;
+
+            if (s.Add(name, prefix, number, hours, grade))
             {
                 RefreshCourseList();
             }
@@ -69,10 +71,8 @@ namespace StudentManagement
         private void RefreshStudentList()
         {
             StudentsListBox.Items.Clear();
-            students.Sort();
-            students.
 
-            foreach (Student s in students)
+            foreach (Student s in StudentsListBox.Items)
             {
                 ListBoxItem studentListBoxItem = new ListBoxItem();
                 studentListBoxItem.Content = s.LastName + " " + s.FirstName;
@@ -83,7 +83,8 @@ namespace StudentManagement
         private void RefreshCourseList()
         {
             CoursessListBox.Items.Clear();
-            foreach (Course c in selectedStudent.Courses)
+            Student s = (Student)StudentsListBox.SelectedItem;
+            foreach (Course c in s.Courses)
             {
                 ListBoxItem courseItem = new ListBoxItem();
                 courseItem.Content = c.Prefix + " " + c.Number;

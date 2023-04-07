@@ -5,16 +5,16 @@ winexe
 C#
 .cs
 C:\Users\jermb\Source\Repos\IT.NET\StudentManagement\StudentManagement\obj\Debug\net6.0-windows\
-StudentManagement_xps0crqn_wpftmp
+StudentManagement
 none
 false
-TRACE;RELEASE;NET;NET6_0;NETCOREAPP
+TRACE;DEBUG;NET;NET6_0;NETCOREAPP
 C:\Users\jermb\Source\Repos\IT.NET\StudentManagement\StudentManagement\App.xaml
 11407045341
 
-11-944677951
-388-2010039996
+9-1051200079
+1941142463650
 MainWindow.xaml;
 
-True
+False
 

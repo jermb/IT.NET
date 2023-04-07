@@ -71,7 +71,7 @@ namespace StudentManagement
         public int CompareTo(Person? other)
         {
             string fullName = this.LastName + " " + this.FirstName;
-            string otherFull = other.LastName + " " + other.FirstName;
+            string otherFull = other?.LastName + " " + other?.FirstName;
 
             return fullName.CompareTo(otherFull);
 
