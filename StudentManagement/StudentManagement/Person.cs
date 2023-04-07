@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace StudentManagement
 {
-    abstract class Person : IComparable<Person>
+    public abstract class Person : IComparable<Person>
     {
         private string? firstName;
         private string? lastName;
@@ -65,6 +65,8 @@ namespace StudentManagement
                 age = value;
             }
         }
+
+        public string Display { get => $"{LastName} {FirstName}"; }
 
         public int CompareTo(Person? other)
         {

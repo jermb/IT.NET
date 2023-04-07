@@ -1,7 +1,9 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\StudentManagement",
+    "\\StudentManagement\\StudentManagement"
   ],
-  "SelectedNode": "\\StudentManagement.sln",
+  "SelectedNode": "\\StudentManagement\\StudentManagement\\MainWindow.xaml.cs",
   "PreviewInSolutionExplorer": false
 }

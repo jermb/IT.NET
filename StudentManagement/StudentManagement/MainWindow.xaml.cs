@@ -21,20 +21,17 @@ namespace StudentManagement
     /// </summary>
     public partial class MainWindow : Window
     {
-        //private ObservableCollection<Person> people = new ObservableCollection<Person>();
-        private List<Student> students;
+        //public ObservableCollection<Person> people = new ObservableCollection<Person>();
+        public ObservableCollection<Student> students;
+        private Student selectedStudent;
         public MainWindow()
         {
             InitializeComponent();
-            students = new List<Student>();
+            students = new ObservableCollection<Student>();
+            students.OrderBy(s => s.Display);
         }
         private void AddStudentButton_Click(object sender, RoutedEventArgs e)
         {
-            ListBoxItem studentListBoxItem = new ListBoxItem();
-            studentListBoxItem.Content = LastNameTextBox.Text + " " + FirstNameTextBox.Text;
-            StudentsListBox.Items.Add(studentListBoxItem);
-
-
             //  Need to handle empty boxes
             string firstName = FirstNameTextBox.Text;
             string lastName = LastNameTextBox.Text;
@@ -55,16 +52,42 @@ namespace StudentManagement
             
         }
 
+        private void AddCourseButton_Click(object sender, RoutedEventArgs e)
+        {
+            string name = CourseNameTextBox.Text;
+            string prefix = CoursePrefixTextBox.Text;
+            int number = int.Parse(CourseNumberTextBox.Text);
+            int hours = int.Parse(CreditHoursTextBox.Text);
+            double grade = double.Parse(GPATextBox.Text);
+
+            if (selectedStudent.Add(name, prefix, number, hours, grade))
+            {
+                RefreshCourseList();
+            }
+        }
+
         private void RefreshStudentList()
         {
             StudentsListBox.Items.Clear();
             students.Sort();
+            students.
 
             foreach (Student s in students)
             {
                 ListBoxItem studentListBoxItem = new ListBoxItem();
                 studentListBoxItem.Content = s.LastName + " " + s.FirstName;
                 StudentsListBox.Items.Add(studentListBoxItem);
+            }
+        }
+
+        private void RefreshCourseList()
+        {
+            CoursessListBox.Items.Clear();
+            foreach (Course c in selectedStudent.Courses)
+            {
+                ListBoxItem courseItem = new ListBoxItem();
+                courseItem.Content = c.Prefix + " " + c.Number;
+                StudentsListBox.Items.Add(courseItem);
             }
         }
 
@@ -84,5 +107,7 @@ namespace StudentManagement
             CreditHoursTextBox.Text = "";
             GPATextBox.Text = "";
         }
+
+
     }
 }

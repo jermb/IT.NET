@@ -14,6 +14,7 @@ namespace StudentManagement
         public int Number { get; }
         public int CreditHours { get; }
         public double Grade { get; }
+        public string Display { get => $"{Prefix} {Number}"; }
 
         public Course(string name, string prefix, int number, int hours, double grade)
         {

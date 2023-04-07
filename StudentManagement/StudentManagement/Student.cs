@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace StudentManagement
 {
-    abstract class Student : Person, INotifyPropertyChanged, IEditableObject
+    public abstract class Student : Person, INotifyPropertyChanged, IEditableObject
     {
 
         private string id;
@@ -17,6 +17,7 @@ namespace StudentManagement
 
         protected int MinCourseNum { get => minCourseNum; set => minCourseNum = value; }
         protected int MaxCourseNum { get => maxCourseNum; set => maxCourseNum = value; }
+        public List<Course> Courses { get => courses; }
 
         public event PropertyChangedEventHandler? PropertyChanged;
 
@@ -30,9 +31,13 @@ namespace StudentManagement
             courses = new List<Course>();
         }
 
-        public void Add()
+        public bool Add(string name, string prefix, int number, int hours, double grade)
         {
+            if (number < minCourseNum || number > maxCourseNum) { /* Throw Error */ return false; }
 
+            courses.Add(new Course(name, prefix, number, hours, grade));
+            courses.Sort();
+            return true;
         }
 
         public void BeginEdit()
