@@ -10,14 +10,30 @@ namespace StudentManagement
     abstract class Student : Person, INotifyPropertyChanged, IEditableObject
     {
 
-        private int id;
+        private string id;
         private int minCourseNum;
         private int maxCourseNum;
+        private List<Course> courses;
 
         protected int MinCourseNum { get => minCourseNum; set => minCourseNum = value; }
         protected int MaxCourseNum { get => maxCourseNum; set => maxCourseNum = value; }
 
         public event PropertyChangedEventHandler? PropertyChanged;
+
+        public Student(string first, string last, int gender, int age, string id)
+        {
+            this.id = id;
+            base.FirstName = first;
+            base.LastName = last;
+            base.Gender = gender;
+            base.Age = age;
+            courses = new List<Course>();
+        }
+
+        public void Add()
+        {
+
+        }
 
         public void BeginEdit()
         {

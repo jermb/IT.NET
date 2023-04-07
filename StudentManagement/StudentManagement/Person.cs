@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace StudentManagement
 {
-    abstract class Person
+    abstract class Person : IComparable<Person>
     {
         private string? firstName;
         private string? lastName;
@@ -64,6 +64,15 @@ namespace StudentManagement
             {
                 age = value;
             }
+        }
+
+        public int CompareTo(Person? other)
+        {
+            string fullName = this.LastName + " " + this.FirstName;
+            string otherFull = other.LastName + " " + other.FirstName;
+
+            return fullName.CompareTo(otherFull);
+
         }
     }
 }

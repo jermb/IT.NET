@@ -22,9 +22,11 @@ namespace StudentManagement
     public partial class MainWindow : Window
     {
         //private ObservableCollection<Person> people = new ObservableCollection<Person>();
+        private List<Student> students;
         public MainWindow()
         {
             InitializeComponent();
+            students = new List<Student>();
         }
         private void AddStudentButton_Click(object sender, RoutedEventArgs e)
         {
@@ -32,17 +34,39 @@ namespace StudentManagement
             studentListBoxItem.Content = LastNameTextBox.Text + " " + FirstNameTextBox.Text;
             StudentsListBox.Items.Add(studentListBoxItem);
 
+
+            //  Need to handle empty boxes
             string firstName = FirstNameTextBox.Text;
             string lastName = LastNameTextBox.Text;
             string studentID = StudentIDTextBox.Text;
             int gender = GenderComboBox.SelectedIndex;
-            string age = AgeTextBox.Text;
-            int 
+            int age = int.Parse(AgeTextBox.Text);
+            int level = LevelComboBox.SelectedIndex;
 
+            Student s;
+
+            if (level == 0) s = new UndergraduateStudent(firstName, lastName, gender, age, studentID);
+            else s = new GraduateStudent(firstName, lastName, gender, age, studentID);
+
+            students.Add(s);
+            RefreshStudentList();
 
             ClearStudentFields();
+            
         }
 
+        private void RefreshStudentList()
+        {
+            StudentsListBox.Items.Clear();
+            students.Sort();
+
+            foreach (Student s in students)
+            {
+                ListBoxItem studentListBoxItem = new ListBoxItem();
+                studentListBoxItem.Content = s.LastName + " " + s.FirstName;
+                StudentsListBox.Items.Add(studentListBoxItem);
+            }
+        }
 
         private void ClearStudentFields()
         {
