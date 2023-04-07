@@ -31,6 +31,15 @@ namespace StudentManagement
             ListBoxItem studentListBoxItem = new ListBoxItem();
             studentListBoxItem.Content = LastNameTextBox.Text + " " + FirstNameTextBox.Text;
             StudentsListBox.Items.Add(studentListBoxItem);
+
+            string firstName = FirstNameTextBox.Text;
+            string lastName = LastNameTextBox.Text;
+            string studentID = StudentIDTextBox.Text;
+            int gender = GenderComboBox.SelectedIndex;
+            string age = AgeTextBox.Text;
+            int 
+
+
             ClearStudentFields();
         }
 

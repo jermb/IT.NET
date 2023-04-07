@@ -7,11 +7,12 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="1000">
     <Grid>
-        <Grid.Resources>
+        <!--<Grid.Resources>
             <local:Students x:Key="StudentList"/>
-        </Grid.Resources>
+        </Grid.Resources>-->
         <Label Content="Students List" HorizontalAlignment="Left" Margin="34,22,0,0" VerticalAlignment="Top"/>
-        <ListBox Name="StudentsListBox" HorizontalAlignment="Left" Height="334" Margin="34,47,0,0" VerticalAlignment="Top" Width="138" ItemsSource="{StaticResource StudentList}">
+        <ListBox Name="StudentsListBox" HorizontalAlignment="Left" Height="334" Margin="34,47,0,0" VerticalAlignment="Top" Width="138">
+            <!--ItemsSource="{StaticResource StudentList}"-->
 
         </ListBox>
         <TextBox Name="FirstNameTextBox"  HorizontalAlignment="Left" Height="23" Margin="308,70,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
@@ -21,7 +22,7 @@
         <TextBox x:Name="StudentIDTextBox"  HorizontalAlignment="Left" Height="23" Margin="308,164,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
         <Label Content="Student ID" HorizontalAlignment="Left" Margin="210,163,0,0" VerticalAlignment="Top"/>
         <Label Content="Gender" HorizontalAlignment="Left" Margin="210,209,0,0" VerticalAlignment="Top"/>
-        <ComboBox HorizontalAlignment="Left" Margin="308,209,0,0" VerticalAlignment="Top" Width="120">
+        <ComboBox x:Name="GenderComboBox" HorizontalAlignment="Left" Margin="308,209,0,0" VerticalAlignment="Top" Width="120">
             <ComboBoxItem IsSelected="True">Male</ComboBoxItem>
             <ComboBoxItem>Female</ComboBoxItem>
             <ComboBoxItem>Other</ComboBoxItem>
@@ -29,7 +30,7 @@
         <TextBox x:Name="AgeTextBox"  HorizontalAlignment="Left" Height="23" Margin="308,251,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
         <Label Content="Age" HorizontalAlignment="Left" Margin="210,250,0,0" VerticalAlignment="Top"/>
         <Label Content="Level" HorizontalAlignment="Left" Margin="210,295,0,0" VerticalAlignment="Top"/>
-        <ComboBox HorizontalAlignment="Left" Margin="308,295,0,0" VerticalAlignment="Top" Width="120">
+        <ComboBox x:Name="LevelComboBox" HorizontalAlignment="Left" Margin="308,295,0,0" VerticalAlignment="Top" Width="120">
             <ComboBoxItem IsSelected="True" Content="Undergraduate"/>
             <ComboBoxItem Content="Graduate"/>
         </ComboBox>
