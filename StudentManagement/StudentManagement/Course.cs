@@ -39,7 +39,7 @@ namespace StudentManagement
             else if (prefixCompare == 1) return 1;
             else if (prefixCompare == 0)
             {
-                return Number.CompareTo(other.Number);
+                return Number.CompareTo(other?.Number);
             }
             else return 0;
         }

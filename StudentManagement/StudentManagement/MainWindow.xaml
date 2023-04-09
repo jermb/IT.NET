@@ -6,12 +6,16 @@
         xmlns:local="clr-namespace:StudentManagement"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="1000">
+    <Window.Resources>
+        <local:Students x:Key="StudentList"/>
+        <local:Courses x:Key="CourseList"/>
+    </Window.Resources>
     <Grid>
-        <Grid.Resources>
-            <local:Students x:Key="StudentList"/>
-        </Grid.Resources>
+        <!--Student List Fields-->
         <Label Content="Students List" HorizontalAlignment="Left" Margin="34,22,0,0" VerticalAlignment="Top"/>
-        <ListBox Name="StudentsListBox" HorizontalAlignment="Left" Height="334" Margin="34,47,0,0" VerticalAlignment="Top" Width="138" ItemsSource="{StaticResource StudentList}">
+        <ListBox Name="StudentsListBox" HorizontalAlignment="Left" Height="334" Margin="34,47,0,0" VerticalAlignment="Top" Width="138" 
+                 ItemsSource="{StaticResource StudentList}"
+                 SelectionChanged="StudentsListBox_SelectionChanged">
             <!--ItemsSource="{StaticResource StudentList}"-->
             <ListBox.ItemTemplate>
                 <DataTemplate>
@@ -40,8 +44,22 @@
             <ComboBoxItem Content="Graduate"/>
         </ComboBox>
         <Button Name="AddStudentButton" Content="Add a Student" HorizontalAlignment="Left" Margin="210,347,0,0" VerticalAlignment="Top" Width="218" Height="35" Click="AddStudentButton_Click"/>
+        
+        <!--Course List Fields-->
+        
         <Label Content="Courses List" HorizontalAlignment="Left" Margin="513,41,0,0" VerticalAlignment="Top"/>
-        <ListBox x:Name="CoursessListBox" HorizontalAlignment="Left" Height="273" Margin="513,66,0,0" VerticalAlignment="Top" Width="171"/>
+
+        <ListBox x:Name="CoursessListBox" HorizontalAlignment="Left" Height="273" Margin="513,66,0,0" VerticalAlignment="Top" Width="171"
+                 ItemsSource="{StaticResource CourseList}"
+                 SelectionChanged="CoursessListBox_SelectionChanged">
+            <ListBox.ItemTemplate>
+                <DataTemplate>
+                    <TextBlock Text="{Binding Path=Display}"/>
+                </DataTemplate>
+            </ListBox.ItemTemplate>
+
+        </ListBox>
+        
         <TextBox x:Name="CourseNameTextBox"  HorizontalAlignment="Left" Height="23" Margin="825,48,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
         <Label Content="Course Name" HorizontalAlignment="Left" Margin="718,48,0,0" VerticalAlignment="Top"/>
         <TextBox x:Name="CoursePrefixTextBox"  HorizontalAlignment="Left" Height="23" Margin="825,89,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>

@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace StudentManagement
 {
-    public abstract class Student : Person, INotifyPropertyChanged, IEditableObject
+    public abstract class Student : Person
     {
 
         private string id;
@@ -15,11 +15,12 @@ namespace StudentManagement
         private int maxCourseNum;
         private List<Course> courses;
 
+        public string ID { get => id; set => id = value; }
+
         protected int MinCourseNum { get => minCourseNum; set => minCourseNum = value; }
         protected int MaxCourseNum { get => maxCourseNum; set => maxCourseNum = value; }
         public List<Course> Courses { get => courses; }
 
-        public event PropertyChangedEventHandler? PropertyChanged;
 
         public Student(string first, string last, int gender, int age, string id)
         {
@@ -31,28 +32,13 @@ namespace StudentManagement
             courses = new List<Course>();
         }
 
-        public bool Add(string name, string prefix, int number, int hours, double grade)
+        public bool AddCourse(string name, string prefix, int number, int hours, double grade)
         {
-            if (number < minCourseNum || number > maxCourseNum) { /* Throw Error */ return false; }
+            if (number < minCourseNum || number > maxCourseNum) { /* Throw Error */ throw new InvalidCourseNumberException($"Course number must be between {MinCourseNum} and {MaxCourseNum}."); return false; }
 
             courses.Add(new Course(name, prefix, number, hours, grade));
-            courses.Sort();
+            courses = courses.OrderBy(c => c.Prefix).ThenBy(c=> c.Number).ToList();
             return true;
-        }
-
-        public void BeginEdit()
-        {
-            throw new NotImplementedException();
-        }
-
-        public void CancelEdit()
-        {
-            throw new NotImplementedException();
-        }
-
-        public void EndEdit()
-        {
-            throw new NotImplementedException();
         }
 
         public bool IsValidCourse(int num)

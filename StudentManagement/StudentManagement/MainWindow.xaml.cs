@@ -24,11 +24,15 @@ namespace StudentManagement
         //public ObservableCollection<Person> people = new ObservableCollection<Person>();
         ////public ObservableCollection<Student> students = new ObservableCollection<Student>();
         //public List<Student> students = new List<Student>();
-        //private Student? selectedStudent;
+        private Student? selectedStudent;
+        private Students studentList;
+        private Courses courseList;
         public MainWindow()
         {
             InitializeComponent();
             //students.OrderBy(s => s.Display);
+            studentList = (Students)FindResource("StudentList");
+            courseList = (Courses)FindResource("CourseList");
         }
         private void AddStudentButton_Click(object sender, RoutedEventArgs e)
         {
@@ -45,8 +49,11 @@ namespace StudentManagement
             if (level == 0) s = new UndergraduateStudent(firstName, lastName, gender, age, studentID);
             else s = new GraduateStudent(firstName, lastName, gender, age, studentID);
 
-            StudentsListBox.Items.Add(s);
-            RefreshStudentList();
+            //StudentsListBox.Items.Add(s);
+    
+            studentList.Add(s);
+
+            //RefreshStudentList();
 
             ClearStudentFields();
             
@@ -62,7 +69,7 @@ namespace StudentManagement
 
             Student s = (Student)StudentsListBox.SelectedItem;
 
-            if (s.Add(name, prefix, number, hours, grade))
+            if (s.AddCourse(name, prefix, number, hours, grade))
             {
                 RefreshCourseList();
             }
@@ -109,6 +116,27 @@ namespace StudentManagement
             GPATextBox.Text = "";
         }
 
+        private void StudentsListBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            selectedStudent = (Student)StudentsListBox.SelectedItem;
 
+            if (selectedStudent != null)
+            {
+                FirstNameTextBox.Text= selectedStudent.FirstName;
+                LastNameTextBox.Text= selectedStudent.LastName;
+                StudentIDTextBox.Text = selectedStudent.ID;
+                AgeTextBox.Text = selectedStudent.Age.ToString();
+                GenderComboBox.SelectedIndex = selectedStudent.Gender;
+                if (selectedStudent is UndergraduateStudent) LevelComboBox.SelectedIndex = 0;
+                else LevelComboBox.SelectedIndex = 1;
+
+                courseList.Set(selectedStudent.Courses);
+            }
+        }
+
+        private void CoursessListBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+
+        }
     }
 }
