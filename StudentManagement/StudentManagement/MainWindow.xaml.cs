@@ -25,6 +25,7 @@ namespace StudentManagement
         ////public ObservableCollection<Student> students = new ObservableCollection<Student>();
         //public List<Student> students = new List<Student>();
         private Student? selectedStudent;
+        private Course? selectedCourse;
         private Students studentList;
         private Courses courseList;
         public MainWindow()
@@ -69,10 +70,10 @@ namespace StudentManagement
 
             Student s = (Student)StudentsListBox.SelectedItem;
 
-            if (s.AddCourse(name, prefix, number, hours, grade))
-            {
-                RefreshCourseList();
-            }
+            s.AddCourse(name, prefix, number, hours, grade);
+            RefreshCourseList();
+            ClearCourseFields();
+            AddCourseButton.IsEnabled = false;
         }
 
         private void RefreshStudentList()
@@ -89,14 +90,18 @@ namespace StudentManagement
 
         private void RefreshCourseList()
         {
-            CoursessListBox.Items.Clear();
-            Student s = (Student)StudentsListBox.SelectedItem;
-            foreach (Course c in s.Courses)
-            {
-                ListBoxItem courseItem = new ListBoxItem();
-                courseItem.Content = c.Prefix + " " + c.Number;
-                StudentsListBox.Items.Add(courseItem);
-            }
+            //CoursesListBox.Items.Clear();
+            //Student s = (Student)StudentsListBox.SelectedItem;
+            //foreach (Course c in s.Courses)
+            //{
+            //    ListBoxItem courseItem = new ListBoxItem();
+            //    courseItem.Content = c.Prefix + " " + c.Number;
+            //    StudentsListBox.Items.Add(courseItem);
+            //}
+            if (selectedStudent == null) return;
+            courseList.Set(selectedStudent.Courses);
+            TotalGPATextBox.Text = courseList.TotalGPA.ToString();
+
         }
 
         private void ClearStudentFields()
@@ -131,12 +136,37 @@ namespace StudentManagement
                 else LevelComboBox.SelectedIndex = 1;
 
                 courseList.Set(selectedStudent.Courses);
+                TotalGPATextBox.Text = courseList.TotalGPA.ToString();
+                AddStudentButton.IsEnabled = false;
             }
         }
 
-        private void CoursessListBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        private void CoursesListBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
+            selectedCourse = (Course)CoursesListBox.SelectedItem;
 
+            if (selectedCourse != null)
+            {
+                CourseNameTextBox.Text = selectedCourse.Name;
+                CourseNumberTextBox.Text = selectedCourse.Number.ToString();
+                CoursePrefixTextBox.Text= selectedCourse.Prefix.ToString();
+                CreditHoursTextBox.Text = selectedCourse.CreditHours.ToString();
+                GPATextBox.Text = selectedCourse.Grade.ToString();
+                AddCourseButton.IsEnabled = false;
+            }
+
+        }
+
+        private void StudentField_Changed(object sender, RoutedEventArgs e)
+        {
+            if (AddStudentButton == null) return;
+            AddStudentButton.IsEnabled = true;
+        }
+
+        private void CourseField_Changed(object sender, RoutedEventArgs e)
+        {
+            if (AddCourseButton == null) return;
+            AddCourseButton.IsEnabled = true;
         }
     }
 }
