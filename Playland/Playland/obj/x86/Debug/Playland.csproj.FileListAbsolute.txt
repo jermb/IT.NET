@@ -110,3 +110,18 @@ H:\FangWang\Courses\C#\Sum17\Week6\CodeExamples\Example Set 10_org\Playland\Play
 H:\FangWang\Courses\C#\Sum17\Week6\CodeExamples\Example Set 10_org\Playland\Playland\Playland\obj\x86\Debug\Playland.csproj.GenerateResource.Cache
 H:\FangWang\Courses\C#\Sum17\Week6\CodeExamples\Example Set 10_org\Playland\Playland\Playland\obj\x86\Debug\Playland.exe
 H:\FangWang\Courses\C#\Sum17\Week6\CodeExamples\Example Set 10_org\Playland\Playland\Playland\obj\x86\Debug\Playland.pdb
+C:\Users\jermb\Source\Repos\IT.NET\Playland\Playland\bin\Debug\Playland.exe.config
+C:\Users\jermb\Source\Repos\IT.NET\Playland\Playland\bin\Debug\Playland.exe
+C:\Users\jermb\Source\Repos\IT.NET\Playland\Playland\bin\Debug\Playland.pdb
+C:\Users\jermb\Source\Repos\IT.NET\Playland\Playland\obj\x86\Debug\Playland.csproj.AssemblyReference.cache
+C:\Users\jermb\Source\Repos\IT.NET\Playland\Playland\obj\x86\Debug\Playland.csproj.SuggestedBindingRedirects.cache
+C:\Users\jermb\Source\Repos\IT.NET\Playland\Playland\obj\x86\Debug\MainWindow.baml
+C:\Users\jermb\Source\Repos\IT.NET\Playland\Playland\obj\x86\Debug\MainWindow.g.cs
+C:\Users\jermb\Source\Repos\IT.NET\Playland\Playland\obj\x86\Debug\App.g.cs
+C:\Users\jermb\Source\Repos\IT.NET\Playland\Playland\obj\x86\Debug\Playland_MarkupCompile.cache
+C:\Users\jermb\Source\Repos\IT.NET\Playland\Playland\obj\x86\Debug\Playland.g.resources
+C:\Users\jermb\Source\Repos\IT.NET\Playland\Playland\obj\x86\Debug\Playland.Properties.Resources.resources
+C:\Users\jermb\Source\Repos\IT.NET\Playland\Playland\obj\x86\Debug\Playland.csproj.GenerateResource.cache
+C:\Users\jermb\Source\Repos\IT.NET\Playland\Playland\obj\x86\Debug\Playland.csproj.CoreCompileInputs.cache
+C:\Users\jermb\Source\Repos\IT.NET\Playland\Playland\obj\x86\Debug\Playland.exe
+C:\Users\jermb\Source\Repos\IT.NET\Playland\Playland\obj\x86\Debug\Playland.pdb

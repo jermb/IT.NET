@@ -25,43 +25,35 @@ namespace Playland
     /// </summary>
     public partial class MainWindow : Window
     {
+        private string[] filepaths;
+        //  Set to negative one so NextImage() can be used to initialize image
+        private int index = -1;
         public MainWindow()
         {
             InitializeComponent();
+            //  Grabs the file path of each imge in the bin/Debug/Images directory
+            filepaths = Directory.GetFiles(System.IO.Path.Combine(Environment.CurrentDirectory, @"Images"));
+            //  Displays the first image
+            NextImage(null, null);
+        }
 
-            Image myImage = new Image();
-            myImage.Width = 128;
-            string path = System.IO.Path.Combine(Environment.CurrentDirectory, @"blue-toy.png");
-            // Create source
-            BitmapImage myBitmapImage = new BitmapImage();
-            //BitmapImage myBitmapImage = new BitmapImage( new Uri (path));
+        private void NextImage(object sender, RoutedEventArgs e)
+        {
+            index = (index == filepaths.Length - 1) ? 0 : (index + 1);
 
-            // BitmapImage.UriSource must be in a BeginInit/EndInit block
-            myBitmapImage.BeginInit();
+            Image image = new Image();
+            BitmapImage bitmap = new BitmapImage();
+            bitmap.BeginInit();
 
-            //// Path.Combine requires using System.IO
-            //// http://stackoverflow.com/questions/5560653/image-source-does-not-locate-image-file-in-working-directory
-            //// "The problem is that without the full path, WPF assumes it is a relative path to an embedded resource, not a file on disk."
-            //string path = System.IO.Path.Combine(Environment.CurrentDirectory, @"blue-toy.png");
-            //// If you remove System.IO you can experience the issue of a conflict between the same named thing in two different name spaces.
-            //// For use of @"" see: http://msdn.microsoft.com/en-us/library/vstudio/362314fe.aspx
+            bitmap.UriSource = new Uri(filepaths[index]);
+            bitmap.DecodePixelWidth = 384;
+            bitmap.EndInit();
 
-            myBitmapImage.UriSource = new Uri(path);
+            image.Source = bitmap;
 
-            //// To save significant application memory, set the DecodePixelWidth or  
-            //// DecodePixelHeight of the BitmapImage value of the image source to the desired 
-            //// height or width of the rendered image. If you don't do this, the application will 
-            //// cache the image as though it were rendered as its normal size rather then just 
-            //// the size that is displayed.
-            //// Note: In order to preserve aspect ratio, set DecodePixelWidth
-            //// or DecodePixelHeight but not both.
-            myBitmapImage.DecodePixelWidth = 128;
-            myBitmapImage.EndInit();
-            //set image source
-            myImage.Source = myBitmapImage;
-
-            canvas1.Children.Add(myImage);
-            Canvas.SetLeft(myImage, 150);
+            ImageDisplay.Children.Clear();
+            ImageDisplay.Children.Add(image);
+            Canvas.SetLeft(image, 70);
         }
     }
 }
