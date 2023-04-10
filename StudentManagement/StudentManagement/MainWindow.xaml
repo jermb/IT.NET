@@ -16,7 +16,6 @@
         <ListBox Name="StudentsListBox" HorizontalAlignment="Left" Height="334" Margin="34,47,0,0" VerticalAlignment="Top" Width="138" 
                  ItemsSource="{StaticResource StudentList}"
                  SelectionChanged="StudentsListBox_SelectionChanged">
-            <!--ItemsSource="{StaticResource StudentList}"-->
             <ListBox.ItemTemplate>
                 <DataTemplate>
                     <TextBlock Text="{Binding Path=Display}"/>

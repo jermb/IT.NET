@@ -114,6 +114,9 @@ namespace StudentManagement
 
         private void StudentsListBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
+            courseList.Clear();
+            ClearCourseFields();
+            AddCourseButton.IsEnabled = false;
             selectedStudent = (Student)StudentsListBox.SelectedItem;
 
             if (selectedStudent != null)
