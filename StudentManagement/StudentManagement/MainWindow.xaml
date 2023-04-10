@@ -41,7 +41,7 @@
             <ComboBoxItem>Other</ComboBoxItem>
         </ComboBox>
         <TextBox x:Name="AgeTextBox"  HorizontalAlignment="Left" Height="23" Margin="308,251,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" 
-                 TextChanged="StudentField_Changed"/>
+                 TextChanged="StudentField_Changed" PreviewTextInput="CheckIntegerInput" />
         <Label Content="Age" HorizontalAlignment="Left" Margin="210,250,0,0" VerticalAlignment="Top"/>
         <Label Content="Level" HorizontalAlignment="Left" Margin="210,295,0,0" VerticalAlignment="Top"/>
         <ComboBox x:Name="LevelComboBox" HorizontalAlignment="Left" Margin="308,295,0,0" VerticalAlignment="Top" Width="120" 
@@ -70,20 +70,26 @@
         <TextBox x:Name="CourseNameTextBox"  HorizontalAlignment="Left" Height="23" Margin="825,48,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" 
                  TextChanged="CourseField_Changed"/>
         <Label Content="Course Name" HorizontalAlignment="Left" Margin="718,48,0,0" VerticalAlignment="Top"/>
+        
         <TextBox x:Name="CoursePrefixTextBox"  HorizontalAlignment="Left" Height="23" Margin="825,89,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" 
                  TextChanged="CourseField_Changed"/>
         <Label Content="Course Prefix" HorizontalAlignment="Left" Margin="718,89,0,0" VerticalAlignment="Top"/>
+        
         <TextBox x:Name="CourseNumberTextBox"  HorizontalAlignment="Left" Height="23" Margin="825,137,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" 
-                 TextChanged="CourseField_Changed"/>
+                 TextChanged="CourseField_Changed" PreviewTextInput="CheckIntegerInput"/>
         <Label Content="Course Number" HorizontalAlignment="Left" Margin="718,137,0,0" VerticalAlignment="Top"/>
+        
         <TextBox x:Name="CreditHoursTextBox"  HorizontalAlignment="Left" Height="23" Margin="825,190,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" 
-                 TextChanged="CourseField_Changed"/>
+                 TextChanged="CourseField_Changed" PreviewTextInput="CheckIntegerInput"/>
         <Label Content="Credit Hours" HorizontalAlignment="Left" Margin="718,189,0,0" VerticalAlignment="Top"/>
+        
         <TextBox x:Name="GPATextBox"  HorizontalAlignment="Left" Height="23" Margin="825,243,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" 
-                 TextChanged="CourseField_Changed"/>
+                 TextChanged="CourseField_Changed" PreviewTextInput="CheckDoubleInput"/>
         <Label Content="Grade" HorizontalAlignment="Left" Margin="718,243,0,0" VerticalAlignment="Top"/>
+        
         <Button x:Name="AddCourseButton" Content="Add a Course" HorizontalAlignment="Left" Margin="727,296,0,0" VerticalAlignment="Top" Width="218" Height="35" 
                 Click="AddCourseButton_Click" IsEnabled="False"/>
+        
         <TextBox x:Name="TotalGPATextBox"  HorizontalAlignment="Left" Height="23" Margin="706,366,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" 
                  IsEnabled="False"/>
         <Label Content="Total GPA" HorizontalAlignment="Left" Margin="599,366,0,0" VerticalAlignment="Top"/>

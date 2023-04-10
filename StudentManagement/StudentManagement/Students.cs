@@ -10,13 +10,7 @@ namespace StudentManagement
 {
     class Students : ObservableCollection<Student>
     {
-        public Students() {
-            Student s = new GraduateStudent("epid", "ald", 0, 22, "asldkf");
-            s.AddCourse("Course", "Crs", 6660, 3, 3.2);
-
-            Add(s);
-            
-        }
+        public Students() { }
 
         public new void Add(Student student)
         {

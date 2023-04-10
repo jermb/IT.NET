@@ -24,6 +24,8 @@ namespace StudentManagement
 
         public Course(string name, string prefix, int number, int hours, double grade)
         {
+            if (grade < 0.0 || grade > 4.0) throw new ArgumentOutOfRangeException("GPA must be between 0.0 and 4.0.");
+
             this.name = name;
             this.prefix = prefix;
             this.number = number;

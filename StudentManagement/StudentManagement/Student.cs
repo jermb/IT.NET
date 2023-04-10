@@ -24,6 +24,8 @@ namespace StudentManagement
 
         public Student(string first, string last, int gender, int age, string id)
         {
+            CheckEmpty(age, first, last, id);
+
             this.id = id;
             base.FirstName = first;
             base.LastName = last;
@@ -32,18 +34,26 @@ namespace StudentManagement
             courses = new List<Course>();
         }
 
-        public bool AddCourse(string name, string prefix, int number, int hours, double grade)
+        public void AddCourse(string name, string prefix, int number, int hours, double grade)
         {
-            if (number < minCourseNum || number > maxCourseNum) { /* Throw Error */ throw new InvalidCourseNumberException($"Course number must be between {MinCourseNum} and {MaxCourseNum}."); return false; }
+            if (number < minCourseNum || number > maxCourseNum) throw new InvalidCourseNumberException(MaxCourseNum, MinCourseNum);
 
             courses.Add(new Course(name, prefix, number, hours, grade));
             courses = courses.OrderBy(c => c.Prefix).ThenBy(c=> c.Number).ToList();
-            return true;
         }
 
         public bool IsValidCourse(int num)
         {
             return num >= minCourseNum && num <= maxCourseNum;
+        }
+
+        private void CheckEmpty(int age, params string[] others)
+        {
+            foreach (var s in others)
+            {
+                if (string.IsNullOrWhiteSpace(s)) throw new ArgumentNullException();
+            }
+            if (age <= 0) throw new ArgumentNullException();
         }
     }
 }

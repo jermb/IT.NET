@@ -9,8 +9,7 @@ namespace StudentManagement
 {
     public class Courses : ObservableCollection<Course>
     {
-        //private double totalGPA;
-
+        public Courses() { }
         public double TotalGPA
         {
             get
@@ -24,28 +23,15 @@ namespace StudentManagement
                     totalHours += c.CreditHours;
                 }
 
-                return totalGPA/totalHours;
+                return Math.Round(totalGPA/totalHours, 2);
             }
-        }
-        public Courses()
-        {
-            Add(new Course("course", "it", 2220, 2, 2.1));
         }
 
         public void Set(List<Course> courses)
         {
+            //  Clear out old list then add items of new list (already sorted when item is added in Student.cs)
             Clear();
             foreach (Course c in courses) Add(c);
         }
-
-        //private void CalculateGPA()
-        //{
-        //    totalGPA = 0;
-
-        //    foreach (Course c in this)
-        //    {
-        //        totalGPA += c.Grade;
-        //    }
-        //}
     }
 }

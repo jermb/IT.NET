@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Linq;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
@@ -21,9 +22,6 @@ namespace StudentManagement
     /// </summary>
     public partial class MainWindow : Window
     {
-        //public ObservableCollection<Person> people = new ObservableCollection<Person>();
-        ////public ObservableCollection<Student> students = new ObservableCollection<Student>();
-        //public List<Student> students = new List<Student>();
         private Student? selectedStudent;
         private Course? selectedCourse;
         private Students studentList;
@@ -31,33 +29,36 @@ namespace StudentManagement
         public MainWindow()
         {
             InitializeComponent();
-            //students.OrderBy(s => s.Display);
             studentList = (Students)FindResource("StudentList");
             courseList = (Courses)FindResource("CourseList");
         }
         private void AddStudentButton_Click(object sender, RoutedEventArgs e)
         {
-            //  Need to handle empty boxes
+            //  Grab the info from the input fields
             string firstName = FirstNameTextBox.Text;
             string lastName = LastNameTextBox.Text;
             string studentID = StudentIDTextBox.Text;
             int gender = GenderComboBox.SelectedIndex;
-            int age = int.Parse(AgeTextBox.Text);
             int level = LevelComboBox.SelectedIndex;
+            //int age = int.Parse(AgeTextBox.Text);
+            int.TryParse(AgeTextBox.Text, out int age);
 
-            Student s;
+            try
+            {
+                //  Create the appropriate student type based on the selected level
+                Student student;
+                if (level == 0) student = new UndergraduateStudent(firstName, lastName, gender, age, studentID);
+                else student = new GraduateStudent(firstName, lastName, gender, age, studentID);
 
-            if (level == 0) s = new UndergraduateStudent(firstName, lastName, gender, age, studentID);
-            else s = new GraduateStudent(firstName, lastName, gender, age, studentID);
-
-            //StudentsListBox.Items.Add(s);
-    
-            studentList.Add(s);
-
-            //RefreshStudentList();
-
-            ClearStudentFields();
-            
+                studentList.Add(student);
+                ClearStudentFields();
+            }
+            catch (ArgumentNullException)
+            {
+                MessageBox.Show("All fields must be filled.", "Alert");
+                if (age == 0) AgeTextBox.Text = "";
+            }
+     
         }
 
         private void AddCourseButton_Click(object sender, RoutedEventArgs e)
@@ -68,40 +69,30 @@ namespace StudentManagement
             int hours = int.Parse(CreditHoursTextBox.Text);
             double grade = double.Parse(GPATextBox.Text);
 
-            Student s = (Student)StudentsListBox.SelectedItem;
-
-            s.AddCourse(name, prefix, number, hours, grade);
-            RefreshCourseList();
-            ClearCourseFields();
-            AddCourseButton.IsEnabled = false;
-        }
-
-        private void RefreshStudentList()
-        {
-            StudentsListBox.Items.Clear();
-
-            foreach (Student s in StudentsListBox.Items)
+            try
             {
-                ListBoxItem studentListBoxItem = new ListBoxItem();
-                studentListBoxItem.Content = s.LastName + " " + s.FirstName;
-                StudentsListBox.Items.Add(studentListBoxItem);
+                selectedStudent?.AddCourse(name, prefix, number, hours, grade);
+                RefreshCourseList();
+                ClearCourseFields();
+                AddCourseButton.IsEnabled = false;
+            }
+            catch (InvalidCourseNumberException ex)
+            {
+                BadInputBox(ex.Message, CourseNumberTextBox);
+            }
+            catch (ArgumentOutOfRangeException ex)
+            {
+                BadInputBox(ex.Message, GPATextBox);
             }
         }
 
         private void RefreshCourseList()
         {
-            //CoursesListBox.Items.Clear();
-            //Student s = (Student)StudentsListBox.SelectedItem;
-            //foreach (Course c in s.Courses)
-            //{
-            //    ListBoxItem courseItem = new ListBoxItem();
-            //    courseItem.Content = c.Prefix + " " + c.Number;
-            //    StudentsListBox.Items.Add(courseItem);
-            //}
             if (selectedStudent == null) return;
+            //  Reset the Course List to display the current student's courses
             courseList.Set(selectedStudent.Courses);
+            //  Calculate and update the TotalGPA
             TotalGPATextBox.Text = courseList.TotalGPA.ToString();
-
         }
 
         private void ClearStudentFields()
@@ -127,6 +118,7 @@ namespace StudentManagement
 
             if (selectedStudent != null)
             {
+                //  Fill out student fields
                 FirstNameTextBox.Text= selectedStudent.FirstName;
                 LastNameTextBox.Text= selectedStudent.LastName;
                 StudentIDTextBox.Text = selectedStudent.ID;
@@ -135,6 +127,7 @@ namespace StudentManagement
                 if (selectedStudent is UndergraduateStudent) LevelComboBox.SelectedIndex = 0;
                 else LevelComboBox.SelectedIndex = 1;
 
+                //  Update course list and GPA
                 courseList.Set(selectedStudent.Courses);
                 TotalGPATextBox.Text = courseList.TotalGPA.ToString();
                 AddStudentButton.IsEnabled = false;
@@ -147,11 +140,13 @@ namespace StudentManagement
 
             if (selectedCourse != null)
             {
+                //  Fill out course fields
                 CourseNameTextBox.Text = selectedCourse.Name;
                 CourseNumberTextBox.Text = selectedCourse.Number.ToString();
                 CoursePrefixTextBox.Text= selectedCourse.Prefix.ToString();
                 CreditHoursTextBox.Text = selectedCourse.CreditHours.ToString();
                 GPATextBox.Text = selectedCourse.Grade.ToString();
+                //  Disable button
                 AddCourseButton.IsEnabled = false;
             }
 
@@ -167,6 +162,23 @@ namespace StudentManagement
         {
             if (AddCourseButton == null) return;
             AddCourseButton.IsEnabled = true;
+        }
+
+        private void BadInputBox(string message, TextBox tb)
+        {
+            MessageBox.Show(message, "Alert");
+            tb.Text = "";
+        }
+
+        //  Prevent the user from inputting non-numbers in select boxes
+        private void CheckIntegerInput(object sender, TextCompositionEventArgs e)
+        {
+            e.Handled = new Regex("[^0-9]+").IsMatch(e.Text);
+        }
+
+        private void CheckDoubleInput(object sender, TextCompositionEventArgs e)
+        {
+            e.Handled = new Regex("[^0-9.]+").IsMatch(e.Text);
         }
     }
 }
