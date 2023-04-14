@@ -40,14 +40,21 @@ namespace Playland
         private void NextImage(object sender, RoutedEventArgs e)
         {
             index = (index == filepaths.Length - 1) ? 0 : (index + 1);
-
+            //  Creates an image using the file path
             Image image = new Image();
             BitmapImage bitmap = new BitmapImage();
             bitmap.BeginInit();
-
             bitmap.UriSource = new Uri(filepaths[index]);
             bitmap.DecodePixelWidth = 384;
-            bitmap.EndInit();
+
+            //  Prevents program from crashing if a non-image file is within the directory
+            try { bitmap.EndInit(); }
+            catch (NotSupportedException)
+            {
+                //  Move on to the next image
+                NextImage(sender, e);
+                return;
+            }
 
             image.Source = bitmap;
 
