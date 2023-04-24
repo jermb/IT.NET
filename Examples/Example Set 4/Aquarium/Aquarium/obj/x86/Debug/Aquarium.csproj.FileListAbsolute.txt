@@ -1,0 +1,139 @@
+c:\users\administrator\documents\visual studio 2010\Projects\Aquarium\Aquarium\obj\x86\Debug\ResolveAssemblyReference.cache
+c:\users\administrator\documents\visual studio 2010\Projects\Aquarium\Aquarium\obj\x86\Debug\MainWindow.baml
+c:\users\administrator\documents\visual studio 2010\Projects\Aquarium\Aquarium\obj\x86\Debug\MainWindow.g.cs
+c:\users\administrator\documents\visual studio 2010\Projects\Aquarium\Aquarium\obj\x86\Debug\App.g.cs
+c:\users\administrator\documents\visual studio 2010\Projects\Aquarium\Aquarium\obj\x86\Debug\Aquarium_MarkupCompile.cache
+c:\users\administrator\documents\visual studio 2010\Projects\Aquarium\Aquarium\obj\x86\Debug\Aquarium.g.resources
+c:\users\administrator\documents\visual studio 2010\Projects\Aquarium\Aquarium\obj\x86\Debug\Aquarium.Properties.Resources.resources
+c:\users\administrator\documents\visual studio 2010\Projects\Aquarium\Aquarium\obj\x86\Debug\GenerateResource.read.1.tlog
+c:\users\administrator\documents\visual studio 2010\Projects\Aquarium\Aquarium\obj\x86\Debug\GenerateResource.write.1.tlog
+c:\users\administrator\documents\visual studio 2010\Projects\Aquarium\Aquarium\bin\Debug\Aquarium.exe
+c:\users\administrator\documents\visual studio 2010\Projects\Aquarium\Aquarium\bin\Debug\Aquarium.pdb
+c:\users\administrator\documents\visual studio 2010\Projects\Aquarium\Aquarium\obj\x86\Debug\Aquarium.exe
+c:\users\administrator\documents\visual studio 2010\Projects\Aquarium\Aquarium\obj\x86\Debug\Aquarium.pdb
+C:\Users\Administrator\Documents\C# Example Sets\C# Course Set 7\Aquarium\Aquarium\Aquarium\obj\x86\Debug\Aquarium.exe
+C:\Users\Administrator\Documents\C# Example Sets\C# Course Set 7\Aquarium\Aquarium\Aquarium\obj\x86\Debug\Aquarium.pdb
+C:\Users\Administrator\Documents\C# Example Sets\C# Course Set 7\Aquarium\Aquarium\Aquarium\bin\Debug\Aquarium.exe
+C:\Users\Administrator\Documents\C# Example Sets\C# Course Set 7\Aquarium\Aquarium\Aquarium\bin\Debug\Aquarium.pdb
+C:\Users\Administrator\Documents\C# Example Sets\C# Course Set 7\Aquarium\Aquarium\Aquarium\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Administrator\Documents\C# Example Sets\C# Course Set 7\Aquarium\Aquarium\Aquarium\obj\x86\Debug\MainWindow.baml
+C:\Users\Administrator\Documents\C# Example Sets\C# Course Set 7\Aquarium\Aquarium\Aquarium\obj\x86\Debug\MainWindow.g.cs
+C:\Users\Administrator\Documents\C# Example Sets\C# Course Set 7\Aquarium\Aquarium\Aquarium\obj\x86\Debug\App.g.cs
+C:\Users\Administrator\Documents\C# Example Sets\C# Course Set 7\Aquarium\Aquarium\Aquarium\obj\x86\Debug\Aquarium_MarkupCompile.cache
+C:\Users\Administrator\Documents\C# Example Sets\C# Course Set 7\Aquarium\Aquarium\Aquarium\obj\x86\Debug\Aquarium.g.resources
+C:\Users\Administrator\Documents\C# Example Sets\C# Course Set 7\Aquarium\Aquarium\Aquarium\obj\x86\Debug\Aquarium.Properties.Resources.resources
+C:\Users\Administrator\Documents\C# Example Sets\C# Course Set 7\Aquarium\Aquarium\Aquarium\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Users\Administrator\Documents\C# Example Sets\C# Course Set 7\Aquarium\Aquarium\Aquarium\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\Users\Administrator\Desktop\Aquarium\Aquarium\obj\x86\Debug\Aquarium.exe
+C:\Users\Administrator\Desktop\Aquarium\Aquarium\obj\x86\Debug\Aquarium.pdb
+C:\Users\Administrator\Desktop\Aquarium\Aquarium\bin\Debug\Aquarium.exe
+C:\Users\Administrator\Desktop\Aquarium\Aquarium\bin\Debug\Aquarium.pdb
+C:\Users\Administrator\Desktop\Aquarium\Aquarium\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Administrator\Desktop\Aquarium\Aquarium\obj\x86\Debug\MainWindow.baml
+C:\Users\Administrator\Desktop\Aquarium\Aquarium\obj\x86\Debug\MainWindow.g.cs
+C:\Users\Administrator\Desktop\Aquarium\Aquarium\obj\x86\Debug\App.g.cs
+C:\Users\Administrator\Desktop\Aquarium\Aquarium\obj\x86\Debug\Aquarium_MarkupCompile.cache
+C:\Users\Administrator\Desktop\Aquarium\Aquarium\obj\x86\Debug\Aquarium.g.resources
+C:\Users\Administrator\Desktop\Aquarium\Aquarium\obj\x86\Debug\Aquarium.Properties.Resources.resources
+C:\Users\Administrator\Desktop\Aquarium\Aquarium\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Users\Administrator\Desktop\Aquarium\Aquarium\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\Users\Dale\Documents\Visual Studio 2012\Projects\Aquarium\Aquarium\Aquarium\obj\x86\Debug\Aquarium.exe
+C:\Users\Dale\Documents\Visual Studio 2012\Projects\Aquarium\Aquarium\Aquarium\obj\x86\Debug\Aquarium.pdb
+C:\Users\Dale\Documents\Visual Studio 2012\Projects\Aquarium\Aquarium\Aquarium\bin\Debug\Aquarium.exe
+C:\Users\Dale\Documents\Visual Studio 2012\Projects\Aquarium\Aquarium\Aquarium\bin\Debug\Aquarium.pdb
+C:\Users\Dale\Documents\Visual Studio 2012\Projects\Aquarium\Aquarium\Aquarium\obj\x86\Debug\Aquarium.csprojResolveAssemblyReference.cache
+C:\Users\Dale\Documents\Visual Studio 2012\Projects\Aquarium\Aquarium\Aquarium\obj\x86\Debug\MainWindow.baml
+C:\Users\Dale\Documents\Visual Studio 2012\Projects\Aquarium\Aquarium\Aquarium\obj\x86\Debug\MainWindow.g.cs
+C:\Users\Dale\Documents\Visual Studio 2012\Projects\Aquarium\Aquarium\Aquarium\obj\x86\Debug\App.g.cs
+C:\Users\Dale\Documents\Visual Studio 2012\Projects\Aquarium\Aquarium\Aquarium\obj\x86\Debug\Aquarium_MarkupCompile.cache
+C:\Users\Dale\Documents\Visual Studio 2012\Projects\Aquarium\Aquarium\Aquarium\obj\x86\Debug\Aquarium.g.resources
+C:\Users\Dale\Documents\Visual Studio 2012\Projects\Aquarium\Aquarium\Aquarium\obj\x86\Debug\Aquarium.Properties.Resources.resources
+C:\Users\Dale\Documents\Visual Studio 2012\Projects\Aquarium\Aquarium\Aquarium\obj\x86\Debug\Aquarium.csproj.GenerateResource.Cache
+I:\FangWang\Course\C#\Fall14\w8\Example Set 14\Aquarium\Aquarium\obj\x86\Debug\Aquarium.exe
+I:\FangWang\Course\C#\Fall14\w8\Example Set 14\Aquarium\Aquarium\obj\x86\Debug\Aquarium.pdb
+I:\FangWang\Course\C#\Fall14\w8\Example Set 14\Aquarium\Aquarium\bin\Debug\Aquarium.exe
+I:\FangWang\Course\C#\Fall14\w8\Example Set 14\Aquarium\Aquarium\bin\Debug\Aquarium.pdb
+I:\FangWang\Course\C#\Fall14\w8\Example Set 14\Aquarium\Aquarium\obj\x86\Debug\Aquarium.csprojResolveAssemblyReference.cache
+I:\FangWang\Course\C#\Fall14\w8\Example Set 14\Aquarium\Aquarium\obj\x86\Debug\MainWindow.baml
+I:\FangWang\Course\C#\Fall14\w8\Example Set 14\Aquarium\Aquarium\obj\x86\Debug\MainWindow.g.cs
+I:\FangWang\Course\C#\Fall14\w8\Example Set 14\Aquarium\Aquarium\obj\x86\Debug\App.g.cs
+I:\FangWang\Course\C#\Fall14\w8\Example Set 14\Aquarium\Aquarium\obj\x86\Debug\Aquarium_MarkupCompile.cache
+I:\FangWang\Course\C#\Fall14\w8\Example Set 14\Aquarium\Aquarium\obj\x86\Debug\Aquarium.g.resources
+I:\FangWang\Course\C#\Fall14\w8\Example Set 14\Aquarium\Aquarium\obj\x86\Debug\Aquarium.Properties.Resources.resources
+I:\FangWang\Course\C#\Fall14\w8\Example Set 14\Aquarium\Aquarium\obj\x86\Debug\Aquarium.csproj.GenerateResource.Cache
+D:\FangWang\Course\C#\Fall14\w8\Example Set 14\Aquarium\Aquarium\obj\x86\Debug\Aquarium.exe
+D:\FangWang\Course\C#\Fall14\w8\Example Set 14\Aquarium\Aquarium\obj\x86\Debug\Aquarium.pdb
+D:\FangWang\Course\C#\Fall14\w8\Example Set 14\Aquarium\Aquarium\bin\Debug\Aquarium.exe
+D:\FangWang\Course\C#\Fall14\w8\Example Set 14\Aquarium\Aquarium\bin\Debug\Aquarium.pdb
+D:\FangWang\Course\C#\Fall14\w8\Example Set 14\Aquarium\Aquarium\obj\x86\Debug\Aquarium.csprojResolveAssemblyReference.cache
+D:\FangWang\Course\C#\Fall14\w8\Example Set 14\Aquarium\Aquarium\obj\x86\Debug\MainWindow.baml
+D:\FangWang\Course\C#\Fall14\w8\Example Set 14\Aquarium\Aquarium\obj\x86\Debug\MainWindow.g.cs
+D:\FangWang\Course\C#\Fall14\w8\Example Set 14\Aquarium\Aquarium\obj\x86\Debug\App.g.cs
+D:\FangWang\Course\C#\Fall14\w8\Example Set 14\Aquarium\Aquarium\obj\x86\Debug\Aquarium_MarkupCompile.cache
+D:\FangWang\Course\C#\Fall14\w8\Example Set 14\Aquarium\Aquarium\obj\x86\Debug\Aquarium.g.resources
+D:\FangWang\Course\C#\Fall14\w8\Example Set 14\Aquarium\Aquarium\obj\x86\Debug\Aquarium.Properties.Resources.resources
+D:\FangWang\Course\C#\Fall14\w8\Example Set 14\Aquarium\Aquarium\obj\x86\Debug\Aquarium.csproj.GenerateResource.Cache
+G:\FangWang\Course\C#\Fall14\w8\Example Set 14\Aquarium\Aquarium\obj\x86\Debug\Aquarium.exe
+G:\FangWang\Course\C#\Fall14\w8\Example Set 14\Aquarium\Aquarium\obj\x86\Debug\Aquarium.pdb
+G:\FangWang\Course\C#\Fall14\w8\Example Set 14\Aquarium\Aquarium\bin\Debug\Aquarium.exe
+G:\FangWang\Course\C#\Fall14\w8\Example Set 14\Aquarium\Aquarium\bin\Debug\Aquarium.pdb
+G:\FangWang\Course\C#\Fall14\w8\Example Set 14\Aquarium\Aquarium\obj\x86\Debug\Aquarium.csprojResolveAssemblyReference.cache
+G:\FangWang\Course\C#\Fall14\w8\Example Set 14\Aquarium\Aquarium\obj\x86\Debug\MainWindow.baml
+G:\FangWang\Course\C#\Fall14\w8\Example Set 14\Aquarium\Aquarium\obj\x86\Debug\MainWindow.g.cs
+G:\FangWang\Course\C#\Fall14\w8\Example Set 14\Aquarium\Aquarium\obj\x86\Debug\App.g.cs
+G:\FangWang\Course\C#\Fall14\w8\Example Set 14\Aquarium\Aquarium\obj\x86\Debug\Aquarium_MarkupCompile.cache
+G:\FangWang\Course\C#\Fall14\w8\Example Set 14\Aquarium\Aquarium\obj\x86\Debug\Aquarium.g.resources
+G:\FangWang\Course\C#\Fall14\w8\Example Set 14\Aquarium\Aquarium\obj\x86\Debug\Aquarium.Properties.Resources.resources
+G:\FangWang\Course\C#\Fall14\w8\Example Set 14\Aquarium\Aquarium\obj\x86\Debug\Aquarium.csproj.GenerateResource.Cache
+D:\FangWang\Course\C#\Fall15\w8\Example Set 14\Aquarium\Aquarium\obj\x86\Debug\Aquarium.exe
+D:\FangWang\Course\C#\Fall15\w8\Example Set 14\Aquarium\Aquarium\obj\x86\Debug\Aquarium.pdb
+D:\FangWang\Course\C#\Fall15\w8\Example Set 14\Aquarium\Aquarium\bin\Debug\Aquarium.exe
+D:\FangWang\Course\C#\Fall15\w8\Example Set 14\Aquarium\Aquarium\bin\Debug\Aquarium.pdb
+D:\FangWang\Course\C#\Fall15\w8\Example Set 14\Aquarium\Aquarium\obj\x86\Debug\Aquarium.csprojResolveAssemblyReference.cache
+D:\FangWang\Course\C#\Fall15\w8\Example Set 14\Aquarium\Aquarium\obj\x86\Debug\MainWindow.baml
+D:\FangWang\Course\C#\Fall15\w8\Example Set 14\Aquarium\Aquarium\obj\x86\Debug\MainWindow.g.cs
+D:\FangWang\Course\C#\Fall15\w8\Example Set 14\Aquarium\Aquarium\obj\x86\Debug\App.g.cs
+D:\FangWang\Course\C#\Fall15\w8\Example Set 14\Aquarium\Aquarium\obj\x86\Debug\Aquarium_MarkupCompile.cache
+D:\FangWang\Course\C#\Fall15\w8\Example Set 14\Aquarium\Aquarium\obj\x86\Debug\Aquarium.g.resources
+D:\FangWang\Course\C#\Fall15\w8\Example Set 14\Aquarium\Aquarium\obj\x86\Debug\Aquarium.Properties.Resources.resources
+D:\FangWang\Course\C#\Fall15\w8\Example Set 14\Aquarium\Aquarium\obj\x86\Debug\Aquarium.csproj.GenerateResource.Cache
+I:\FangWang\Course\C#\Fall15\w8\Example Set 14\Aquarium\Aquarium\obj\x86\Debug\Aquarium.exe
+I:\FangWang\Course\C#\Fall15\w8\Example Set 14\Aquarium\Aquarium\obj\x86\Debug\Aquarium.pdb
+E:\FangWang\Courses\C#\Fall16\w8\Example Set 14\Aquarium\Aquarium\obj\x86\Debug\Aquarium.exe
+E:\FangWang\Courses\C#\Fall16\w8\Example Set 14\Aquarium\Aquarium\obj\x86\Debug\Aquarium.pdb
+E:\FangWang\Courses\C#\Fall16\w8\Example Set 14\Aquarium\Aquarium\bin\Debug\Aquarium.exe
+E:\FangWang\Courses\C#\Fall16\w8\Example Set 14\Aquarium\Aquarium\bin\Debug\Aquarium.pdb
+E:\FangWang\Courses\C#\Fall16\w8\Example Set 14\Aquarium\Aquarium\obj\x86\Debug\Aquarium.csprojResolveAssemblyReference.cache
+E:\FangWang\Courses\C#\Fall16\w8\Example Set 14\Aquarium\Aquarium\obj\x86\Debug\MainWindow.baml
+E:\FangWang\Courses\C#\Fall16\w8\Example Set 14\Aquarium\Aquarium\obj\x86\Debug\MainWindow.g.cs
+E:\FangWang\Courses\C#\Fall16\w8\Example Set 14\Aquarium\Aquarium\obj\x86\Debug\App.g.cs
+E:\FangWang\Courses\C#\Fall16\w8\Example Set 14\Aquarium\Aquarium\obj\x86\Debug\Aquarium_MarkupCompile.cache
+E:\FangWang\Courses\C#\Fall16\w8\Example Set 14\Aquarium\Aquarium\obj\x86\Debug\Aquarium.g.resources
+E:\FangWang\Courses\C#\Fall16\w8\Example Set 14\Aquarium\Aquarium\obj\x86\Debug\Aquarium.Properties.Resources.resources
+E:\FangWang\Courses\C#\Fall16\w8\Example Set 14\Aquarium\Aquarium\obj\x86\Debug\Aquarium.csproj.GenerateResource.Cache
+E:\FangWang\Courses\C#\SP17\w8\Example Set 14\Aquarium\Aquarium\obj\x86\Debug\Aquarium.exe
+E:\FangWang\Courses\C#\SP17\w8\Example Set 14\Aquarium\Aquarium\obj\x86\Debug\Aquarium.pdb
+F:\FangWang\Courses\C#\SP17\w8\Example Set 14\Aquarium\Aquarium\obj\x86\Debug\Aquarium.exe
+F:\FangWang\Courses\C#\SP17\w8\Example Set 14\Aquarium\Aquarium\obj\x86\Debug\Aquarium.pdb
+E:\FangWang\Courses\C#\SP17\w8\Example Set 14\Aquarium\Aquarium\bin\Debug\Aquarium.exe
+E:\FangWang\Courses\C#\SP17\w8\Example Set 14\Aquarium\Aquarium\bin\Debug\Aquarium.pdb
+E:\FangWang\Courses\C#\SP17\w8\Example Set 14\Aquarium\Aquarium\obj\x86\Debug\Aquarium.csprojResolveAssemblyReference.cache
+E:\FangWang\Courses\C#\SP17\w8\Example Set 14\Aquarium\Aquarium\obj\x86\Debug\MainWindow.baml
+E:\FangWang\Courses\C#\SP17\w8\Example Set 14\Aquarium\Aquarium\obj\x86\Debug\MainWindow.g.cs
+E:\FangWang\Courses\C#\SP17\w8\Example Set 14\Aquarium\Aquarium\obj\x86\Debug\App.g.cs
+E:\FangWang\Courses\C#\SP17\w8\Example Set 14\Aquarium\Aquarium\obj\x86\Debug\Aquarium_MarkupCompile.cache
+E:\FangWang\Courses\C#\SP17\w8\Example Set 14\Aquarium\Aquarium\obj\x86\Debug\Aquarium.g.resources
+E:\FangWang\Courses\C#\SP17\w8\Example Set 14\Aquarium\Aquarium\obj\x86\Debug\Aquarium.Properties.Resources.resources
+E:\FangWang\Courses\C#\SP17\w8\Example Set 14\Aquarium\Aquarium\obj\x86\Debug\Aquarium.csproj.GenerateResource.Cache
+H:\FangWang\Courses\C#\Sum17\Week6\CodeExamples\Example Set 4\Aquarium\Aquarium\bin\Debug\Aquarium.exe
+H:\FangWang\Courses\C#\Sum17\Week6\CodeExamples\Example Set 4\Aquarium\Aquarium\bin\Debug\Aquarium.pdb
+H:\FangWang\Courses\C#\Sum17\Week6\CodeExamples\Example Set 4\Aquarium\Aquarium\obj\x86\Debug\Aquarium.csprojResolveAssemblyReference.cache
+H:\FangWang\Courses\C#\Sum17\Week6\CodeExamples\Example Set 4\Aquarium\Aquarium\obj\x86\Debug\MainWindow.baml
+H:\FangWang\Courses\C#\Sum17\Week6\CodeExamples\Example Set 4\Aquarium\Aquarium\obj\x86\Debug\MainWindow.g.cs
+H:\FangWang\Courses\C#\Sum17\Week6\CodeExamples\Example Set 4\Aquarium\Aquarium\obj\x86\Debug\App.g.cs
+H:\FangWang\Courses\C#\Sum17\Week6\CodeExamples\Example Set 4\Aquarium\Aquarium\obj\x86\Debug\Aquarium_MarkupCompile.cache
+H:\FangWang\Courses\C#\Sum17\Week6\CodeExamples\Example Set 4\Aquarium\Aquarium\obj\x86\Debug\Aquarium.g.resources
+H:\FangWang\Courses\C#\Sum17\Week6\CodeExamples\Example Set 4\Aquarium\Aquarium\obj\x86\Debug\Aquarium.Properties.Resources.resources
+H:\FangWang\Courses\C#\Sum17\Week6\CodeExamples\Example Set 4\Aquarium\Aquarium\obj\x86\Debug\Aquarium.csproj.GenerateResource.Cache
+H:\FangWang\Courses\C#\Sum17\Week6\CodeExamples\Example Set 4\Aquarium\Aquarium\obj\x86\Debug\Aquarium.exe
+H:\FangWang\Courses\C#\Sum17\Week6\CodeExamples\Example Set 4\Aquarium\Aquarium\obj\x86\Debug\Aquarium.pdb
