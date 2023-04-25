@@ -19,6 +19,8 @@ namespace CreatureKingdom
 
         BitmapImage leftImage;
         BitmapImage rightImage;
+        BitmapImage upImage;
+        BitmapImage downImage;
         Image currentImage;
 
         double creatureWidth = 100;
@@ -37,8 +39,10 @@ namespace CreatureKingdom
 
             currentImage = new Image();
             currentImage.Width = creatureWidth;
-            leftImage = LoadBitmap(@"EdsonJay/left.jpg", creatureWidth);
-            rightImage = LoadBitmap(@"EdsonJay/left.jpg", creatureWidth);
+            leftImage = LoadBitmap(@"EdsonJay/left.png", creatureWidth);
+            rightImage = LoadBitmap(@"EdsonJay/right.png", creatureWidth);
+            upImage = LoadBitmap(@"EdsonJay/up.png", creatureWidth);
+            downImage = LoadBitmap(@"EdsonJay/down.png", creatureWidth);
 
             random = new Random();
         }
@@ -47,9 +51,15 @@ namespace CreatureKingdom
         {
             base.Place(x, y);
 
-            direction = (Direction) random.Next(2, 3);
+            direction = (Direction) random.Next(0, 3);
 
-            currentImage.Source = (direction == Direction.LEFT) ? leftImage : rightImage;
+            switch (direction)
+            {
+                case Direction.UP: currentImage.Source = upImage; break;
+                case Direction.DOWN: currentImage.Source = downImage; break;
+                case Direction.LEFT: currentImage.Source = leftImage; break;
+                case Direction.RIGHT: currentImage.Source = rightImage; break;
+            }
             kingdom.Children.Add(currentImage);
             currentImage.SetValue(Canvas.LeftProperty, x);
             currentImage.SetValue(Canvas.TopProperty, y);
@@ -65,6 +75,7 @@ namespace CreatureKingdom
             {
                 if (!Paused)
                 {
+                    int angle = random.Next(1, 3);
                     switch (direction)
                     {
                         case Direction.LEFT:
@@ -83,7 +94,70 @@ namespace CreatureKingdom
                                 ChangeImage(leftImage);
                             }
                             break;
+                        case Direction.UP:
+                            y -= increment;
+                            if (y < 0)
+                            {
+                                direction = Direction.DOWN;
+                                ChangeImage(downImage);
+                            }
+                            break;
+                        case Direction.DOWN:
+                            y += increment;
+                            if (y > kingdom.ActualHeight - currentImage.ActualHeight)
+                            {
+                                direction = Direction.UP;
+                                ChangeImage(upImage);
+                            }
+                            break;
                     }
+
+                    switch (direction)
+                    {
+                        case Direction.LEFT:
+                        case Direction.RIGHT:
+                            if (angle == 1)
+                            {
+                                y += increment;
+                                if (y > kingdom.ActualHeight - currentImage.ActualHeight)
+                                {
+                                    direction = Direction.UP;
+                                    ChangeImage(upImage);
+                                }
+                            }
+                            else if (angle == 2)
+                            {
+                                y -= increment;
+                                if (y < 0)
+                                {
+                                    direction = Direction.DOWN;
+                                    ChangeImage(downImage);
+                                }
+                            }
+                            break;
+                        case Direction.UP:
+                        case Direction.DOWN:
+                            if (angle == 1)
+                            {
+                                x += increment;
+                                if (x > kingdom.ActualWidth - currentImage.ActualWidth)
+                                {
+                                    direction = Direction.LEFT;
+                                    ChangeImage(leftImage);
+                                }
+                            }
+                            else if (angle == 2)
+                            {
+                                x -= increment;
+                                if (x < 0)
+                                {
+                                    direction = Direction.RIGHT;
+                                    ChangeImage(rightImage);
+                                }
+                            }
+                            break;
+                    }
+
                     Update();
                 }
                 //int angle = random.Next(1, 4);
