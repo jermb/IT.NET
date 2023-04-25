@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Text;
 using System.Threading;
@@ -21,9 +22,10 @@ namespace CreatureKingdom
         Image currentImage;
 
         double creatureWidth = 100;
-        double increment = 2;
+        double increment = 20;
 
         private Thread? thread;
+        private bool running = false;
         private enum Direction { UP, DOWN, LEFT, RIGHT }
         private Direction direction;
         private Random random;
@@ -35,8 +37,8 @@ namespace CreatureKingdom
 
             currentImage = new Image();
             currentImage.Width = creatureWidth;
-            leftImage = LoadBitmap(@"assets/EdsonJay/left.jpg", creatureWidth);
-            rightImage = LoadBitmap(@"assets/EdsonJay/left.jpg", creatureWidth);
+            leftImage = LoadBitmap(@"EdsonJay/left.jpg", creatureWidth);
+            rightImage = LoadBitmap(@"EdsonJay/left.jpg", creatureWidth);
 
             random = new Random();
         }
@@ -45,20 +47,45 @@ namespace CreatureKingdom
         {
             base.Place(x, y);
 
-            direction = (Direction) random.Next(3, 4);
+            direction = (Direction) random.Next(2, 3);
 
+            currentImage.Source = (direction == Direction.LEFT) ? leftImage : rightImage;
             kingdom.Children.Add(currentImage);
             currentImage.SetValue(Canvas.LeftProperty, x);
             currentImage.SetValue(Canvas.TopProperty, y);
 
+            running = true;
             thread = new Thread(Move);
             thread.Start();
         }
 
         void Move()
         {
-            while (!Paused)
+            while (running)
             {
+                if (!Paused)
+                {
+                    switch (direction)
+                    {
+                        case Direction.LEFT:
+                            x -= increment;
+                            if (x < 0)
+                            {
+                                direction = Direction.RIGHT;
+                                ChangeImage(rightImage);
+                            }
+                            break;
+                        case Direction.RIGHT:
+                            x += increment;
+                            if (x > kingdom.ActualWidth - currentImage.ActualWidth)
+                            {
+                                direction = Direction.LEFT;
+                                ChangeImage(leftImage);
+                            }
+                            break;
+                    }
+                    Update();
+                }
                 //int angle = random.Next(1, 4);
                 //switch (direction)
                 //{
@@ -72,26 +99,7 @@ namespace CreatureKingdom
                 //    case Direction.LEFT: x -= increment; break;
                 //    case Direction.RIGHT: x += increment; break;
                 //}
-                switch (direction)
-                {
-                    case Direction.LEFT: 
-                        x -= increment; 
-                        if (x < 0)
-                        {
-                            direction = Direction.RIGHT;
-                            ChangeImage(rightImage);
-                        }
-                        break;
-                    case Direction.RIGHT: 
-                        x += increment;
-                        if (x > kingdom.ActualWidth)
-                        {
-                            direction = Direction.LEFT;
-                            ChangeImage(leftImage);
-                        }
-                        break;
-                }
-                Update();
+
                 Thread.Sleep(WaitTime);
             }
         }
@@ -114,7 +122,12 @@ namespace CreatureKingdom
 
         public override void Shutdown()
         {
-            base.Shutdown();
+            Paused = true;
+            running = false;
+            if (thread != null)
+            {
+                thread.Join();
+            }
         }
     }
 }
