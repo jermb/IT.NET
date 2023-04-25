@@ -33,10 +33,10 @@ namespace CreatureKingdom
             // Test your creature - create each creature below
 
             // Example:
-            // creature = new SmithMollyCreature(kingdom, Dispatcher, 100);
-            // creature.Paused = true;
-            // creatures.Add(creature);
-            // creature.Place(200, 200);
+            creature = new EdsonJayCreature(kingdom, Dispatcher, 100);
+            creature.Paused = true;
+            creatures.Add(creature);
+            creature.Place(200, 200);
 
             // creature = new SmithKarenCreature(kingdom, Dispatcher, 100);
             // creature.Paused = true;
