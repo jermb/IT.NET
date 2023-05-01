@@ -1,0 +1,76 @@
+﻿<Page
+    x:Class="PythonIDE.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:PythonIDE"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:controls="using:Microsoft.UI.Xaml.Controls"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <StackPanel>
+        <StackPanel>
+            <MenuBar>
+                <MenuBarItem Title="File">
+                    <MenuFlyoutItem x:ConnectionId='5' Text="New File"             x:Name="NewButton" IsEnabled="False"/>
+                    <MenuFlyoutItem x:ConnectionId='6' Text="Open File"                 />
+                    <MenuFlyoutItem x:ConnectionId='7' Text="Open Folder"                   />
+                    <MenuFlyoutItem x:ConnectionId='8' Text="Save"              x:Name="SaveButton" IsEnabled="False"/>
+                    <MenuFlyoutItem x:ConnectionId='9' Text="Save As"               />
+                    <MenuFlyoutSeparator />
+                    <MenuFlyoutItem x:ConnectionId='10' Text="Exit"             />
+                </MenuBarItem>
+                <MenuBarItem Title="Help">
+                    <MenuFlyoutItem x:ConnectionId='4' Text="About"              />
+                </MenuBarItem>
+            </MenuBar>
+        </StackPanel>
+
+        <SplitView Height="800" IsPaneOpen="True">
+            <SplitView.Pane>
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="auto"/>
+                    </Grid.RowDefinitions>
+                    <TreeView x:ConnectionId='2' x:Name="NavTree">
+                        <TreeView.RootNodes>
+                            <TreeViewNode Content="World">
+                                <TreeViewNode.Children>
+                                    <TreeViewNode Content="Hello"></TreeViewNode>
+                                </TreeViewNode.Children>
+                            </TreeViewNode>
+                        </TreeView.RootNodes>
+                    </TreeView>
+                </Grid>
+            </SplitView.Pane>
+            <SplitView.Content>
+                <TextBox x:ConnectionId='3' x:Name="InputBox" Grid.Column="1" TextWrapping="Wrap" ScrollViewer.VerticalScrollBarVisibility="Auto" AcceptsReturn="True"                                                                                                     />
+            </SplitView.Content>
+        </SplitView>
+
+        <!--Content-->
+        <!--<Grid Height="700">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="400"></ColumnDefinition>
+                <ColumnDefinition Width="1000*"></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            
+            --><!--Navigation-->
+            <!--<ListBox x:Name="Navigation">
+                <ListBox.ItemTemplate>
+                    
+                </ListBox.ItemTemplate>
+                
+            </ListBox>-->
+            
+            
+            <!--Editor--><!--
+            <TextBox x:Name="InputBox" Grid.Column="1" TextWrapping="Wrap" ScrollViewer.VerticalScrollBarVisibility="Auto" AcceptsReturn="True" Paste="InputBox_ClipboardAction" CuttingToClipboard="InputBox_ClipboardAction" KeyDown="TabHandling"/>
+        </Grid>-->
+        <TextBlock></TextBlock>
+    </StackPanel>
+
+</Page>
+

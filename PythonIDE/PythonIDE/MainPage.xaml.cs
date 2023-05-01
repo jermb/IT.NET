@@ -28,15 +28,15 @@ namespace PythonIDE
     /// </summary>
     public sealed partial class MainPage : Page
     {
-        private readonly PythonDocument doc;
+        private readonly PythonFile doc;
         public MainPage()
         {
             this.InitializeComponent();
-            doc = new PythonDocument(this);
+            doc = new PythonFile(this);
         }
 
         /* Event Handlers */
-        private async void Open(object sender, RoutedEventArgs e)
+        private async void OpenFile(object sender, RoutedEventArgs e)
         {
             //  Make sure the user doesn't unwillingly delete changes
             if (!await ResolveUnsavedChanges("Are you sure?")) return;
@@ -45,11 +45,26 @@ namespace PythonIDE
             FileOpenPicker openPicker = new FileOpenPicker();
             openPicker.ViewMode = PickerViewMode.List;
             openPicker.SuggestedStartLocation = PickerLocationId.DocumentsLibrary;
-            openPicker.FileTypeFilter.Add(".txt");
+            openPicker.FileTypeFilter.Add(".py");
             StorageFile file = await openPicker.PickSingleFileAsync();
             //  Sends a reference to the chosen file to the TextDocument class to be read
             //  If a new document is successfully opened ensures the New document button is available
             if (await doc.Open(file)) NewButton.IsEnabled = true;
+        }
+
+        private async void OpenFolder(object sender, RoutedEventArgs e)
+        {
+            if (!await ResolveUnsavedChanges("Are yous sure?")) return;
+
+            FolderPicker picker = new FolderPicker();
+            picker.FileTypeFilter.Add(".py");
+
+            StorageFolder folder = await picker.PickSingleFolderAsync();
+            if (folder == null) return;
+
+            IReadOnlyList<StorageFolder> subfolders = await folder.GetFoldersAsync();
+            IReadOnlyList<StorageFile> files = await folder.GetFilesAsync();
+
         }
 
         private async void Save(object sender, RoutedEventArgs e)
@@ -78,7 +93,7 @@ namespace PythonIDE
             //  Opens a dialog for the user to name and pick the location of their file
             FileSavePicker savePicker = new FileSavePicker();
             savePicker.SuggestedStartLocation = PickerLocationId.DocumentsLibrary;
-            savePicker.FileTypeChoices.Add("Plain Text", new List<string>() { ".txt" });
+            savePicker.FileTypeChoices.Add("Python Program", new List<string>() { ".py" });
             //  If the Document already has a name fill that into the file name field, otherwise default to 'Untitled'
             savePicker.SuggestedFileName = doc.FileName ?? "Untitled";
             StorageFile file = await savePicker.PickSaveFileAsync();
@@ -105,7 +120,7 @@ namespace PythonIDE
         private async void About(object sender, RoutedEventArgs e)
         {
             //  Displays a Dialog box with information about the application
-            await new MessageDialog("This application is a basic text editor. It is capable of opening and saving '.txt' files.\nIt was created by Jay Edson for INFOTC 4400", "About").ShowAsync();
+            await new MessageDialog("This application is a basic Python editor. It is capable of opening, saving, and running '.py' files.\nIt was created by Jay Edson for INFOTC 4400 as the final project.", "About").ShowAsync();
         }
 
         /*  Utility Methods  */
@@ -165,7 +180,7 @@ namespace PythonIDE
         public void SetFileName()
         {
             //  Sets the Title of the document about the text box to the file's name (if it has one), defaults to 'Untitled' (same as SaveAs())
-            FileName.Text = doc.FileName ?? "Untitled";
+            //FileName.Text = doc.FileName ?? "Untitled";
         }
 
         public void UnsavedChanges(bool enabled)
@@ -174,7 +189,7 @@ namespace PythonIDE
             //  Disables save button if HasChanges == false. Enables it if HasChanges == true
             SaveButton.IsEnabled = enabled;
             //  Uses Italics to show user file has unsaved changes (applied to the document Title)
-            FileName.FontStyle = enabled ? FontStyle.Italic : FontStyle.Normal;
+            //FileName.FontStyle = enabled ? FontStyle.Italic : FontStyle.Normal;
             //  If the NewButton is disabled (meaning the document is New) enables it. Can only be disabled by the New() method
             if (!NewButton.IsEnabled) NewButton.IsEnabled = enabled;
         }
