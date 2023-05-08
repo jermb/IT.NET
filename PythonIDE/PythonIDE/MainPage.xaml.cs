@@ -18,6 +18,14 @@ using System.Threading.Tasks;
 using Windows.ApplicationModel.Core;
 using Windows.UI.Popups;
 using Windows.UI.Text;
+using System.Diagnostics;
+using Windows.System;
+using IronPython.Hosting;
+using Microsoft.Scripting.Hosting;
+using System.Text;
+using System.Text.RegularExpressions;
+using Windows.UI;
+using static System.Net.Mime.MediaTypeNames;
 
 // The Blank Page item template is documented at https://go.microsoft.com/fwlink/?LinkId=402352&clcid=0x409
 
@@ -26,13 +34,23 @@ namespace PythonIDE
     /// <summary>
     /// An empty page that can be used on its own or navigated to within a Frame.
     /// </summary>
+ 
     public sealed partial class MainPage : Page
     {
-        private readonly PythonFile doc;
+        private static TextBlock output;
+        private static TextBlock debug;
+        private PythonFile doc;
+
+        FolderNavigation nav = new FolderNavigation();
         public MainPage()
         {
+
             this.InitializeComponent();
-            doc = new PythonFile(this);
+            doc = new PythonFile();
+            //test();
+            output = Output;
+            debug = Debug;
+            nav.Set(doc);
         }
 
         /* Event Handlers */
@@ -49,7 +67,17 @@ namespace PythonIDE
             StorageFile file = await openPicker.PickSingleFileAsync();
             //  Sends a reference to the chosen file to the TextDocument class to be read
             //  If a new document is successfully opened ensures the New document button is available
-            if (await doc.Open(file)) NewButton.IsEnabled = true;
+            //if (await doc.Open(file)) NewButton.IsEnabled = true;
+            if (file == null) return;
+            PythonFile pyFile = new PythonFile(file);
+            var fileData = await pyFile.Open();
+            if (fileData.Item1 != null)
+            {
+                FileName.Text = fileData.Item1;
+                RichTextBox.Document.SetText(TextSetOptions.None, fileData.Item2);
+            }
+            nav.Set(pyFile);
+            doc = pyFile;
         }
 
         private async void OpenFolder(object sender, RoutedEventArgs e)
@@ -62,8 +90,11 @@ namespace PythonIDE
             StorageFolder folder = await picker.PickSingleFolderAsync();
             if (folder == null) return;
 
-            IReadOnlyList<StorageFolder> subfolders = await folder.GetFoldersAsync();
-            IReadOnlyList<StorageFile> files = await folder.GetFilesAsync();
+            //IReadOnlyList<StorageFolder> subfolders = await folder.GetFoldersAsync();
+            //IReadOnlyList<StorageFile> files = await folder.GetFilesAsync();
+            PythonFolder pyFolder = new PythonFolder(folder);
+            pyFolder.LoadItems();
+            nav.Set(pyFolder);
 
         }
 
@@ -101,11 +132,20 @@ namespace PythonIDE
             await doc.Save(file);
         }
 
+        private async void SaveAll(object sender, RoutedEventArgs e)
+        {
+            await nav.Save();
+        }
+
         private async void New(object sender, RoutedEventArgs e)
         {
             //  If the current doc has Unsaved changes ask the user to save them before opening a new document
             //  If they cancel the operation nothing happens, otherwise a new document is created.
-            if (await ResolveUnsavedChanges("Are you sure?")) await doc.New();
+            if (await ResolveUnsavedChanges("Are you sure?"))
+            {
+                PythonFile file = new PythonFile();
+                nav.Set(file);
+            }
             NewButton.IsEnabled = false;
         }
 
@@ -124,7 +164,7 @@ namespace PythonIDE
         }
 
         /*  Utility Methods  */
-        private async Task<bool> ResolveUnsavedChanges(string msgTitle)
+        private async Task<bool> ResolveUnsavedChanges(string msgTitle, bool discard = true)
         {
             if (!doc.HasChanges) return true;
             //  Checks whether the user really wants to exit the application/current document with unsaved changes
@@ -134,11 +174,11 @@ namespace PythonIDE
             var discardCommand = new UICommand("Discard");
             var cancelCommand = new UICommand("Cancel");
             dialog.Commands.Add(saveCommand);
-            dialog.Commands.Add(discardCommand);
+            if (discard) dialog.Commands.Add(discardCommand);
             dialog.Commands.Add(cancelCommand);
 
             var command = await dialog.ShowAsync();
-            if (command == cancelCommand)
+            if (command == cancelCommand || (command == discardCommand && !discard))
             {
                 //  Cancelling returns false and prevents whatever action was occurring
                 return false;
@@ -160,23 +200,32 @@ namespace PythonIDE
             {
                 //  Finds the area selected by the user and replaces it with a Tab character
                 //  Allows for replacing multiple characters with one tab, as opposed to just inserting a tab where the cursor is
-                int start = InputBox.SelectionStart;
-                int length = InputBox.SelectionLength;
-                InputBox.Text = InputBox.Text.Substring(0, start) + "\t" + InputBox.Text.Substring(start + length);
+   
+                int start = Selection.StartPosition;
+                int length = Selection.Length;
+                
+                DocText = DocText.Substring(0, start) + "\t" + DocText.Substring(start + length);
+  
                 //  Moves the cursor behind the new tab
-                InputBox.SelectionStart = ++start;
+                Selection.StartPosition = ++start;
                 //  Absorbs tab press, prevents moving to next navigation item
                 e.Handled = true;
             }
         }
 
         /*  Public methods called from TextDocument class  */
-        public string DocumentText
+
+        public ITextSelection Selection
         {
-            get => InputBox.Text;
-            //  Prevents setting the TextBox to hold a null value
-            set => InputBox.Text = value ?? "";
+            get => RichTextBox.Document.Selection;
         }
+
+        public string DocText
+        {
+            get { RichTextBox.Document.GetText(TextGetOptions.None, out string text); return text; }
+            set => RichTextBox.Document.SetText(TextSetOptions.None, value);
+        }
+
         public void SetFileName()
         {
             //  Sets the Title of the document about the text box to the file's name (if it has one), defaults to 'Untitled' (same as SaveAs())
@@ -200,6 +249,97 @@ namespace PythonIDE
             //  This method exists because with the standard TextChanged event Opening a document would cause the event to fire and it would be flagged as needing to be saved.
             //  Now it is only flagged when the user types text, but that prevents mouse based input, mainly pasting and cutting.
             doc.HasChanges = true;
+        }
+
+        private void StackPanel_PointerPressed(object sender, PointerRoutedEventArgs e)
+        {
+            e.Handled = true;
+        }
+
+        public static void SetOutput(string text, string error)
+        {
+            output.Text = text;
+            debug.Text = error;
+        }
+
+        private void RunProgram(object sender, RoutedEventArgs e)
+        {
+            RunProgram();
+        }
+
+        private async Task RunProgram()
+        {
+            if (await ResolveUnsavedChanges("Must save changes before running.", false))
+            {
+                doc.Run();
+            }
+        }
+
+        private void InputBox_TextChanged(object sender, TextChangedEventArgs e)
+        {
+
+        }
+
+        private bool ignoreTextChange = false;
+        private void RichEditBox_TextChanged(object sender, RoutedEventArgs e)
+        {
+            //  Uses variable to prevent formatting of text from creating infinite loop
+            if (ignoreTextChange) return;
+            ignoreTextChange = true;
+
+            //  Adds color to text of keywords
+            RichTextBox.ColorText();
+            ignoreTextChange = false;
+        }
+
+        private void RichEditBox_Paste(object sender, TextControlPasteEventArgs e)
+        {
+
+        }
+
+        private void RichEditBox_CuttingToClipboard(RichEditBox sender, TextControlCuttingToClipboardEventArgs args)
+        {
+
+        }
+
+        private void RichTextBox_SelectionChanged(object sender, RoutedEventArgs e)
+        {
+            if (RichTextBox.Document.Selection.StartPosition == RichTextBox.Document.Selection.EndPosition) return;
+
+
+        }
+
+        private void CommentOut(object sender, RoutedEventArgs e)
+        {
+            RichTextBox.CommentOut();
+        }
+
+        private void RichTextBox_LostFocus(object sender, RoutedEventArgs e)
+        {
+            ITextSelection selection = RichTextBox.Document.Selection;
+            RichTextBox.Tag = new Tuple<int, int>(selection.StartPosition, selection.EndPosition);
+        }
+
+        private void RichTextBox_GotFocus(object sender, RoutedEventArgs e)
+        {
+            if (RichTextBox.Tag != null)
+            {
+                Tuple<int, int> selection = (Tuple<int, int>)RichTextBox.Tag;
+                RichTextBox.Document.Selection.SetRange(selection.Item1, selection.Item2);
+            }
+        }
+
+        private void TreeViewItem_Tapped(object sender, TappedRoutedEventArgs e)
+        {
+            var tvi = sender as TreeViewItem;
+            if (tvi == null) return;
+
+            var item = tvi.DataContext as PythonFile;
+            if (item == null) return;
+
+
+            //Open file
+            var file = item.Open();
         }
     }
 }

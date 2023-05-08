@@ -5,11 +5,42 @@
     xmlns:local="using:PythonIDE"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-    xmlns:controls="using:Microsoft.UI.Xaml.Controls"
+    xmlns:controls="using:Microsoft.Toolkit.Uwp.UI.Controls"
+    xmlns:muxc="using:Microsoft.UI.Xaml.Controls"
     mc:Ignorable="d"
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
-    <StackPanel>
+    <!--<Page.Resources>
+        --><!--<local:FolderNavigation x:Key="folders"/>--><!--
+        <DataTemplate x:Key="DefaultTemplate">
+            <TextBlock Text="{Binding DisplayName}" />
+        </DataTemplate>
+
+        <DataTemplate x:Key="ChildTemplate">
+            <StackPanel>
+                <TextBlock Text="{Binding DisplayName}" />
+                <ItemsControl ItemsSource="{Binding Items}">
+                    <ItemsControl.ItemTemplate>
+                        <DataTemplate>
+                            <ContentPresenter Content="{Binding}">
+                                <ContentPresenter.ContentTemplateSelector>
+                                    <local:PythonItemSelector
+                                    DefaultTemplate="{StaticResource DefaultTemplate}"
+                                    ChildTemplate="{StaticResource ChildTemplate}" />
+                                </ContentPresenter.ContentTemplateSelector>
+                            </ContentPresenter>
+                        </DataTemplate>
+                    </ItemsControl.ItemTemplate>
+                </ItemsControl>
+            </StackPanel>
+        </DataTemplate>
+
+        <local:PythonItemSelector x:Key="PythonItemSelector"
+        DefaultTemplate="{StaticResource DefaultTemplate}"
+        ChildTemplate="{StaticResource ChildTemplate}" />
+    </Page.Resources>-->
+
+    <StackPanel Height="1000">
         <StackPanel>
             <MenuBar>
                 <MenuBarItem Title="File">
@@ -18,8 +49,15 @@
                     <MenuFlyoutItem Text="Open Folder" Click="OpenFolder"/>
                     <MenuFlyoutItem Text="Save" Click="Save" x:Name="SaveButton" IsEnabled="False"/>
                     <MenuFlyoutItem Text="Save As" Click="SaveAs"/>
+                    <MenuFlyoutItem Text="Save All" Click="SaveAll"/>
                     <MenuFlyoutSeparator />
                     <MenuFlyoutItem Text="Exit" Click="Exit"/>
+                </MenuBarItem>
+                <MenuBarItem Title="Edit">
+                    <MenuFlyoutItem Text="Copy" x:Name="CopyButton"/>
+                    <MenuFlyoutItem Text="Paste"/>
+                    <MenuFlyoutItem Text="Cut"/>
+                    <MenuFlyoutItem Text="Comment Selection" Click="CommentOut"/>
                 </MenuBarItem>
                 <MenuBarItem Title="Help">
                     <MenuFlyoutItem Text="About" Click="About"/>
@@ -27,33 +65,54 @@
             </MenuBar>
         </StackPanel>
 
-        <SplitView Height="800" IsPaneOpen="True">
-            <SplitView.Pane>
-                <Grid>
-                    <Grid.RowDefinitions>
-                        <RowDefinition Height="*"/>
-                        <RowDefinition Height="auto"/>
-                    </Grid.RowDefinitions>
-                    <TreeView x:Name="NavTree">
-                        <TreeView.RootNodes>
-                            <TreeViewNode Content="World">
-                                <TreeViewNode.Children>
-                                    <TreeViewNode Content="Hello"></TreeViewNode>
-                                </TreeViewNode.Children>
-                            </TreeViewNode>
-                        </TreeView.RootNodes>
-                        <TreeView.Resources>
-                            <DataTemplate x:DataType="local:PythonFile">
-                                <TextBlock Text="{Binding FileName}"/>
-                            </DataTemplate>
-                        </TreeView.Resources>
-                    </TreeView>
-                </Grid>
-            </SplitView.Pane>
-            <SplitView.Content>
-                <TextBox x:Name="InputBox" Grid.Column="1" TextWrapping="Wrap" ScrollViewer.VerticalScrollBarVisibility="Auto" AcceptsReturn="True" Paste="InputBox_ClipboardAction" CuttingToClipboard="InputBox_ClipboardAction" KeyDown="TabHandling"/>
-            </SplitView.Content>
-        </SplitView>
+
+        <Grid Margin="0" Height="955">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="320"/>
+                <ColumnDefinition Width="700*"></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+
+            <TreeView x:Name="Navigation" ItemsSource="{x:Bind nav}" CanDragItems="False">
+                <TreeView.ItemTemplate>
+                    <DataTemplate>
+                        <!--<TextBlock Text="{Binding Name}"/>-->
+                        <TreeViewItem CanDrag="False" IsExpanded="True" ItemsSource="{Binding Items}" Tapped="TreeViewItem_Tapped">
+                            <StackPanel Orientation="Horizontal">
+                                <SymbolIcon Symbol="{Binding Symbol}"/>
+                                <TextBlock Text="{Binding DisplayName}"/>
+                            </StackPanel>
+                        </TreeViewItem>
+                    </DataTemplate>
+                </TreeView.ItemTemplate>
+            </TreeView>
+            
+            
+            <StackPanel Grid.Column="1" VerticalAlignment="Stretch" PointerPressed="StackPanel_PointerPressed">
+                <RelativePanel Height="55">
+                    <TextBlock x:Name="FileName" Text="Untitled" TextAlignment="Center" RelativePanel.AlignVerticalCenterWithPanel="True" RelativePanel.AlignLeftWithPanel="True" Margin="20 0"/>
+                    <Button Click="RunProgram" Width="50" Height="25" Content="Run" FontSize="10"  RelativePanel.AlignRightWithPanel="True" RelativePanel.AlignVerticalCenterWithPanel="True" Margin="40 0"/>
+                </RelativePanel>
+
+                <RichEditBox x:Name="RichTextBox" TextChanged="RichEditBox_TextChanged" ScrollViewer.VerticalScrollBarVisibility="Auto" AcceptsReturn="True"
+                             TextWrapping="Wrap" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Height="600" 
+                             Paste="RichEditBox_Paste" CuttingToClipboard="RichEditBox_CuttingToClipboard" KeyDown="TabHandling"
+                             SelectionChanged="RichTextBox_SelectionChanged" LostFocus="RichTextBox_LostFocus"/>
+
+                <TextBox x:Name="InputBox" Height="0" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" 
+                         TextWrapping="Wrap" ScrollViewer.VerticalScrollBarVisibility="Auto" AcceptsReturn="True" 
+                         Paste="InputBox_ClipboardAction" CuttingToClipboard="InputBox_ClipboardAction" KeyDown="TabHandling"
+                         TextChanged="InputBox_TextChanged"/>
+                <StackPanel Height="300" VerticalAlignment="Bottom" Orientation="Horizontal" HorizontalAlignment="Stretch">
+                    <TextBlock x:Name="Output" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Width="590" 
+                               ScrollViewer.VerticalScrollBarVisibility="Auto" ScrollViewer.HorizontalScrollMode="Disabled" TextWrapping="WrapWholeWords" />
+                    <TextBlock x:Name="Debug" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Width="590"
+                               ScrollViewer.VerticalScrollBarVisibility="Auto" ScrollViewer.HorizontalScrollMode="Disabled" TextWrapping="WrapWholeWords"/>
+                </StackPanel>
+            </StackPanel>
+        </Grid>
+
+
+
 
         <!--Content-->
         <!--<Grid Height="700">
@@ -62,16 +121,18 @@
                 <ColumnDefinition Width="1000*"></ColumnDefinition>
             </Grid.ColumnDefinitions>
             
-            --><!--Navigation-->
-            <!--<ListBox x:Name="Navigation">
+            -->
+        <!--Navigation-->
+        <!--<ListBox x:Name="Navigation">
                 <ListBox.ItemTemplate>
                     
                 </ListBox.ItemTemplate>
                 
             </ListBox>-->
-            
-            
-            <!--Editor--><!--
+
+
+        <!--Editor-->
+        <!--
             <TextBox x:Name="InputBox" Grid.Column="1" TextWrapping="Wrap" ScrollViewer.VerticalScrollBarVisibility="Auto" AcceptsReturn="True" Paste="InputBox_ClipboardAction" CuttingToClipboard="InputBox_ClipboardAction" KeyDown="TabHandling"/>
         </Grid>-->
         <TextBlock></TextBlock>
