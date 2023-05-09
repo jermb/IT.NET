@@ -340,6 +340,7 @@ namespace PythonIDE
         }
 
         private bool ignoreTextChange = false;
+        private int textChangeCount = 0;
         private void RichEditBox_TextChanged(object sender, RoutedEventArgs e)
         {
             //  Uses variable to prevent formatting of text from creating infinite loop
@@ -347,7 +348,11 @@ namespace PythonIDE
             ignoreTextChange = true;
 
             //  Adds color to text of keywords
-            RichTextBox.ColorText();
+            if (textChangeCount == 0) RichTextBox.ColorText();
+            else if (textChangeCount == 5) textChangeCount = -1;
+            textChangeCount++;
+  
+
             ignoreTextChange = false;
         }
 

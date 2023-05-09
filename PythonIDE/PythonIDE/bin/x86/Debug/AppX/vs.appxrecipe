@@ -30,13 +30,13 @@
     <AppXManifest Include="C:\Users\jermb\Source\Repos\IT.NET\PythonIDE\PythonIDE\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2023-05-09T03:19:30.511</Modified>
+      <Modified>2023-05-09T04:11:18.114</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\jermb\Source\Repos\IT.NET\PythonIDE\PythonIDE\bin\x86\Debug\PythonIDE.exe">
       <PackagePath>entrypoint\PythonIDE.exe</PackagePath>
-      <Modified>2023-05-09T03:19:25.882</Modified>
+      <Modified>2023-05-09T04:11:13.230</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\jermb\.nuget\packages\microsoft.web.webview2\1.0.1264.42\build\..\runtimes\win-x86\native_uap\Microsoft.Web.WebView2.Core.dll">
       <PackagePath>Microsoft.Web.WebView2.Core.dll</PackagePath>
@@ -290,11 +290,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\jermb\Source\Repos\IT.NET\PythonIDE\PythonIDE\bin\x86\Debug\App.xbf">
       <PackagePath>App.xbf</PackagePath>
-      <Modified>2023-05-09T03:19:25.594</Modified>
+      <Modified>2023-05-09T04:11:12.922</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\jermb\Source\Repos\IT.NET\PythonIDE\PythonIDE\bin\x86\Debug\MainPage.xbf">
       <PackagePath>MainPage.xbf</PackagePath>
-      <Modified>2023-05-09T03:19:25.594</Modified>
+      <Modified>2023-05-09T04:11:12.921</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.UniversalCRT.Debug\10.0.18362.0\\redist\Debug\x86\ucrtbased.dll">
       <PackagePath>ucrtbased.dll</PackagePath>
@@ -314,7 +314,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\jermb\Source\Repos\IT.NET\PythonIDE\PythonIDE\bin\x86\Debug\Core\PythonIDE.exe">
       <PackagePath>PythonIDE.exe</PackagePath>
-      <Modified>2023-05-09T03:19:30.488</Modified>
+      <Modified>2023-05-09T04:11:18.094</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

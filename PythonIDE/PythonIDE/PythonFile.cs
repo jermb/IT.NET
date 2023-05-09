@@ -102,27 +102,45 @@ namespace PythonIDE
 
         public void Run()
         {
-            //var stream = await file.OpenReadAsync();
-            //var pythonCode = new StreamReader(stream.AsStream()).ReadToEnd();
+            string errorStr = "";
+            string outputStr = "";
 
-            Debug.WriteLine(contents);
+            try
+            {
+                var engine = Python.CreateEngine();
+                var eio = engine.Runtime.IO;
+                var errors = new MemoryStream();
+                eio.SetErrorOutput(errors, Encoding.Default);
 
-            var engine = Python.CreateEngine();
-            var eio = engine.Runtime.IO;
-            var errors = new MemoryStream();
-            eio.SetErrorOutput(errors, Encoding.Default);
+                var results = new MemoryStream();
+                eio.SetOutput(results, Encoding.Default);
 
-            var results = new MemoryStream();
-            eio.SetOutput(results, Encoding.Default);
+                var scope = engine.CreateScope();
+                engine.Execute(contents, scope);
 
-            var scope = engine.CreateScope();
-            engine.Execute(contents, scope);
+                string str(byte[] x) => Encoding.Default.GetString(x);
 
-            string str(byte[] x) => Encoding.Default.GetString(x);
+                errorStr = str(errors.ToArray());
+                outputStr = str(results.ToArray());
+            }
+            catch (IronPython.Runtime.UnboundNameException ex)
+            {
+                errorStr = ex.Message;
+            }
+            catch (Microsoft.Scripting.SyntaxErrorException ex)
+            {
+                errorStr = ex.Message;
+            }
+            catch (IronPython.Runtime.Exceptions.LookupException ex)
+            {
+                errorStr = "Could not run code.";
+            }
+            catch
+            {
+                errorStr = "There was a problem running this code.";
+            }
 
-
-
-            MainPage.SetOutput(str(results.ToArray()), str(errors.ToArray()));
+            MainPage.SetOutput(outputStr, errorStr);
         }
 
     }
