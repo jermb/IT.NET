@@ -2,6 +2,7 @@
 using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
+using System.ComponentModel;
 using System.Diagnostics;
 using System.Linq;
 using System.Text;
@@ -13,54 +14,65 @@ namespace PythonIDE
 {
     class FolderNavigation : ObservableCollection<PythonItem>
     {
-        //public FolderNavigation
-        public FolderNavigation()
-        {
-
-        }
+        public FolderNavigation() {}
 
         public void Set(PythonItem item)
         {
+            //  Makes sure only one item is set to the tree at a time
             Clear();
             Add(item);
+            //  Updates tree when items have relevant changes.
+            item.PropertyChanged += OnPropertyChanged;
+        }
+
+        public void AddItem(PythonItem item)
+        {
+            if (item is PythonFile file && this[0] is PythonFolder folder)
+            {
+                folder.Add(file);
+            }
+            else
+            {
+                Set(item);
+            }
+        }
+
+        public bool HasChanges()
+        {
+            //  Checks whether any file in file tree has unsaved changes
+            foreach (var item in this)
+            {
+                if (item.HasChanges) return true;
+            }
+            return false;
         }
 
         public async Task Save()
         {
+            //  Saves all files in file tree
             await this[0].Save();
         }
 
-        //public override string DisplayName { get => name; }
-        //private string name;
-
-
-
-        ////public void Set(PythonFolder folder)
-        ////{
-        ////    Clear();
-        ////    Add(folder);
-        ////}
-
-        //public void Add(string name)
-        //{
-        //    Items.Add(new FolderNavigation(name));
-        //}
-
-    }
-    class Item
-    {
-        public string Name { get; set; }
-        public ObservableCollection<Item> Items { get; } = new ObservableCollection<Item>();
-        public Item(string name)
+        protected void OnPropertyChanged(object sender, PropertyChangedEventArgs args)
         {
-            Name = name;
-            Items.Add(new Item());
-            Items.Add(new Item());
+            //  Refeshes tree
+            Set(this[0]);
         }
 
-        public Item()
+        public PythonFile GetFirstFile()
         {
-            Name = "sub";
+            //  Gets the first Python file in file tree
+            if (this[0] is PythonFile file)
+            {
+                return file;
+            }
+            else if (this[0] is PythonFolder folder)
+            {
+                return folder.GetFirstFile();
+            }
+            //  if none exist returns a new file
+            return new PythonFile();
         }
+
     }
 }

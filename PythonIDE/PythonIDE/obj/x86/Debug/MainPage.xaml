@@ -10,57 +10,43 @@
     mc:Ignorable="d"
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
-    <!--<Page.Resources>
-        --><!--<local:FolderNavigation x:Key="folders"/>--><!--
-        <DataTemplate x:Key="DefaultTemplate">
-            <TextBlock Text="{Binding DisplayName}" />
-        </DataTemplate>
-
-        <DataTemplate x:Key="ChildTemplate">
-            <StackPanel>
-                <TextBlock Text="{Binding DisplayName}" />
-                <ItemsControl ItemsSource="{Binding Items}">
-                    <ItemsControl.ItemTemplate>
-                        <DataTemplate>
-                            <ContentPresenter Content="{Binding}">
-                                <ContentPresenter.ContentTemplateSelector>
-                                    <local:PythonItemSelector
-                                    DefaultTemplate="{StaticResource DefaultTemplate}"
-                                    ChildTemplate="{StaticResource ChildTemplate}" />
-                                </ContentPresenter.ContentTemplateSelector>
-                            </ContentPresenter>
-                        </DataTemplate>
-                    </ItemsControl.ItemTemplate>
-                </ItemsControl>
-            </StackPanel>
-        </DataTemplate>
-
-        <local:PythonItemSelector x:Key="PythonItemSelector"
-        DefaultTemplate="{StaticResource DefaultTemplate}"
-        ChildTemplate="{StaticResource ChildTemplate}" />
-    </Page.Resources>-->
+    <Page.Resources>
+        <Style x:Key="RichTextBoxStyle" TargetType="RichEditBox">
+            <Setter Property="BorderThickness" Value="0, 1, 0, 1"/>
+        </Style>
+        <Style x:Key="TreeViewStyle" TargetType="TreeView">
+            <Setter Property="BorderThickness" Value="0 0 1 0"/>
+            <Setter Property="BorderBrush" Value="Gray"/>
+            <Setter Property="Background" Value="Gray"/>
+        </Style>
+        <Style TargetType="TreeViewItem"/>
+    </Page.Resources>
 
     <StackPanel Height="1000">
         <StackPanel>
             <MenuBar>
                 <MenuBarItem Title="File">
-                    <MenuFlyoutItem x:ConnectionId='14' Text="New File"             x:Name="NewButton" IsEnabled="False"/>
-                    <MenuFlyoutItem x:ConnectionId='15' Text="Open File"                 />
-                    <MenuFlyoutItem x:ConnectionId='16' Text="Open Folder"                   />
-                    <MenuFlyoutItem x:ConnectionId='17' Text="Save"              x:Name="SaveButton" IsEnabled="False"/>
-                    <MenuFlyoutItem x:ConnectionId='18' Text="Save As"               />
-                    <MenuFlyoutItem x:ConnectionId='19' Text="Save All"                />
+                    <MenuFlyoutItem x:ConnectionId='16' Text="New File"             x:Name="NewButton" IsEnabled="False"/>
+                    <MenuFlyoutItem x:ConnectionId='17' Text="Open File"                 />
+                    <MenuFlyoutItem x:ConnectionId='18' Text="Open Folder"                   />
+                    <MenuFlyoutItem x:ConnectionId='19' Text="Save"              x:Name="SaveButton" IsEnabled="False"/>
+                    <MenuFlyoutItem x:ConnectionId='20' Text="Save As"               />
+                    <MenuFlyoutItem x:ConnectionId='21' Text="Save All"                />
                     <MenuFlyoutSeparator />
-                    <MenuFlyoutItem x:ConnectionId='20' Text="Exit"             />
+                    <MenuFlyoutItem x:ConnectionId='22' Text="Exit"             />
                 </MenuBarItem>
                 <MenuBarItem Title="Edit">
-                    <MenuFlyoutItem x:ConnectionId='12' Text="Copy" x:Name="CopyButton"/>
-                    <MenuFlyoutItem Text="Paste"/>
-                    <MenuFlyoutItem Text="Cut"/>
-                    <MenuFlyoutItem x:ConnectionId='13' Text="Comment Selection"                   />
+                    <MenuFlyoutItem x:ConnectionId='12' Text="Copy" x:Name="CopyButton"                         />
+                    <MenuFlyoutItem x:ConnectionId='13' Text="Paste"                          />
+                    <MenuFlyoutItem x:ConnectionId='14' Text="Cut"                        />
+                    <MenuFlyoutItem x:ConnectionId='15' Text="Comment Selection"                   />
+                </MenuBarItem>
+                <MenuBarItem Title="View">
+                    <MenuFlyoutItem x:ConnectionId='10' x:Name="WordWrapButton" Text="Word Wrap On"                       />
+                    <MenuFlyoutItem x:ConnectionId='11' x:Name="SyntaxColoringButton" Text="Syntax Coloring Off"                          />
                 </MenuBarItem>
                 <MenuBarItem Title="Help">
-                    <MenuFlyoutItem x:ConnectionId='11' Text="About"              />
+                    <MenuFlyoutItem x:ConnectionId='9' Text="About"              />
                 </MenuBarItem>
             </MenuBar>
         </StackPanel>
@@ -69,14 +55,20 @@
         <Grid Margin="0" Height="955">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="320"/>
-                <ColumnDefinition Width="700*"></ColumnDefinition>
+                <ColumnDefinition Width="700*"/>
             </Grid.ColumnDefinitions>
+            <Border Grid.Column="0" BorderBrush="Gray" BorderThickness="0 0 1 0" Margin="0 55 0 0"/>
 
-            <TreeView x:ConnectionId='2' x:Name="Navigation"                            CanDragItems="False">
+            <TreeView x:ConnectionId='2' x:Name="Navigation"                            CanDragItems="False" Margin="0 55" Style="{StaticResource TreeViewStyle}">
+                <TreeView.ItemContainerStyle>
+                    <Style TargetType="TreeViewItem">
+                        <Setter Property="IsExpanded" Value="True"/>
+                    </Style>
+                </TreeView.ItemContainerStyle>
                 <TreeView.ItemTemplate>
                     <DataTemplate>
                         <!--<TextBlock Text="{Binding Name}"/>-->
-                        <TreeViewItem x:ConnectionId='10' CanDrag="False" IsExpanded="True" ItemsSource="{Binding Items}"                             >
+                        <TreeViewItem x:ConnectionId='8' CanDrag="False" IsExpanded="True" ItemsSource="{Binding Items}"                             >
                             <StackPanel Orientation="Horizontal">
                                 <SymbolIcon Symbol="{Binding Symbol}"/>
                                 <TextBlock Text="{Binding DisplayName}"/>
@@ -87,26 +79,33 @@
             </TreeView>
             
             
-            <StackPanel x:ConnectionId='3' Grid.Column="1" VerticalAlignment="Stretch"                                           >
+            <StackPanel Grid.Column="1" VerticalAlignment="Stretch">
                 <RelativePanel Height="55">
-                    <TextBlock x:ConnectionId='8' x:Name="FileName" Text="Untitled" TextAlignment="Center" RelativePanel.AlignVerticalCenterWithPanel="True" RelativePanel.AlignLeftWithPanel="True" Margin="20 0"/>
-                    <Button x:ConnectionId='9'                    Width="50" Height="25" Content="Run" FontSize="10"  RelativePanel.AlignRightWithPanel="True" RelativePanel.AlignVerticalCenterWithPanel="True" Margin="40 0"/>
+                    <TextBlock x:ConnectionId='6' x:Name="FileName" Text="Untitled" TextAlignment="Center" RelativePanel.AlignVerticalCenterWithPanel="True" RelativePanel.AlignLeftWithPanel="True" Margin="20 0"/>
+                    <Button x:ConnectionId='7'                    Width="50" Height="25" Content="Run" FontSize="10"  RelativePanel.AlignRightWithPanel="True" RelativePanel.AlignVerticalCenterWithPanel="True" Margin="40 0"/>
                 </RelativePanel>
 
-                <RichEditBox x:ConnectionId='4' x:Name="RichTextBox"                                       ScrollViewer.VerticalScrollBarVisibility="Auto" AcceptsReturn="True"
+                <RichEditBox x:ConnectionId='3' x:Name="RichTextBox"                                       ScrollViewer.VerticalScrollBarVisibility="Auto" ScrollViewer.HorizontalScrollBarVisibility="Auto" AcceptsReturn="True"
                              TextWrapping="Wrap" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Height="600" 
-                                                                                                                                
-                                                                                                              />
+                                                                                                                                       
+                                                              
+                             Style="{StaticResource RichTextBoxStyle}"/>
 
-                <TextBox x:ConnectionId='5' x:Name="InputBox" Height="0" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" 
+                <!--<TextBox x:Name="InputBox" Height="0" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" 
                          TextWrapping="Wrap" ScrollViewer.VerticalScrollBarVisibility="Auto" AcceptsReturn="True" 
-                                                                                                                             
-                                                           />
+                         Paste="InputBox_ClipboardAction" CuttingToClipboard="InputBox_ClipboardAction" KeyDown="TabHandling"
+                         TextChanged="InputBox_TextChanged"/>-->
                 <StackPanel Height="300" VerticalAlignment="Bottom" Orientation="Horizontal" HorizontalAlignment="Stretch">
-                    <TextBlock x:ConnectionId='6' x:Name="Output" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Width="590" 
+                    <StackPanel>
+                        <TextBlock Text="Output" FontSize="15" Margin="10 0"/>
+                        <TextBlock x:ConnectionId='5' x:Name="Output" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Width="590" 
                                ScrollViewer.VerticalScrollBarVisibility="Auto" ScrollViewer.HorizontalScrollMode="Disabled" TextWrapping="WrapWholeWords" />
-                    <TextBlock x:ConnectionId='7' x:Name="Debug" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Width="590"
+                    </StackPanel>
+                    <StackPanel>
+                        <TextBlock Text="Debug" FontSize="15" Margin="10 0"/>
+                        <TextBlock x:ConnectionId='4' x:Name="DebugText" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Width="590"
                                ScrollViewer.VerticalScrollBarVisibility="Auto" ScrollViewer.HorizontalScrollMode="Disabled" TextWrapping="WrapWholeWords"/>
+                    </StackPanel>
                 </StackPanel>
             </StackPanel>
         </Grid>
@@ -135,8 +134,9 @@
         <!--
             <TextBox x:Name="InputBox" Grid.Column="1" TextWrapping="Wrap" ScrollViewer.VerticalScrollBarVisibility="Auto" AcceptsReturn="True" Paste="InputBox_ClipboardAction" CuttingToClipboard="InputBox_ClipboardAction" KeyDown="TabHandling"/>
         </Grid>-->
-        <TextBlock></TextBlock>
     </StackPanel>
+
+
 
 </Page>
 

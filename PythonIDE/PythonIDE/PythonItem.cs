@@ -12,6 +12,8 @@ namespace PythonIDE
     internal abstract class PythonItem : INotifyPropertyChanged
     {
         public virtual string DisplayName { get => name; }
+        public virtual bool HasChanges { get; set; }
+
         protected string name;
 
 

@@ -24,9 +24,19 @@ namespace PythonIDE
         //  Returns the name of the file minus the '.txt' extension
         public string FileName { get => file?.DisplayName; }
         public bool IsStored { get => file != null; }
-        public bool HasChanges { get => changed; set { changed = value; OnPropertyChanged("HasChanges"); } }
+        public override bool HasChanges { get => changed; 
+            set 
+            {
+                if (changed != value)
+                {
+                    changed = value;
+                    OnPropertyChanged("HasChanges");
+                    MainPage.UnsavedChanges(value);
+                }
+            } 
+        }
 
-        public override string DisplayName { get => (changed) ? $"* {name}" : name; }
+        public override string DisplayName { get => (changed) ? "*" + name : name; }
 
         public string Contents { get => contents; set => contents = value; }
         private string contents;
@@ -39,27 +49,27 @@ namespace PythonIDE
         public PythonFile(StorageFile file)
         {
             this.file = file;
+            name = file?.DisplayName;
         }
 
         public override async Task Save()
         {
-            //  This method is called when saving an already existing file
-            //  Uses the StorageFile saved in [file] to save
-            await Save(file);
+            contents = MainPage.GetContent();
+            CachedFileManager.DeferUpdates(file);
+            await FileIO.WriteTextAsync(file, contents);
+            //  If there was an issue with saving the file, displays a message to the user
+            Windows.Storage.Provider.FileUpdateStatus status = await CachedFileManager.CompleteUpdatesAsync(file);
+            if (status != Windows.Storage.Provider.FileUpdateStatus.Complete) await new MessageDialog("An issue occurred while saving " + file.Name).ShowAsync();
+            HasChanges = false;
         }
 
         public async Task Save(StorageFile file)
         {
             if (file == null) return;
-            CachedFileManager.DeferUpdates(file);
-            //await FileIO.WriteTextAsync(file, main.DocumentText);
-            //  If there was an issue with saving the file, displays a message to the user
-            Windows.Storage.Provider.FileUpdateStatus status = await CachedFileManager.CompleteUpdatesAsync(file);
-            if (status != Windows.Storage.Provider.FileUpdateStatus.Complete) await new MessageDialog("An issue occurred while saving " + file.Name).ShowAsync();
-
             this.file = file;
-            HasChanges = false;
-            //main.SetFileName();
+            name = file.DisplayName;
+            OnPropertyChanged("DisplayName");
+            await Save();
         }
 
         public async Task<(string, string)> Open()
@@ -109,6 +119,8 @@ namespace PythonIDE
             engine.Execute(contents, scope);
 
             string str(byte[] x) => Encoding.Default.GetString(x);
+
+
 
             MainPage.SetOutput(str(results.ToArray()), str(errors.ToArray()));
         }

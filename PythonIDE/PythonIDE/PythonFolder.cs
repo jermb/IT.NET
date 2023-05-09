@@ -4,6 +4,7 @@ using System.Collections.ObjectModel;
 using System.ComponentModel;
 using System.Diagnostics;
 using System.Linq;
+using System.Security.Policy;
 using System.Text;
 using System.Threading.Tasks;
 using Windows.Storage;
@@ -16,25 +17,26 @@ namespace PythonIDE
     {
 
         private readonly StorageFolder thisFolder;
-        ////private List<PythonFolder> subfolders;
-        ////private List<PythonFile> files;
 
-        //private ObservableCollection<PythonFile> files;
+        public override bool HasChanges { 
+            get 
+            {
+                foreach (var item in Items)
+                {
+                    if (item.HasChanges) return true;
+                }
+                return false;
+            }
+            set { }
+        }
 
-        //public event PropertyChangedEventHandler PropertyChanged;
-
-        ////public List<PythonFolder> Subfolders { get => subfolders; set => subfolders = value; }
-        ////public List<PythonFile> Files { get => files; set => files = value; }
-
+        //  Icon displayed along name;
         public override Symbol Symbol { get => Symbol.Folder; }
-
 
         public PythonFolder()
         {
             name = "no folder";
         }
-
-
 
         public PythonFolder(StorageFolder thisFolder)
         {
@@ -44,6 +46,7 @@ namespace PythonIDE
 
         public async void LoadItems()
         {
+            //  Gets items in folder and properly casts them to either PythonFolder or PythonFile
             IReadOnlyList<IStorageItem> items = await thisFolder.GetItemsAsync();
 
             foreach (IStorageItem item in items)
@@ -53,12 +56,14 @@ namespace PythonIDE
                     PythonFile file = new PythonFile(item as StorageFile);
                     file.Open();
                     Add(file);
+                    file.PropertyChanged += OnPropertyChanged;
                 }
                 else if (item.IsOfType(StorageItemTypes.Folder))
                 {
                     PythonFolder sub = new PythonFolder((StorageFolder)item);
                     sub.LoadItems();
                     Add(sub);
+                    sub.PropertyChanged += OnPropertyChanged;
                 }
             }
         }
@@ -74,6 +79,27 @@ namespace PythonIDE
             {
                 await item.Save();
             }
+        }
+
+        protected void OnPropertyChanged(object sender, PropertyChangedEventArgs args)
+        {
+            OnPropertyChanged(args.PropertyName);
+        }
+
+        public PythonFile GetFirstFile()
+        {
+            foreach (var item in Items)
+            {
+                if (item is PythonFile file)
+                {
+                    return file;
+                }
+                else if (item is PythonFolder folder)
+                {
+                    return folder.GetFirstFile();
+                }
+            }
+            return new PythonFile();
         }
 
     }
